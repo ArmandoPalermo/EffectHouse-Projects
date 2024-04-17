@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "ef9e7a61-84bf-4d8a-04ed-d952908d3f0d",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "image_processing20200424-22029-kc2ycg (2)",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "resourceFilePath": "C:\\Users\\arman\\OneDrive\\Desktop\\Foto Png\\image_processing20200424-22029-kc2ycg.png",
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "5b892ee1-85c6-64e2-9e22-a7d46116502f",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "textures",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

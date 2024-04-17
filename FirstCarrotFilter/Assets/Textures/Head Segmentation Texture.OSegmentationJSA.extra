@@ -1,0 +1,16 @@
+[
+  {
+    "guid": {
+      "a": "68421f81-9edc-5fdd-1916-7be7b506f64f",
+      "b": ""
+    },
+    "extraType": "JSAssetSegmentation",
+    "name": "Head Segmentation Texture",
+    "expandInPanel": true,
+    "objGuid": "",
+    "rttiType": "ScreenRenderTexture",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "dae90163-1c3b-075a-9196-e8f4563d7277",
+      "b": ""
+    },
+    "extraType": "JSAssetHead3D",
+    "name": "3D Face Binding Mesh (2)",
+    "expandInPanel": false,
+    "fillEyes": true,
+    "fillMouth": true,
+    "faceIndex": 0,
+    "objGuid": "",
+    "rttiType": "Mesh",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false
+  }
+]

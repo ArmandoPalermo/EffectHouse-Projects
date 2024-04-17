@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "732947a8-60e3-ac5a-0489-15d3ccb6b839",
+      "b": ""
+    },
+    "extraType": "ResItemVSSubgraph",
+    "name": "2D Object Scroller",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "assetPackageID": "7270559134733336577",
+    "resourceFilePath": "C:\\Users\\arman\\AppData\\Roaming\\EffectHouse\\package\\7270559134733336577\\2D Object Scroller.ssubgraph",
+    "combinedWithNodeLibary": true,
+    "assetID": "7270559134733336577"
+  }
+]

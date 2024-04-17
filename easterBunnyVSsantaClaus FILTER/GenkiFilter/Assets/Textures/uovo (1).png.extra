@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "1720c1c8-d1c8-09ae-a3c8-2ece89192b60",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "uovo (1)",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "resourceFilePath": "C:\\Users\\arman\\OneDrive\\Desktop\\ProgettiEffectHouse\\genkidama Goku filter\\uovo.png",
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false
+  }
+]

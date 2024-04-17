@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "f0c0bc64-10bc-0a8f-d55f-7c131a564efe",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "Japanese Carrot Attempt",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

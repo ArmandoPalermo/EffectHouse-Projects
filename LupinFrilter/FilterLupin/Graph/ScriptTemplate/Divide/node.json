@@ -1,0 +1,65 @@
+{
+	"name": "Divide",
+	"id": "af1dd159-5fa9-47af-b3a0-cf81f5051b8c",
+	"inputs": [
+		{
+			"name": "A",
+			"type": "Double",
+			"item_type": "",
+			"dynamic": true,
+			"default_value": "0",
+			"description": "The dividend",
+			"displayType": "Number",
+			"nameKey": "graph_divide_input_a",
+			"descriptionKey": "graph_divide_input_a_description",
+			"displayTypeKey": "graph_type_number"
+		},
+		{
+			"name": "B",
+			"type": "Double",
+			"item_type": "",
+			"dynamic": true,
+			"default_value": "1",
+			"description": "The divisor",
+			"displayType": "Number",
+			"nameKey": "graph_divide_input_b",
+			"descriptionKey": "graph_divide_input_b_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"outputs": [
+		{
+			"name": "A/B",
+			"type": "Double",
+			"item_type": "",
+			"dynamic": true,
+			"description": "The quotient of A divided by B",
+			"displayType": "Number",
+			"nameKey": "graph_divide_output_ab",
+			"descriptionKey": "graph_divide_output_ab_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"lua": "CGDivide.lua",
+	"js": "CGDivide.js",
+	"version": "1.0.1",
+	"amazingVersion": "10.40.0",
+	"luaFuncName": "CGDivide",
+	"category": "Math",
+	"description": "Divide one value (A) by another (B). Supported types: Number, Vec2, Vec3, and Vec4.",
+	"supportedValueTypes": [
+		"Double",
+		"Int",
+		"Vector2f",
+		"Vector3f",
+		"Vector4f"
+	],
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"nameKey": "graph_divide_name",
+	"categoryKey": "graph_category_math",
+	"descriptionKey": "graph_divide_description"
+}

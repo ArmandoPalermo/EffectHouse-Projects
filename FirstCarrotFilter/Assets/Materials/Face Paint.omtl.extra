@@ -1,0 +1,27 @@
+[
+  {
+    "guid": {
+      "a": "1a67a8f5-6ac4-fdf1-ca79-8b0371c665e6",
+      "b": ""
+    },
+    "extraType": "ResItemMaterialOmtl",
+    "name": "Face Paint",
+    "expandInPanel": true,
+    "objGuid": "",
+    "rttiType": "Material",
+    "version": "0.4.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "skinObjGuid": "Guid(4897095615684269400, 9265515470872383404)",
+    "references": [
+      {
+        "propertyName": "_BaseTexture",
+        "guid": "00000000-0000-0000-0000-000000000021"
+      },
+      {
+        "propertyName": "_OpacityTexture",
+        "guid": "00000000-0000-0000-0000-00000000010b"
+      }
+    ]
+  }
+]

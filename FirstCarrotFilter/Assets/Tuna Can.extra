@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "502de68e-1795-3fc8-effd-d28bc9497b82",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "Tuna Can",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

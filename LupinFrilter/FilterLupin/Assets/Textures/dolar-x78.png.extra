@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "6bc95701-1e31-9a76-f344-8056c59cd0c5",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "dolar-x78",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "resourceFilePath": "C:\\Users\\arman\\OneDrive\\Desktop\\Foto Png\\dolar-x78.png",
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false
+  }
+]

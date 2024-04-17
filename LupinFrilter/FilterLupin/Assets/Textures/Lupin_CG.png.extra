@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "c0554a82-fe16-f52c-6c89-838c925bcd5a",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "Lupin_CG",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "resourceFilePath": "C:\\Users\\arman\\OneDrive\\Desktop\\Foto Png\\Lupin_CG.png",
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false
+  }
+]

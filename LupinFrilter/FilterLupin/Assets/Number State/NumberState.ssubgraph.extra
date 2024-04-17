@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "850be105-57e8-2f4c-e56c-ef11a33a7393",
+      "b": ""
+    },
+    "extraType": "ResItemVSSubgraph",
+    "name": "NumberState",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "assetPackageID": "7293732841232302082",
+    "resourceFilePath": "C:\\Users\\arman\\AppData\\Roaming\\EffectHouse\\package\\7293732841232302082\\NumberState.ssubgraph",
+    "combinedWithNodeLibary": true,
+    "assetID": "7293732841232302082"
+  }
+]

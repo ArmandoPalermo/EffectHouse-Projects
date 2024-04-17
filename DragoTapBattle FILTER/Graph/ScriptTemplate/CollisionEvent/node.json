@@ -1,0 +1,86 @@
+{
+	"name": "Collision Event",
+	"id": "1be8a274-2f5b-e92e-9b38-c56009aa7f8d",
+	"inputs": [
+		{
+			"name": "Start",
+			"description": "Start listening for an event",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_collision_event_input_start",
+			"descriptionKey": "graph_collision_event_input_start_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Collider Component",
+			"type": "Component",
+			"item_type": "",
+			"description": "The object to track for collision events",
+			"displayType": "Component",
+			"nameKey": "graph_collision_event_input_collidercomponent",
+			"descriptionKey": "graph_collision_event_input_collidercomponent_description",
+			"displayTypeKey": "graph_type_component"
+		},
+		{
+			"name": "Event Type",
+			"description": "Trigger Next depending on event type",
+			"type": "String",
+			"value_list": [
+				"onEnter",
+				"onStay",
+				"onExit"
+			],
+			"displayType": "String",
+			"nameKey": "graph_collision_event_input_eventtype",
+			"descriptionKey": "graph_collision_event_input_eventtype_description",
+			"displayTypeKey": "graph_type_string",
+			"value_list_i18n_keys": [
+				"graph_collision_event_input_eventtype_valueList_onenter",
+				"graph_collision_event_input_eventtype_valueList_stay",
+				"graph_collision_event_input_eventtype_valueList_onexit"
+			]
+		}
+	],
+	"outputs": [
+		{
+			"name": "Next",
+			"type": "Pulse",
+			"description": "Execute the next node.",
+			"displayType": "Exec",
+			"nameKey": "graph_collision_event_output_next",
+			"descriptionKey": "graph_collision_event_output_next_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Collision Info Array",
+			"generic": "T",
+			"type": "Array",
+			"item_type": "",
+			"dynamic": true,
+			"description": "The information passed on to the Collision Info node, such as contact points, relative velocity, and impulse",
+			"displayType": "{dataType} Array",
+			"nameKey": "graph_collision_event_output_collisioninfoarray",
+			"descriptionKey": "graph_collision_event_output_collisioninfoarray_description",
+			"displayTypeKey": "graph_type_generic_array"
+		}
+	],
+	"js": "CGCollisionEvent.js",
+	"nodeEvent": [
+		"onUpdate"
+	],
+	"supportedValueTypes": [
+		"ContactInfo"
+	],
+	"version": "2.0.0",
+	"SDKVersion": "15.2.0",
+	"category": "Physics",
+	"description": "Detects collision events between Rigid Body components and outputs relevant information through the Collision Info node",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"nameKey": "graph_collision_event_name",
+	"categoryKey": "graph_category_physics",
+	"descriptionKey": "graph_collision_event_description"
+}

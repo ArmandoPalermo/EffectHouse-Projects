@@ -1,0 +1,29 @@
+[
+  {
+    "guid": {
+      "a": "855612cf-2084-55dd-171f-0558d62d74a6",
+      "b": ""
+    },
+    "extraType": "ResItemAssimpAsset",
+    "name": "Carrot",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Model",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "assetPackageID": "755fb8b9ca6c4faf894bf75d71501b8c",
+    "importAnimation": true,
+    "importVertexColor": false,
+    "importBlendshape": true,
+    "importNormalTangentBinormal": true,
+    "regenerateNormalTangentBinormal": true,
+    "materialsGUIDs": [
+      "56f6cc74-d975-a8b0-4502-c67bf19e171d"
+    ],
+    "meshGUIDs": [
+      "d522e16d-207f-aab0-589f-a1b423cb13e9"
+    ],
+    "animazGUIDs": []
+  }
+]

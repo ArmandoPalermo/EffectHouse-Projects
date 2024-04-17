@@ -1,0 +1,2104 @@
+%YAML 1.1
+--- !Scene &1
+name: !<str> ""
+guid: {a: 7875085725817850609, b: 329766013828765107}
+editSceneGuid: {a: 0, b: 0}
+calibrateVer: !<str> V5
+entities:
+  - __class: Entity
+    name: !<str> Camera
+    guid: {a: 10180214583793075010, b: 13085474825770890632}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 2}
+      - __class: Camera
+        name: !<str> ""
+        guid: {a: 18393534764065644695, b: 16547619468206596491}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderOrder: 0
+        type:
+          __class: CameraType
+          value: PERSPECTIVE
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        orthoScale: 1
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+        sortMethod:
+          __class: CameraSortMethod
+          value: SORT_ORDER_AND_RENDERQUEUES
+    layer: 0
+  - __class: Entity
+    name: !<str> Face Mask Effects
+    guid: {a: 4916362792341694814, b: 14859841555723924652}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 22}
+      - __class: EffectNode
+        name: !<str> ""
+        guid: {a: 5469052594088762392, b: 9153043384550160546}
+        enabled: true
+        outputTextures:
+          - {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        renderOrder: 2501
+        minorOrder: 0
+        type:
+          __class: EffectNodeTag
+          value: FaceMakeup
+        version: 2
+        rendererType:
+          __class: RendererType
+          value: OpenGLES30
+    layer: 0
+  - __class: Entity
+    name: !<str> Segmentation Effects
+    guid: {a: 5558812723173280621, b: 1373857799570162355}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 28}
+      - __class: EffectNode
+        name: !<str> ""
+        guid: {a: 5259278371164102611, b: 16929847812805567383}
+        enabled: true
+        outputTextures:
+          - {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        renderOrder: 2750
+        minorOrder: 0
+        type:
+          __class: EffectNodeTag
+          value: Other
+        version: 2
+        rendererType:
+          __class: RendererType
+          value: OpenGLES30
+    layer: 0
+  - __class: Entity
+    name: !<str> Head Segmentation Effects
+    guid: {a: 5453437592787030410, b: 18311589722775306422}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 32}
+      - __class: EffectNode
+        name: !<str> ""
+        guid: {a: 5449199027918985807, b: 17763318322512629917}
+        enabled: true
+        outputTextures:
+          - {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        renderOrder: 4500
+        minorOrder: 0
+        type:
+          __class: EffectNodeTag
+          value: Other
+        version: 2
+        rendererType:
+          __class: RendererType
+          value: OpenGLES30
+    layer: 0
+  - __class: Entity
+    name: !<str> General
+    guid: {a: 8235238043598186243, b: 16840308208679013795}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 3}
+      - __class: EffectNode
+        name: !<str> ""
+        guid: {a: 14792803682663561050, b: 6161520050080348315}
+        enabled: true
+        outputTextures:
+          - {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        renderOrder: 8001
+        minorOrder: 0
+        type:
+          __class: EffectNodeTag
+          value: Other
+        version: 2
+        rendererType:
+          __class: RendererType
+          value: OpenGLES30
+    layer: 0
+  - __class: Entity
+    name: !<str> Directional Light
+    guid: {a: 815069582473778930, b: 3860102513852982437}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 4}
+      - __class: DirectionalLight
+        name: !<str> ""
+        guid: {a: 8739102965005804130, b: 6461487404246441657}
+        enabled: true
+        color: {x: 1, y: 1, z: 1}
+        intensiy: 1
+        shadowEnable: false
+        shadowEnableNew: false
+        shadowResolution: {x: 256, y: 256}
+        shadowBias: 0
+        shadowStrength: 1
+        useSoftShadow: false
+        shadowSoftness: 1
+        blurRadius: 1.299999952316284
+        blurNum: 0
+        selfShadowGradient: 0
+        shadowColor: {x: 0, y: 0, z: 0}
+        InitStrength: 0.300000011920929
+        EsmC: 0.03500000014901161
+        lightingLayers: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderMode:
+          __class: LightRenderMode
+          value: AUTO
+        shadowArea: 100
+        autoShadowFrustum: true
+        shadowFrustumZNear: 1
+        shadowFrustumZFar: 100
+        cookieSize: 1
+        softShadowType:
+          __class: SoftShadowType
+          value: PCF
+        EVSMExponents: {x: 4, y: 4}
+        contactShadowEnable: false
+        lightUnit:
+          __class: LightUnit
+          value: Lux
+    layer: 0
+  - __class: Entity
+    name: !<str> Environment Light
+    guid: {a: 11406181728386468509, b: 5972158861532600762}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 5}
+      - __class: Envmap
+        name: !<str> ""
+        guid: {a: 16737500510660696093, b: 7610174286501797273}
+        enabled: true
+        envmapLayers: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        specularEnvmap: {localId: 1, path: 00000000-0000-0000-0000-000000000800--00000000-0000-0000-0000-000000000800.texture}
+        IBLMode: true
+        intensity: 1
+        rotation: 0
+    layer: 0
+  - __class: Entity
+    name: !<str> Head Tracker
+    guid: {a: 5623203942591140576, b: 10087859652573756832}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 6}
+      - __class: FaceCapture
+        name: !<str> ""
+        guid: {a: 5421080908094867604, b: 764198746480917412}
+        enabled: true
+        faceid: 0
+        captureType:
+          __class: CaptureType
+          value: HUMAN
+        captureVersion:
+          __class: CaptureVersion
+          value: SOLVEPNP
+        alignoffset: {x: 0, y: 0}
+        alignz: 5
+        isGlobal: true
+        useSceneCameraFov: false
+        isPictureMode: false
+        isFaceCaptureEnable: true
+        calirateVersion:
+          __class: CalibrationType
+          value: V5
+        nearPlane: 0.1000000014901161
+        farPlane: 10000
+        useSceneCameraNearFar: false
+        behaviorWhenTrackerDisappear:
+          __class: BehaviorWhenTrackerDisappear
+          value: ALIGN_VISIBILITY_WITH_TRACKER
+        entityRotateType:
+          __class: EntityRotateType
+          value: ROTATE_AROUND_XYZ_AXIS
+    layer: 3
+  - __class: Entity
+    name: !<str> Face Mask Camera
+    guid: {a: 4717527835408903964, b: 8946357840945300403}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 23}
+      - __class: Camera
+        name: !<str> ""
+        guid: {a: 5032439273077509862, b: 18419107302107668149}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderOrder: 1
+        type:
+          __class: CameraType
+          value: PERSPECTIVE
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        orthoScale: 1
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+        sortMethod:
+          __class: CameraSortMethod
+          value: SORT_ORDER_AND_RENDERQUEUES
+    layer: 0
+  - __class: Entity
+    name: !<str> 2D Camera
+    guid: {a: 5429042424562419626, b: 14054090931121533860}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 33}
+      - __class: Camera
+        name: !<str> ""
+        guid: {a: 5695074496331542983, b: 1398725250721753011}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderOrder: 0
+        type:
+          __class: CameraType
+          value: ORTHO
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        orthoScale: 20
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+        sortMethod:
+          __class: CameraSortMethod
+          value: SORT_ORDER_AND_RENDERQUEUES
+    layer: 0
+  - __class: Entity
+    name: !<str> Face Inset
+    guid: {a: 5399535241470810921, b: 3232145251171740301}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 27}
+      - __class: FaceInsetRenderer
+        name: !<str> ""
+        guid: {a: 5028582141020598724, b: 12133836420554091709}
+        enabled: true
+        sharedMaterials:
+          - {localId: 0}
+        sortingOrder: 3
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        insetParams:
+          __class: Map
+          areaType: !<str> LEFT_EYE
+          blendMode: !<str> Normal_v2
+          depthTest: false
+          fillColor: {r: 1, g: 1, b: 1, a: 0}
+          innBorderRad: 0
+          inputTexture: {localId: 1, path: share://input.texture}
+          inputTextureScale: {x: 1, y: 1}
+          inputTextureUVOffset: {x: 0, y: 0}
+          needOutline: false
+          opacity: 1
+          outBorderRad: 0.800000011920929
+          outlineColor: {r: 1, g: 1, b: 1, a: 1}
+          outlineThickness: 0.5
+          subdivCount: 3
+          type: !<str> HUMAN
+          whichId: 0
+        preDefinedData:
+          __class: Map
+          CAT:
+            __class: Map
+            HEAD:
+              - 25
+              - 24
+              - 23
+              - 22
+              - 21
+              - 20
+              - 19
+              - 18
+              - 17
+              - 16
+              - 15
+              - 14
+              - 13
+              - 12
+              - 11
+              - 10
+              - 9
+              - 8
+              - 7
+              - 6
+              - 5
+              - 4
+              - 3
+              - 2
+              - 1
+              - 0
+            LEFT_EAR:
+              - 0
+              - 26
+              - 27
+              - 28
+              - 29
+              - 30
+              - 31
+              - 32
+              - 23
+              - 24
+              - 25
+            LEFT_EYE: [64, 65, 66, 67, 68, 69, 70, 71]
+            MOUTH:
+              - 44
+              - 46
+              - 11
+              - 10
+              - 9
+              - 8
+              - 7
+              - 6
+              - 5
+              - 45
+            NOSE: [45, 44, 46, 47]
+            RIGHT_EAR:
+              - 19
+              - 33
+              - 34
+              - 35
+              - 36
+              - 37
+              - 38
+              - 39
+              - 16
+              - 17
+              - 18
+            RIGHT_EYE: [76, 75, 74, 73, 72, 79, 78, 77]
+          DOG:
+            __class: Map
+            HEAD:
+              - 25
+              - 24
+              - 23
+              - 22
+              - 21
+              - 20
+              - 19
+              - 18
+              - 17
+              - 16
+              - 15
+              - 14
+              - 13
+              - 12
+              - 11
+              - 10
+              - 9
+              - 8
+              - 7
+              - 6
+              - 5
+              - 4
+              - 3
+              - 2
+              - 1
+              - 0
+            LEFT_EAR:
+              - 0
+              - 76
+              - 77
+              - 78
+              - 79
+              - 80
+              - 81
+              - 82
+              - 23
+              - 24
+              - 25
+            LEFT_EYE: [58, 59, 60, 61, 62, 63, 64, 65]
+            MOUTH:
+              - 34
+              - 35
+              - 36
+              - 11
+              - 10
+              - 9
+              - 8
+              - 7
+              - 6
+              - 5
+            NOSE: [31, 38, 37, 36, 35, 34, 33, 32]
+            RIGHT_EAR:
+              - 16
+              - 17
+              - 18
+              - 19
+              - 83
+              - 84
+              - 85
+              - 86
+              - 87
+              - 88
+              - 89
+            RIGHT_EYE: [70, 69, 68, 67, 66, 73, 72, 71]
+          HUMAN:
+            __class: Map
+            HEAD:
+              - 33
+              - 34
+              - 35
+              - 36
+              - 37
+              - 38
+              - 39
+              - 40
+              - 41
+              - 42
+              - 32
+              - 31
+              - 30
+              - 29
+              - 28
+              - 27
+              - 26
+              - 25
+              - 24
+              - 23
+              - 22
+              - 21
+              - 20
+              - 19
+              - 18
+              - 17
+              - 16
+              - 15
+              - 14
+              - 13
+              - 12
+              - 11
+              - 10
+              - 9
+              - 8
+              - 7
+              - 6
+              - 5
+              - 4
+              - 3
+              - 2
+              - 1
+              - 0
+            INNER_MOUTH: [96, 97, 98, 99, 100, 101, 102, 103]
+            LEFT_BROW: [33, 34, 35, 36, 37, 67, 66, 65, 64]
+            LEFT_EYE: [52, 53, 72, 54, 55, 56, 73, 57]
+            LEFT_IRIS:
+              - 1
+              - 2
+              - 3
+              - 4
+              - 5
+              - 6
+              - 7
+              - 8
+              - 9
+              - 10
+              - 11
+              - 12
+              - 13
+              - 14
+              - 15
+              - 16
+              - 17
+              - 18
+              - 19
+            MOUTH:
+              - 84
+              - 85
+              - 86
+              - 87
+              - 88
+              - 89
+              - 90
+              - 91
+              - 92
+              - 93
+              - 94
+              - 95
+            NOSE: [43, 83, 51, 50, 49, 48, 47, 82]
+            RIGHT_BROW: [38, 39, 40, 41, 42, 71, 70, 69, 68]
+            RIGHT_EYE: [62, 76, 63, 58, 59, 75, 60, 61]
+            RIGHT_IRIS:
+              - 1
+              - 2
+              - 3
+              - 4
+              - 5
+              - 6
+              - 7
+              - 8
+              - 9
+              - 10
+              - 11
+              - 12
+              - 13
+              - 14
+              - 15
+              - 16
+              - 17
+              - 18
+              - 19
+          skipConvexHull:
+            __class: Map
+            LEFT_BROW: true
+            RIGHT_BROW: true
+    layer: 0
+  - __class: Entity
+    name: !<str> Face Inset (1)
+    guid: {a: 5715316540584603556, b: 350329545751695516}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 25}
+      - __class: FaceInsetRenderer
+        name: !<str> ""
+        guid: {a: 5564975578706807741, b: 11552639516343932317}
+        enabled: true
+        sharedMaterials:
+          - {localId: 0}
+        sortingOrder: 1
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        insetParams:
+          __class: Map
+          areaType: !<str> RIGHT_EYE
+          blendMode: !<str> Normal_v2
+          depthTest: false
+          fillColor: {r: 1, g: 1, b: 1, a: 0}
+          innBorderRad: 0
+          inputTexture: {localId: 1, path: share://input.texture}
+          inputTextureScale: {x: 1, y: 1}
+          inputTextureUVOffset: {x: 0, y: 0}
+          needOutline: false
+          opacity: 1
+          outBorderRad: 0.800000011920929
+          outlineColor: {r: 1, g: 1, b: 1, a: 1}
+          outlineThickness: 0.5
+          subdivCount: 2
+          type: !<str> HUMAN
+          whichId: 0
+        preDefinedData:
+          __class: Map
+          CAT:
+            __class: Map
+            HEAD:
+              - 25
+              - 24
+              - 23
+              - 22
+              - 21
+              - 20
+              - 19
+              - 18
+              - 17
+              - 16
+              - 15
+              - 14
+              - 13
+              - 12
+              - 11
+              - 10
+              - 9
+              - 8
+              - 7
+              - 6
+              - 5
+              - 4
+              - 3
+              - 2
+              - 1
+              - 0
+            LEFT_EAR:
+              - 0
+              - 26
+              - 27
+              - 28
+              - 29
+              - 30
+              - 31
+              - 32
+              - 23
+              - 24
+              - 25
+            LEFT_EYE: [64, 65, 66, 67, 68, 69, 70, 71]
+            MOUTH:
+              - 44
+              - 46
+              - 11
+              - 10
+              - 9
+              - 8
+              - 7
+              - 6
+              - 5
+              - 45
+            NOSE: [45, 44, 46, 47]
+            RIGHT_EAR:
+              - 19
+              - 33
+              - 34
+              - 35
+              - 36
+              - 37
+              - 38
+              - 39
+              - 16
+              - 17
+              - 18
+            RIGHT_EYE: [76, 75, 74, 73, 72, 79, 78, 77]
+          DOG:
+            __class: Map
+            HEAD:
+              - 25
+              - 24
+              - 23
+              - 22
+              - 21
+              - 20
+              - 19
+              - 18
+              - 17
+              - 16
+              - 15
+              - 14
+              - 13
+              - 12
+              - 11
+              - 10
+              - 9
+              - 8
+              - 7
+              - 6
+              - 5
+              - 4
+              - 3
+              - 2
+              - 1
+              - 0
+            LEFT_EAR:
+              - 0
+              - 76
+              - 77
+              - 78
+              - 79
+              - 80
+              - 81
+              - 82
+              - 23
+              - 24
+              - 25
+            LEFT_EYE: [58, 59, 60, 61, 62, 63, 64, 65]
+            MOUTH:
+              - 34
+              - 35
+              - 36
+              - 11
+              - 10
+              - 9
+              - 8
+              - 7
+              - 6
+              - 5
+            NOSE: [31, 38, 37, 36, 35, 34, 33, 32]
+            RIGHT_EAR:
+              - 16
+              - 17
+              - 18
+              - 19
+              - 83
+              - 84
+              - 85
+              - 86
+              - 87
+              - 88
+              - 89
+            RIGHT_EYE: [70, 69, 68, 67, 66, 73, 72, 71]
+          HUMAN:
+            __class: Map
+            HEAD:
+              - 33
+              - 34
+              - 35
+              - 36
+              - 37
+              - 38
+              - 39
+              - 40
+              - 41
+              - 42
+              - 32
+              - 31
+              - 30
+              - 29
+              - 28
+              - 27
+              - 26
+              - 25
+              - 24
+              - 23
+              - 22
+              - 21
+              - 20
+              - 19
+              - 18
+              - 17
+              - 16
+              - 15
+              - 14
+              - 13
+              - 12
+              - 11
+              - 10
+              - 9
+              - 8
+              - 7
+              - 6
+              - 5
+              - 4
+              - 3
+              - 2
+              - 1
+              - 0
+            INNER_MOUTH: [96, 97, 98, 99, 100, 101, 102, 103]
+            LEFT_BROW: [33, 34, 35, 36, 37, 67, 66, 65, 64]
+            LEFT_EYE: [52, 53, 72, 54, 55, 56, 73, 57]
+            LEFT_IRIS:
+              - 1
+              - 2
+              - 3
+              - 4
+              - 5
+              - 6
+              - 7
+              - 8
+              - 9
+              - 10
+              - 11
+              - 12
+              - 13
+              - 14
+              - 15
+              - 16
+              - 17
+              - 18
+              - 19
+            MOUTH:
+              - 84
+              - 85
+              - 86
+              - 87
+              - 88
+              - 89
+              - 90
+              - 91
+              - 92
+              - 93
+              - 94
+              - 95
+            NOSE: [43, 83, 51, 50, 49, 48, 47, 82]
+            RIGHT_BROW: [38, 39, 40, 41, 42, 71, 70, 69, 68]
+            RIGHT_EYE: [62, 76, 63, 58, 59, 75, 60, 61]
+            RIGHT_IRIS:
+              - 1
+              - 2
+              - 3
+              - 4
+              - 5
+              - 6
+              - 7
+              - 8
+              - 9
+              - 10
+              - 11
+              - 12
+              - 13
+              - 14
+              - 15
+              - 16
+              - 17
+              - 18
+              - 19
+          skipConvexHull:
+            __class: Map
+            LEFT_BROW: true
+            RIGHT_BROW: true
+    layer: 0
+  - __class: Entity
+    name: !<str> Face Inset (2)
+    guid: {a: 5399404528725276730, b: 13386816577040929666}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 26}
+      - __class: FaceInsetRenderer
+        name: !<str> ""
+        guid: {a: 4836324872181725393, b: 4747452898701283769}
+        enabled: true
+        sharedMaterials:
+          - {localId: 0}
+        sortingOrder: 2
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        insetParams:
+          __class: Map
+          areaType: !<str> MOUTH
+          blendMode: !<str> Normal_v2
+          depthTest: false
+          fillColor: {r: 1, g: 1, b: 1, a: 0}
+          innBorderRad: 0
+          inputTexture: {localId: 1, path: share://input.texture}
+          inputTextureScale: {x: 1, y: 1}
+          inputTextureUVOffset: {x: 0, y: 0}
+          needOutline: false
+          opacity: 1
+          outBorderRad: 0.800000011920929
+          outlineColor: {r: 1, g: 1, b: 1, a: 1}
+          outlineThickness: 0.5
+          subdivCount: 2
+          type: !<str> HUMAN
+          whichId: 0
+        preDefinedData:
+          __class: Map
+          CAT:
+            __class: Map
+            HEAD:
+              - 25
+              - 24
+              - 23
+              - 22
+              - 21
+              - 20
+              - 19
+              - 18
+              - 17
+              - 16
+              - 15
+              - 14
+              - 13
+              - 12
+              - 11
+              - 10
+              - 9
+              - 8
+              - 7
+              - 6
+              - 5
+              - 4
+              - 3
+              - 2
+              - 1
+              - 0
+            LEFT_EAR:
+              - 0
+              - 26
+              - 27
+              - 28
+              - 29
+              - 30
+              - 31
+              - 32
+              - 23
+              - 24
+              - 25
+            LEFT_EYE: [64, 65, 66, 67, 68, 69, 70, 71]
+            MOUTH:
+              - 44
+              - 46
+              - 11
+              - 10
+              - 9
+              - 8
+              - 7
+              - 6
+              - 5
+              - 45
+            NOSE: [45, 44, 46, 47]
+            RIGHT_EAR:
+              - 19
+              - 33
+              - 34
+              - 35
+              - 36
+              - 37
+              - 38
+              - 39
+              - 16
+              - 17
+              - 18
+            RIGHT_EYE: [76, 75, 74, 73, 72, 79, 78, 77]
+          DOG:
+            __class: Map
+            HEAD:
+              - 25
+              - 24
+              - 23
+              - 22
+              - 21
+              - 20
+              - 19
+              - 18
+              - 17
+              - 16
+              - 15
+              - 14
+              - 13
+              - 12
+              - 11
+              - 10
+              - 9
+              - 8
+              - 7
+              - 6
+              - 5
+              - 4
+              - 3
+              - 2
+              - 1
+              - 0
+            LEFT_EAR:
+              - 0
+              - 76
+              - 77
+              - 78
+              - 79
+              - 80
+              - 81
+              - 82
+              - 23
+              - 24
+              - 25
+            LEFT_EYE: [58, 59, 60, 61, 62, 63, 64, 65]
+            MOUTH:
+              - 34
+              - 35
+              - 36
+              - 11
+              - 10
+              - 9
+              - 8
+              - 7
+              - 6
+              - 5
+            NOSE: [31, 38, 37, 36, 35, 34, 33, 32]
+            RIGHT_EAR:
+              - 16
+              - 17
+              - 18
+              - 19
+              - 83
+              - 84
+              - 85
+              - 86
+              - 87
+              - 88
+              - 89
+            RIGHT_EYE: [70, 69, 68, 67, 66, 73, 72, 71]
+          HUMAN:
+            __class: Map
+            HEAD:
+              - 33
+              - 34
+              - 35
+              - 36
+              - 37
+              - 38
+              - 39
+              - 40
+              - 41
+              - 42
+              - 32
+              - 31
+              - 30
+              - 29
+              - 28
+              - 27
+              - 26
+              - 25
+              - 24
+              - 23
+              - 22
+              - 21
+              - 20
+              - 19
+              - 18
+              - 17
+              - 16
+              - 15
+              - 14
+              - 13
+              - 12
+              - 11
+              - 10
+              - 9
+              - 8
+              - 7
+              - 6
+              - 5
+              - 4
+              - 3
+              - 2
+              - 1
+              - 0
+            INNER_MOUTH: [96, 97, 98, 99, 100, 101, 102, 103]
+            LEFT_BROW: [33, 34, 35, 36, 37, 67, 66, 65, 64]
+            LEFT_EYE: [52, 53, 72, 54, 55, 56, 73, 57]
+            LEFT_IRIS:
+              - 1
+              - 2
+              - 3
+              - 4
+              - 5
+              - 6
+              - 7
+              - 8
+              - 9
+              - 10
+              - 11
+              - 12
+              - 13
+              - 14
+              - 15
+              - 16
+              - 17
+              - 18
+              - 19
+            MOUTH:
+              - 84
+              - 85
+              - 86
+              - 87
+              - 88
+              - 89
+              - 90
+              - 91
+              - 92
+              - 93
+              - 94
+              - 95
+            NOSE: [43, 83, 51, 50, 49, 48, 47, 82]
+            RIGHT_BROW: [38, 39, 40, 41, 42, 71, 70, 69, 68]
+            RIGHT_EYE: [62, 76, 63, 58, 59, 75, 60, 61]
+            RIGHT_IRIS:
+              - 1
+              - 2
+              - 3
+              - 4
+              - 5
+              - 6
+              - 7
+              - 8
+              - 9
+              - 10
+              - 11
+              - 12
+              - 13
+              - 14
+              - 15
+              - 16
+              - 17
+              - 18
+              - 19
+          skipConvexHull:
+            __class: Map
+            LEFT_BROW: true
+            RIGHT_BROW: true
+    layer: 0
+  - __class: Entity
+    name: !<str> SkeletonAndRenderRoot
+    guid: {a: 5351874289095910315, b: 11876513915756494522}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 8}
+    layer: 0
+  - __class: Entity
+    name: !<str> Sketchfab_model
+    guid: {a: 5566197368925582411, b: 7647848106212009614}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 9}
+    layer: 0
+  - __class: Entity
+    name: !<str> 5bbf6fd71bbb465fa1cb0d948c9ab7cd.fbx
+    guid: {a: 5497335532637779845, b: 9048115604706902657}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 10}
+    layer: 0
+  - __class: Entity
+    name: !<str> RootNode
+    guid: {a: 5230226418497381878, b: 10569808100630020005}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 11}
+    layer: 0
+  - __class: Entity
+    name: !<str> Sphere086
+    guid: {a: 5103680834069950010, b: 17515478864111646850}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 12}
+    layer: 0
+  - __class: Entity
+    name: !<str> "Sphere086_Material #67_0"
+    guid: {a: 5760870341732002993, b: 7019412304025967519}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 13}
+      - __class: MeshRenderer
+        name: !<str> mesh0_renderer
+        guid: {a: 5525753370266798079, b: 18270788757698326706}
+        enabled: true
+        sharedMaterials:
+          - {localId: 1, path: 00000000-0000-0000-0000-000000000011--00000000-0000-0000-0000-000000000011.material}
+        sortingOrder: 5
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        mesh: {localId: 1, path: 00000000-0000-0000-0000-000000000006}
+        castShadow: false
+    layer: 0
+  - __class: Entity
+    name: !<str> "Sphere086_Material #55_0"
+    guid: {a: 4841562500393674880, b: 13546235389000438402}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 14}
+      - __class: MeshRenderer
+        name: !<str> mesh1_renderer
+        guid: {a: 4887540770780647166, b: 18202463491883384761}
+        enabled: true
+        sharedMaterials:
+          - {localId: 1, path: 00000000-0000-0000-0000-000000000011--00000000-0000-0000-0000-000000000011.material}
+        sortingOrder: 6
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        mesh: {localId: 1, path: 00000000-0000-0000-0000-000000000006}
+        castShadow: false
+    layer: 0
+  - __class: Entity
+    name: !<str> Carrot
+    guid: {a: 4925183123383691433, b: 15187474700357779598}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 7}
+    layer: 0
+  - __class: Entity
+    name: !<str> Tonno
+    guid: {a: 5357160735958268187, b: 11540789018685514412}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 15}
+      - __class: MeshRenderer
+        name: !<str> ""
+        guid: {a: 4865402137905849872, b: 9798632673470123394}
+        enabled: true
+        sharedMaterials:
+          - {localId: 1, path: 4a52b16d-8787-80e7-2d48-9123d2b538a3--4a52b16d-8787-80e7-2d48-9123d2b538a3.material}
+        sortingOrder: 7
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        mesh: {localId: 1, path: e94bc4d2-f6ef-01ed-81f9-b3856ac017b8--tinCanLowPoly_tinCan_0.mesh}
+        castShadow: false
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5679984775989183431, b: 12804587792611405491}
+        enabled: true
+        path: !<str> js/RigidBody.js
+        properties:
+          __class: Map
+          angularDamping: 0
+          damping: 0
+          externalForce: {x: 0, y: 0, z: 0}
+          externalTorque: {x: 0, y: 0, z: 0}
+          freezeX: true
+          freezeY: false
+          freezeZ: true
+          isKinematic: false
+          mass: 5
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 4970848749565806984, b: 7494829985571550393}
+        enabled: true
+        path: !<str> js/BoxCollider.js
+        properties:
+          __class: Map
+          center: {x: 0, y: 0, z: 0}
+          fitMesh: true
+          isTangible: true
+          rotation: {x: 0, y: 0, z: 0}
+          showCollider: true
+          size: {x: 4, y: 3.6, z: 4}
+    layer: 0
+  - __class: Entity
+    name: !<str> piatto
+    guid: {a: 4863109169820156601, b: 8439827582130912903}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 17}
+      - __class: MeshRenderer
+        name: !<str> ""
+        guid: {a: 5700322865817327348, b: 14413687984172032441}
+        enabled: true
+        sharedMaterials:
+          - {localId: 1, path: a43d0430-fc04-fbca-b9ed-fbe4681c4a9c--a43d0430-fc04-fbca-b9ed-fbe4681c4a9c.material}
+        sortingOrder: 9
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        mesh: {localId: 1, path: fc5b00aa-0974-176d-4acc-05f7198336e9--BezierCircle__0.mesh}
+        castShadow: false
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5063593677151415982, b: 1028868621247084961}
+        enabled: true
+        path: !<str> js/BoxCollider.js
+        properties:
+          __class: Map
+          center: {x: 0, y: 0, z: 0}
+          fitMesh: true
+          isTangible: true
+          rotation: {x: 0, y: 0, z: 0}
+          showCollider: true
+          size: {x: 8.7, y: 7.5, z: 1}
+    layer: 0
+  - __class: Entity
+    name: !<str> 2D Camera
+    guid: {a: 5255646256944918712, b: 10725212513254265242}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 29}
+      - __class: Camera
+        name: !<str> ""
+        guid: {a: 5053450188963952285, b: 5360792435418459283}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderOrder: 0
+        type:
+          __class: CameraType
+          value: ORTHO
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        orthoScale: 20
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+        sortMethod:
+          __class: CameraSortMethod
+          value: SORT_ORDER_AND_RENDERQUEUES
+    layer: 0
+  - __class: Entity
+    name: !<str> Portrait Segmentation
+    guid: {a: 5252671420174532143, b: 15037674766233078956}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 30}
+    layer: 0
+  - __class: Entity
+    name: !<str> Portrait
+    guid: {a: 5441042758530830877, b: 2194966785328075418}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 31}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 5286624831824430150, b: 4318270143317544085}
+        enabled: true
+        sharedMaterials:
+          - {localId: 1, path: 80f13dba-fbd7-b9e4-2278-b47071154567--80f13dba-fbd7-b9e4-2278-b47071154567.material}
+        sortingOrder: 4
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: custom://Default_Face_Mask_OutputV2}
+        opacity: 1
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 10, y: 10}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Stretch
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+    layer: 0
+  - __class: Entity
+    name: !<str> 3D Face
+    guid: {a: 5042907347537234165, b: 3233678480494280837}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 24}
+      - __class: MeshRenderer
+        name: !<str> ""
+        guid: {a: 5446435659389770680, b: 12890080165367156119}
+        enabled: true
+        sharedMaterials:
+          - {localId: 1, path: 56f6cc74-d975-a8b0-4502-c67bf19e171d--56f6cc74-d975-a8b0-4502-c67bf19e171d.material}
+        sortingOrder: 0
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        mesh: {localId: 1, path: 855612cf-2084-55dd-171f-0558d62d74a6--Carrot_lambert4_0.mesh}
+        castShadow: false
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 4729506258916432243, b: 16753994926347875488}
+        enabled: true
+        path: !<str> js/FaceShapeV2.js
+        properties:
+          __class: Map
+          algoGraphName: !<str> AlSubGraph_Thu22Feb2024113049GMT7998jnk
+          faceIdx: 0
+          graphName: !<str> AlSubGraph_Thu22Feb2024113049GMT7998jnk
+    layer: 0
+  - __class: Entity
+    name: !<str> Carote
+    guid: {a: 5088663074705264532, b: 15132842802097784999}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 16}
+      - __class: MeshRenderer
+        name: !<str> ""
+        guid: {a: 5701549504836734879, b: 3956924129588037790}
+        enabled: true
+        sharedMaterials:
+          - {localId: 1, path: ca6d32cb-b1d4-878d-d0de-f91c8631df8f--ca6d32cb-b1d4-878d-d0de-f91c8631df8f.material}
+        sortingOrder: 8
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        mesh: {localId: 1, path: aa26cad0-8952-a4d2-d165-f0e80d4c11e9--Cylinder_0.mesh}
+        castShadow: false
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5420063878391492687, b: 2644701876849587611}
+        enabled: true
+        path: !<str> js/RigidBody.js
+        properties:
+          __class: Map
+          angularDamping: 0
+          damping: 0
+          externalForce: {x: 0, y: 0, z: 0}
+          externalTorque: {x: 0, y: 0, z: 0}
+          freezeX: true
+          freezeY: false
+          freezeZ: true
+          isKinematic: false
+          mass: 5
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5264427252901321030, b: 5640679544073497240}
+        enabled: true
+        path: !<str> js/BoxCollider.js
+        properties:
+          __class: Map
+          center: {x: 0, y: 0, z: 0}
+          fitMesh: true
+          isTangible: true
+          rotation: {x: 0, y: 0, z: 0}
+          showCollider: true
+          size: {x: 1.6, y: 1.1, z: 3.5}
+    layer: 0
+  - __class: Entity
+    name: !<str> Plane
+    guid: {a: 5010123901041836273, b: 14963024053409055113}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 18}
+      - __class: MeshRenderer
+        name: !<str> ""
+        guid: {a: 5307775256353153755, b: 3494364308831352763}
+        enabled: true
+        sharedMaterials:
+          - {localId: 1, path: 00000000-0000-0000-0000-00000000000c--00000000-0000-0000-0000-00000000000c.material}
+        sortingOrder: 10
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        mesh: {localId: 1, path: 00000000-0000-0000-0000-000000000002}
+        castShadow: false
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5060297759091567107, b: 9757176692505418942}
+        enabled: true
+        path: !<str> js/RigidBody.js
+        properties:
+          __class: Map
+          angularDamping: 0
+          damping: 0
+          externalForce: {x: 0, y: 0, z: 0}
+          externalTorque: {x: 0, y: 0, z: 0}
+          freezeX: false
+          freezeY: false
+          freezeZ: false
+          isKinematic: true
+          mass: 1
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5374277324047710929, b: 14361085495430164103}
+        enabled: true
+        path: !<str> js/BoxCollider.js
+        properties:
+          __class: Map
+          center: {x: 0, y: 0, z: 0}
+          fitMesh: true
+          isTangible: true
+          rotation: {x: 0, y: 0, z: 0}
+          showCollider: true
+          size: {x: 8, y: 10.4, z: 8}
+    layer: 0
+  - __class: Entity
+    name: !<str> Plane tuna
+    guid: {a: 5727964644650217632, b: 2963993251535011985}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 19}
+      - __class: MeshRenderer
+        name: !<str> ""
+        guid: {a: 5662433054348324925, b: 10858210951451908758}
+        enabled: true
+        sharedMaterials:
+          - {localId: 1, path: 00000000-0000-0000-0000-00000000000c--00000000-0000-0000-0000-00000000000c.material}
+        sortingOrder: 11
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        mesh: {localId: 1, path: 00000000-0000-0000-0000-000000000002}
+        castShadow: false
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 4794137933640841252, b: 3085934912833708982}
+        enabled: true
+        path: !<str> js/RigidBody.js
+        properties:
+          __class: Map
+          angularDamping: 0
+          damping: 0
+          externalForce: {x: 0, y: 0, z: 0}
+          externalTorque: {x: 0, y: 0, z: 0}
+          freezeX: false
+          freezeY: false
+          freezeZ: false
+          isKinematic: true
+          mass: 1
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5013952737188900248, b: 6184606619906698936}
+        enabled: true
+        path: !<str> js/BoxCollider.js
+        properties:
+          __class: Map
+          center: {x: 0, y: 0, z: 0}
+          fitMesh: true
+          isTangible: true
+          rotation: {x: 0, y: 0, z: 0}
+          showCollider: true
+          size: {x: 10.6, y: 10, z: 8}
+    layer: 0
+  - __class: Entity
+    name: !<str> Text
+    guid: {a: 5199996060438687332, b: 16862413109795420055}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 20}
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5106186838241636285, b: 13613849305121948035}
+        enabled: true
+        path: !<str> js/Text.js
+        properties:
+          __class: Map
+          autoSortingOrder: true
+          backgroundEnable: false
+          bold: true
+          fontSize: 202
+          fontType: !<str> Classic.ttf
+          input: !<str> LOSER!!
+          italic: false
+          letterAlpha: 1
+          letterBgAlpha: 1
+          letterBgColor: {r: 0, g: 0, b: 0, a: 1}
+          letterColor: {r: 1, g: 0.8455882, b: 0.4509804, a: 1}
+          letterSpacing: 0
+          lineSpacing: 0
+          outlineAlpha: 1
+          outlineColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          outlineEnable: true
+          outlineWidth: 30
+          shadowAlpha: 0.9
+          shadowAngle: -45
+          shadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          shadowDistance: 10
+          shadowEnable: false
+          shadowSmooth: 0
+          sortingOrder: 0
+          textTypeSettingKindAlign: 1
+          underline: false
+    layer: 0
+  - __class: Entity
+    name: !<str> Text (1)
+    guid: {a: 5756921205354210309, b: 6436455194574578583}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 21}
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5600076950171481429, b: 6331803637547791533}
+        enabled: true
+        path: !<str> js/Text.js
+        properties:
+          __class: Map
+          autoSortingOrder: true
+          backgroundEnable: false
+          bold: true
+          fontSize: 202
+          fontType: !<str> Classic.ttf
+          input: !<str> WINNER!
+          italic: false
+          letterAlpha: 1
+          letterBgAlpha: 1
+          letterBgColor: {r: 0, g: 0, b: 0, a: 1}
+          letterColor: {r: 1, g: 0.827451, b: 0.4509804, a: 1}
+          letterSpacing: 0
+          lineSpacing: 0
+          outlineAlpha: 1
+          outlineColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          outlineEnable: true
+          outlineWidth: 30
+          shadowAlpha: 0.9
+          shadowAngle: -45
+          shadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          shadowDistance: 10
+          shadowEnable: false
+          shadowSmooth: 0
+          sortingOrder: 0
+          textTypeSettingKindAlign: 1
+          underline: false
+    layer: 0
+visible: true
+config:
+  __class: Map
+msaa:
+  __class: MSAAMode
+  value: NONE
+jsScriptSystems:
+  - !<str> js/GraphSystem.js
+  - !<str> js/Main.js
+  - !<str> js/JSAssetSystem.js
+  - !<str> js/PBDSystem.js
+enableMultiTouch: false
+enableLightMultiPass: false
+pixelLightCount: 4
+resourceRendererType:
+  __class: RendererType
+  value: OpenGLES30
+--- !Transform &2
+name: !<str> ""
+guid: {a: 14145000689903744101, b: 6111037265461598351}
+enabled: true
+localPosition: {x: 0, y: 0, z: 66.32375}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 3}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &3
+name: !<str> ""
+guid: {a: 12629985132416961300, b: 14387677276955654788}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+children:
+  - {localId: 2}
+  - {localId: 4}
+  - {localId: 5}
+  - {localId: 6}
+  - {localId: 7}
+  - {localId: 15}
+  - {localId: 16}
+  - {localId: 17}
+  - {localId: 18}
+  - {localId: 19}
+  - {localId: 20}
+  - {localId: 21}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &4
+name: !<str> ""
+guid: {a: 15367742060568528024, b: 10146237304508457363}
+enabled: true
+localPosition: {x: -30, y: 20, z: -20}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.6123727, x: -0.3535534, y: -0.6123724, z: -0.3535532}
+parent: {localId: 3}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &5
+name: !<str> ""
+guid: {a: 2038139312557020282, b: 1886311758165782682}
+enabled: true
+localPosition: {x: 0, y: 30, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.7071068, x: 0, y: 0.7071068, z: 0}
+parent: {localId: 3}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &6
+name: !<str> ""
+guid: {a: 4988201234965265703, b: 3434255507940640419}
+enabled: true
+localPosition: {x: 0.1143705, y: 0.985, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 3}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &7
+name: !<str> ""
+guid: {a: 5428761684650986363, b: 11365959065439443358}
+enabled: true
+localPosition: {x: 17.95334, y: 18.29279, z: 0.6231298}
+localScale: {x: 200.2, y: 20, z: 20}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 3}
+children:
+  - {localId: 8}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &8
+name: !<str> RootNode
+guid: {a: 5522141778661914057, b: 10984171916377069698}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 7}
+children:
+  - {localId: 9}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &9
+name: !<str> Sketchfab_model
+guid: {a: 5521080604578605476, b: 17166268838670414775}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: -0.7071069, x: 0.7071066, y: 0, z: 0}
+parent: {localId: 8}
+children:
+  - {localId: 10}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &10
+name: !<str> 5bbf6fd71bbb465fa1cb0d948c9ab7cd.fbx
+guid: {a: 4736907470670465670, b: 18185256256946573225}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.7071067, x: 0.7071068, y: 0, z: 0}
+parent: {localId: 9}
+children:
+  - {localId: 11}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &11
+name: !<str> RootNode
+guid: {a: 5011651142421767716, b: 4407941090051701173}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 10}
+children:
+  - {localId: 12}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &12
+name: !<str> Sphere086
+guid: {a: 5126584039287325351, b: 1053259299817128894}
+enabled: true
+localPosition: {x: -1413.261, y: 156.4728, z: 287.8441}
+localScale: {x: 5.744173, y: 5.744173, z: 5.744173}
+localOrientation: {w: -0.7071069, x: 0.7071066, y: 0, z: 0}
+parent: {localId: 11}
+children:
+  - {localId: 13}
+  - {localId: 14}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &13
+name: !<str> "Sphere086_Material #67_0"
+guid: {a: 5168412333448978906, b: 14650095266081100434}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 12}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &14
+name: !<str> "Sphere086_Material #55_0"
+guid: {a: 5671269910760648398, b: 17677217087195678089}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 12}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &15
+name: !<str> ""
+guid: {a: 5532380586076716265, b: 4953201769894585216}
+enabled: true
+localPosition: {x: 7.186381, y: 102.7921, z: 18.88987}
+localScale: {x: 3, y: 2.28892, z: 2.323681}
+localOrientation: {w: 0.8267916, x: 0, y: 0.5625083, z: 0}
+parent: {localId: 3}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &16
+name: !<str> ""
+guid: {a: 4948626552902056545, b: 11172168821732284306}
+enabled: true
+localPosition: {x: -6.459313, y: 101.8923, z: 19.48271}
+localScale: {x: 3.005706, y: 3.005705, z: 2.690828}
+localOrientation: {w: -0.09230769, x: -0.5876252, y: 0.758706, z: 0.2655958}
+parent: {localId: 3}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &17
+name: !<str> ""
+guid: {a: 5034362506615698086, b: 218951448961814149}
+enabled: true
+localPosition: {x: 1.501426, y: -21.15641, z: 21.60954}
+localScale: {x: 9.409658, y: 3.431136, z: 3.431136}
+localOrientation: {w: 0.7250826, x: -0.6886554, y: 0.002293468, z: 0.001928201}
+parent: {localId: 3}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &18
+name: !<str> ""
+guid: {a: 5180126351594268554, b: 10730397921716698008}
+enabled: true
+localPosition: {x: -6.835927, y: 94.524, z: 20.22662}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.698365, x: -0.7157418, y: 0, z: 0}
+parent: {localId: 3}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &19
+name: !<str> ""
+guid: {a: 4666394246620416099, b: 16596300631505826473}
+enabled: true
+localPosition: {x: 6.807939, y: 94.17624, z: 19.66894}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.698365, x: -0.7157418, y: 0, z: 0}
+parent: {localId: 3}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &20
+name: !<str> ""
+guid: {a: 4729301091936060367, b: 13900344553931846844}
+enabled: true
+localPosition: {x: -60.59689, y: -2.132815, z: 0.6093758}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 3}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &21
+name: !<str> ""
+guid: {a: 5762746757100754596, b: 2480970442331882664}
+enabled: true
+localPosition: {x: -61.60767, y: -0.9723867, z: 0.2778248}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 3}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &22
+name: !<str> ""
+guid: {a: 4881170284354725489, b: 7700355920673285774}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+children:
+  - {localId: 23}
+  - {localId: 24}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &23
+name: !<str> ""
+guid: {a: 5658411808357200982, b: 8926740318400572071}
+enabled: true
+localPosition: {x: -0.04868471, y: -17.20273, z: 15.09017}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 22}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &24
+name: !<str> ""
+guid: {a: 4974329788684326079, b: 7305148466945174663}
+enabled: true
+localPosition: {x: 0.4875652, y: 4.848233, z: -0.6482401}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 22}
+children:
+  - {localId: 25}
+  - {localId: 26}
+  - {localId: 27}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &25
+name: !<str> ""
+guid: {a: 5011696317295317485, b: 5995890604103842985}
+enabled: true
+localPosition: {x: 3.659433, y: 7.767902, z: 3.094}
+localScale: {x: 1.511947, y: 1.297757, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 24}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &26
+name: !<str> ""
+guid: {a: 5280844583662489233, b: 11465887740862245785}
+enabled: true
+localPosition: {x: -0.4102318, y: -2.86823, z: 5.530261}
+localScale: {x: 1.517316, y: 1.517316, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 6.137961e-10}
+parent: {localId: 24}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &27
+name: !<str> ""
+guid: {a: 5523980405075364738, b: 3951895863421975200}
+enabled: true
+localPosition: {x: -4.256711, y: 7.624487, z: 3.134948}
+localScale: {x: 1.635609, y: 1.635609, z: 1}
+localOrientation: {w: 0.9999614, x: 0, y: 0, z: 0.008782028}
+parent: {localId: 24}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &28
+name: !<str> ""
+guid: {a: 5112467550605049103, b: 18368212870800208569}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+children:
+  - {localId: 29}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &29
+name: !<str> ""
+guid: {a: 5036146141211567089, b: 1236520983376651402}
+enabled: true
+localPosition: {x: 0, y: 0, z: 40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 28}
+children:
+  - {localId: 30}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !ScreenTransform &30
+name: !<str> ""
+guid: {a: 4886839130421938295, b: 16616425418756600454}
+enabled: true
+localPosition: {x: 0, y: 0, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 29}
+children:
+  - {localId: 31}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 0, y: 0}
+sizeDelta: {x: 720, y: 1280}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &31
+name: !<str> ""
+guid: {a: 5324498113911513658, b: 4604519879868043709}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 30}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 0, y: 0}
+sizeDelta: {x: 720, y: 1280}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !Transform &32
+name: !<str> ""
+guid: {a: 5349069097183650033, b: 4301656091427431042}
+enabled: true
+localPosition: {x: 1.965293e-05, y: -3.046749, z: 0.8704996}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+children:
+  - {localId: 33}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &33
+name: !<str> ""
+guid: {a: 5004539234738161103, b: 8337128905878377353}
+enabled: true
+localPosition: {x: 0, y: 0, z: 40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 32}
+mobility:
+  __class: Mobility
+  value: Dynamic

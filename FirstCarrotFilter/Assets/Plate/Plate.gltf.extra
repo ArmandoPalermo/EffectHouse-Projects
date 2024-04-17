@@ -1,0 +1,29 @@
+[
+  {
+    "guid": {
+      "a": "fc5b00aa-0974-176d-4acc-05f7198336e9",
+      "b": ""
+    },
+    "extraType": "ResItemAssimpAsset",
+    "name": "Plate",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Model",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "assetPackageID": "7c265f6c42ef40b8b3e9c42560c28a97",
+    "importAnimation": true,
+    "importVertexColor": false,
+    "importBlendshape": true,
+    "importNormalTangentBinormal": true,
+    "regenerateNormalTangentBinormal": true,
+    "materialsGUIDs": [
+      "a43d0430-fc04-fbca-b9ed-fbe4681c4a9c"
+    ],
+    "meshGUIDs": [
+      "607a08cc-2bab-755e-6e1e-b53f00249aea"
+    ],
+    "animazGUIDs": []
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "e8b19517-240d-54ca-ae0d-97145de59873",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "2D Object Scroller",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

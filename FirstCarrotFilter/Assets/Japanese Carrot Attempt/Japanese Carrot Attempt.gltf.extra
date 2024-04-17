@@ -1,0 +1,31 @@
+[
+  {
+    "guid": {
+      "a": "aa26cad0-8952-a4d2-d165-f0e80d4c11e9",
+      "b": ""
+    },
+    "extraType": "ResItemAssimpAsset",
+    "name": "Japanese Carrot Attempt",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Model",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "assetPackageID": "53c1ac4a7089403a850519eba65de629",
+    "importAnimation": true,
+    "importVertexColor": false,
+    "importBlendshape": true,
+    "importNormalTangentBinormal": true,
+    "regenerateNormalTangentBinormal": true,
+    "materialsGUIDs": [
+      "37755f8e-931f-4158-0fe3-3cf39e23cc50",
+      "ca6d32cb-b1d4-878d-d0de-f91c8631df8f"
+    ],
+    "meshGUIDs": [
+      "8e8b5759-5643-9913-3a4f-d4c715c50ebc",
+      "30256aec-f90a-66d1-1cff-e0c20652185b"
+    ],
+    "animazGUIDs": []
+  }
+]

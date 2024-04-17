@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "8c74a1c5-a014-75af-23f0-fe107976f7e9",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "lambert4_baseColor",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "assetPackageID": "755fb8b9ca6c4faf894bf75d71501b8c",
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "enableMipmap": true,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 2,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false
+  }
+]

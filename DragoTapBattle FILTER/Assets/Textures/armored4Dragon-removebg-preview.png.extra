@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "6dfac941-ce8a-ab4d-5b55-752bd4c5abe4",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "armored4Dragon-removebg-preview",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "resourceFilePath": "C:\\Users\\arman\\OneDrive\\Desktop\\ProgettiEffectHouse\\DragonballAFFilter\\DragonballImages\\armored4Dragon-removebg-preview.png",
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false
+  }
+]

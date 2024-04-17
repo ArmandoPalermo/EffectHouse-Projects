@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "c0de50bf-2238-b3f8-2b3f-0e6ca13c5768",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "28350cd3534e65b8d156cbdfa7931d0b",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "resourceFilePath": "C:\\Users\\arman\\OneDrive\\Desktop\\Foto Png\\28350cd3534e65b8d156cbdfa7931d0b.png",
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false
+  }
+]

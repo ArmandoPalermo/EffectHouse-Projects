@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "fd1d1cc1-7184-8cd2-66b3-7dac0d79f319",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "Plate",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

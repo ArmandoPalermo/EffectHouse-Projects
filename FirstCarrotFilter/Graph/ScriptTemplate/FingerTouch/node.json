@@ -1,0 +1,101 @@
+{
+	"name": "Finger Touch",
+	"id": "0d990e75-52d1-4fe3-b946-f0d1b498a579",
+	"inputs": [
+		{
+			"name": "Detect",
+			"description": "The finger to be detected. \"Touch 0\" detects the first touch; \"Touch 1\" detects the second touch",
+			"value_list": [
+				"Touch 0",
+				"Touch 1"
+			],
+			"descriptionKey": "graph_finger_touch_input_detect_description",
+			"type": "String",
+			"displayType": "String",
+			"displayTypeKey": "graph_type_string",
+			"nameKey": "graph_finger_touch_input_detect",
+			"value_list_i18n_keys": [
+				"graph_finger_touch_input_detect_valueList_touch0",
+				"graph_finger_touch_input_detect_valueList_touch1"
+			]
+		}
+	],
+	"outputs": [
+		{
+			"name": "Idle",
+			"type": "Pulse",
+			"description": "Executes the next node when no first or second finger is detected on the screen",
+			"displayType": "Exec",
+			"nameKey": "graph_finger_touch_output_idle",
+			"descriptionKey": "graph_finger_touch_output_idle_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "On Start",
+			"type": "Pulse",
+			"description": "Executes the next node as soon as the first or second finger touches the screen",
+			"displayType": "Exec",
+			"nameKey": "graph_finger_touch_output_onstart",
+			"descriptionKey": "graph_finger_touch_output_onstart_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Stay",
+			"type": "Pulse",
+			"description": "Executes the next node while the first or second finger is touching the screen",
+			"displayType": "Exec",
+			"nameKey": "graph_finger_touch_output_stay",
+			"descriptionKey": "graph_finger_touch_output_stay_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "On Stop",
+			"type": "Pulse",
+			"description": "Executes the next node as soon as the first or second finger stops touching the screen",
+			"displayType": "Exec",
+			"nameKey": "graph_finger_touch_output_onstop",
+			"descriptionKey": "graph_finger_touch_output_onstop_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Current Position",
+			"type": "Vector2f",
+			"description": "The position of the first or second finger in the current frame. If the node execution is Idle (no touch detected), this position returns \"-1, -1\"",
+			"displayType": "Vec2",
+			"nameKey": "graph_finger_touch_output_currentposition",
+			"descriptionKey": "graph_finger_touch_output_currentposition_description",
+			"displayTypeKey": "graph_type_vec2"
+		},
+		{
+			"name": "Last Position",
+			"type": "Vector2f",
+			"description": "The most recent position of the first or second finger",
+			"displayType": "Vec2",
+			"nameKey": "graph_finger_touch_output_lastposition",
+			"descriptionKey": "graph_finger_touch_output_lastposition_description",
+			"displayTypeKey": "graph_type_vec2"
+		}
+	],
+	"nodeEvent": [
+		"beforeStart",
+		"onLateUpdate",
+		"onEvent",
+		"resetOnRecord"
+	],
+	"category": "Event",
+	"graphAlgorithms": [
+		"TouchGes"
+	],
+	"js": "FingerTouch.js",
+	"version": "4.0.0",
+	"description": "Detects when the screen is touched by one or two fingers and when it's not",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"onlineWebsite": "graph_finger_touch_website",
+	"nameKey": "graph_finger_touch_name",
+	"categoryKey": "graph_category_event",
+	"descriptionKey": "graph_finger_touch_description"
+}

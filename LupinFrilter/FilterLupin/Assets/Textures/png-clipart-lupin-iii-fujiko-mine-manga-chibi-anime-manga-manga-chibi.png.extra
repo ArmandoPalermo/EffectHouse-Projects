@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "f24927d4-0435-d94b-ff1a-85608ffddb15",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "png-clipart-lupin-iii-fujiko-mine-manga-chibi-anime-manga-manga-chibi",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "resourceFilePath": "C:\\Users\\arman\\OneDrive\\Desktop\\Foto Png\\png-clipart-lupin-iii-fujiko-mine-manga-chibi-anime-manga-manga-chibi.png",
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false
+  }
+]

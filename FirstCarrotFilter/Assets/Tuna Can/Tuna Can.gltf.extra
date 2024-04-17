@@ -1,0 +1,29 @@
+[
+  {
+    "guid": {
+      "a": "e94bc4d2-f6ef-01ed-81f9-b3856ac017b8",
+      "b": ""
+    },
+    "extraType": "ResItemAssimpAsset",
+    "name": "Tuna Can",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Model",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "assetPackageID": "5d0ffab432c6434fa88c346e77984308",
+    "importAnimation": true,
+    "importVertexColor": false,
+    "importBlendshape": true,
+    "importNormalTangentBinormal": true,
+    "regenerateNormalTangentBinormal": true,
+    "materialsGUIDs": [
+      "4a52b16d-8787-80e7-2d48-9123d2b538a3"
+    ],
+    "meshGUIDs": [
+      "db07aaab-e9da-e275-5961-a6b835e93827"
+    ],
+    "animazGUIDs": []
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "27853120-e9e4-f762-9d42-a4a793798606",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "tinCan_normal",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "assetPackageID": "5d0ffab432c6434fa88c346e77984308",
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "enableMipmap": true,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 2,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false
+  }
+]

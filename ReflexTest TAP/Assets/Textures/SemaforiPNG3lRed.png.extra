@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "8ddc4209-c7dc-0c48-d185-46220a11db82",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "SemaforiPNG3lRed",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "resourceFilePath": "C:\\Users\\arman\\OneDrive\\Desktop\\ProgettiEffectHouse\\ReflexTest TAP\\Immagini\\SemaforiPNG3lRed.png",
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false
+  }
+]

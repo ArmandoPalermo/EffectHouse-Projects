@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "7e1f214a-c7c8-41e6-0e43-30612690a78c",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "Carrot",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

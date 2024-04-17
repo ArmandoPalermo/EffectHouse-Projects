@@ -1,0 +1,27 @@
+[
+  {
+    "guid": {
+      "a": "df0aa2f4-3772-88d0-2b0e-bfd98df95f6c",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "tinCan_mrao",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "enableMipmap": true,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 2,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false
+  }
+]

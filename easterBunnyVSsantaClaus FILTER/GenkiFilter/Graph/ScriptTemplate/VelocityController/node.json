@@ -1,0 +1,110 @@
+{
+	"name": "Velocity Controller",
+	"id": "a4d3fba6-14bd-8f63-132b-7ddfcc1fb243",
+	"inputs": [
+		{
+			"name": "Start",
+			"type": "Pulse",
+			"description": "Start the rigid body operation.",
+			"displayType": "Exec",
+			"nameKey": "graph_velocity_controller_input_start",
+			"descriptionKey": "graph_velocity_controller_input_start_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Stop",
+			"type": "Pulse",
+			"description": "Stop the rigid body operation.",
+			"displayType": "Exec",
+			"nameKey": "graph_velocity_controller_input_stop",
+			"descriptionKey": "graph_velocity_controller_input_stop_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Rigid Body",
+			"type": "Component",
+			"item_type": "",
+			"description": "The Rigid Body component that you want to set or modify the velocity for.",
+			"displayType": "Component",
+			"nameKey": "graph_velocity_controller_input_rigidbody",
+			"descriptionKey": "graph_velocity_controller_input_rigidbody_description",
+			"displayTypeKey": "graph_type_component"
+		},
+		{
+			"name": "New Velocity",
+			"type": "Vector3f",
+			"displayType": "Vec3",
+			"item_type": "",
+			"description": "The magnitude and direction of the new velocity that you want to set for the rigid body component.",
+			"nameKey": "graph_velocity_controller_input_newvelocity",
+			"descriptionKey": "graph_velocity_controller_input_newvelocity_description",
+			"displayTypeKey": "graph_type_vec3"
+		},
+		{
+			"name": "Is Local Velocity",
+			"type": "Bool",
+			"item_type": "",
+			"description": "Check if you want to set or modify the velocity in the local space; uncheck if in the world space",
+			"displayType": "Boolean",
+			"nameKey": "graph_velocity_controller_input_islocalvelocity",
+			"descriptionKey": "graph_velocity_controller_input_islocalvelocity_description",
+			"displayTypeKey": "graph_type_boolean"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Begin",
+			"type": "Pulse",
+			"description": "Execute the next node",
+			"displayType": "Exec",
+			"nameKey": "graph_velocity_controller_output_begin",
+			"descriptionKey": "graph_velocity_controller_output_begin_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Stay",
+			"type": "Pulse",
+			"description": "Execute the next node",
+			"displayType": "Exec",
+			"nameKey": "graph_velocity_controller_output_stay",
+			"descriptionKey": "graph_velocity_controller_output_stay_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "End",
+			"type": "Pulse",
+			"description": "Execute the next node",
+			"displayType": "Exec",
+			"nameKey": "graph_velocity_controller_output_end",
+			"descriptionKey": "graph_velocity_controller_output_end_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Current Velocity",
+			"type": "Vector3f",
+			"displayType": "Vec3",
+			"item_type": "",
+			"description": "The current velocity of the object",
+			"nameKey": "graph_velocity_controller_output_currentvelocity",
+			"descriptionKey": "graph_velocity_controller_output_currentvelocity_description",
+			"displayTypeKey": "graph_type_vec3"
+		}
+	],
+	"js": "CGVelocityController.js",
+	"nodeEvent": [
+		"onUpdate",
+		"resetOnRecord"
+	],
+	"version": "1.0.0",
+	"SDKVersion": "15.2.0",
+	"category": "Physics",
+	"description": "Sets the velocity of a specified Rigid Body component",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"nameKey": "graph_velocity_controller_name",
+	"categoryKey": "graph_category_physics",
+	"descriptionKey": "graph_velocity_controller_description"
+}

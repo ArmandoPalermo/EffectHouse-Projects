@@ -1,0 +1,27 @@
+[
+  {
+    "guid": {
+      "a": "32bbb491-210f-f972-5480-35d88066c27e",
+      "b": ""
+    },
+    "extraType": "ResItemMaterialOmtl",
+    "name": "Segmentation Material",
+    "expandInPanel": true,
+    "objGuid": "",
+    "rttiType": "Material",
+    "version": "0.4.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "skinObjGuid": "Guid(5127639549441927068, 15853231606998598291)",
+    "references": [
+      {
+        "propertyName": "_SegTex",
+        "guid": "68421f81-9edc-5fdd-1916-7be7b506f64f"
+      },
+      {
+        "propertyName": "_MainTex",
+        "guid": "00000000-0000-0000-0000-000000001302"
+      }
+    ]
+  }
+]

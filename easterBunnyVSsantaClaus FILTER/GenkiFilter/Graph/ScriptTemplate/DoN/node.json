@@ -1,0 +1,79 @@
+{
+	"name": "Do N",
+	"id": "602da371-ec38-6ad4-2aef-909284c2745c",
+	"inputs": [
+		{
+			"name": "Enter",
+			"type": "Pulse",
+			"item_type": "",
+			"description": "The input execution that triggers this node",
+			"displayType": "Exec",
+			"nameKey": "graph_do_n_input_enter",
+			"descriptionKey": "graph_do_n_input_enter_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Reset",
+			"type": "Pulse",
+			"item_type": "",
+			"description": "Reset this node so that it can be executed again",
+			"displayType": "Exec",
+			"nameKey": "graph_do_n_input_reset",
+			"descriptionKey": "graph_do_n_input_reset_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "N",
+			"type": "Int",
+			"default_value": "1",
+			"range": [
+				[
+					1,
+					"Inf",
+					1
+				]
+			],
+			"description": "The number of times you want to execute this node",
+			"displayType": "Number",
+			"nameKey": "graph_do_n_input_n",
+			"descriptionKey": "graph_do_n_input_n_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Next",
+			"type": "Pulse",
+			"item_type": "",
+			"description": "Execute the next node",
+			"displayType": "Exec",
+			"nameKey": "graph_do_n_output_next",
+			"descriptionKey": "graph_do_n_output_next_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Counter",
+			"type": "Int",
+			"item_type": "",
+			"description": "The current execution times out of the N, starting from 1",
+			"displayType": "Number",
+			"nameKey": "graph_do_n_output_counter",
+			"descriptionKey": "graph_do_n_output_counter_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"js": "CGDoN.js",
+	"version": "1.0.0",
+	"nodeEvent": "resetOnRecord",
+	"category": "Control",
+	"description": "Execute this node multiple times until it is reset. ",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"onlineWebsite": "graph_do_n_website",
+	"nameKey": "graph_do_n_name",
+	"categoryKey": "graph_category_control",
+	"descriptionKey": "graph_do_n_description"
+}

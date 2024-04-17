@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "fdd0c62b-c190-67d9-c5bf-2e8259ad640a",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "png-transparent-lupin-iii-koichi-zenigata-animation-database-tms-entertainment-lupine-television-cartoon-fictional-character",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "resourceFilePath": "C:\\Users\\arman\\OneDrive\\Desktop\\Foto Png\\png-transparent-lupin-iii-koichi-zenigata-animation-database-tms-entertainment-lupine-television-cartoon-fictional-character.png",
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "bbc018e8-dcf7-ac1b-ff8f-53e3c4ad3435",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "Cylinder_0_baseColor",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "assetPackageID": "53c1ac4a7089403a850519eba65de629",
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "enableMipmap": true,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 2,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false
+  }
+]

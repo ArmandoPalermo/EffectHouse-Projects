@@ -1,0 +1,51 @@
+{
+	"name": "Do Once",
+	"id": "2f11c27c-3a3a-8958-c9c3-d99791065139",
+	"category": "Control",
+	"description": "Execute this node only once until it is reset. ",
+	"groupTemplate": true,
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"foldable": false,
+	"expandable": false,
+	"inputs": [
+		{
+			"name": "Enter",
+			"type": "Pulse",
+			"description": "The input execution that triggers this node",
+			"displayType": "Exec",
+			"nameKey": "graph_do_once_input_enter",
+			"descriptionKey": "graph_do_once_input_enter_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Reset",
+			"type": "Pulse",
+			"description": "Reset this node so that it can be executed again",
+			"displayType": "Exec",
+			"nameKey": "graph_do_once_input_reset",
+			"descriptionKey": "graph_do_once_input_reset_description",
+			"displayTypeKey": "graph_type_exec"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Next",
+			"type": "Pulse",
+			"description": "Execute the next node",
+			"displayType": "Exec",
+			"nameKey": "graph_do_once_output_next",
+			"descriptionKey": "graph_do_once_output_next_description",
+			"displayTypeKey": "graph_type_exec"
+		}
+	],
+	"version": "2.0.0",
+	"subgraphPath": "DoOnce.ssubgraph",
+	"onlineWebsite": "graph_do_once_website",
+	"nameKey": "graph_do_once_name",
+	"categoryKey": "graph_category_control",
+	"descriptionKey": "graph_do_once_description"
+}

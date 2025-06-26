@@ -1,0 +1,52 @@
+{
+	"name": "Set Main Texture",
+	"function": "SetMainTexture",
+	"id": "ff0c911a-1874-0d2a-0733-eaa02cf62273",
+	"NodeType": "VFXGRAPHBLOCK",
+	"inputs": [
+		{
+			"name": "Main Texture",
+			"shaderName": "MainTexture",
+			"description": "The texture that displays on each particle",
+			"type": "Texture",
+			"providerType": "Texture2DProvider",
+			"allowedTypes": [],
+			"nameKey": "vfxgraph_set_main_texture_input_maintexture",
+			"descriptionKey": "vfxgraph_set_main_texture_input_maintexture_description",
+			"displayType": "Texture2D",
+			"displayTypeKey": "graph_type_texture2d"
+		}
+	],
+	"outputs": [],
+	"category": "Output",
+	"description": "Set the texture of the particles",
+	"version": "1.0.0",
+	"compatibleContexts": [
+		"Output"
+	],
+	"builtinVars": [
+		{
+			"name": "uv",
+			"type": "vec2"
+		},
+		{
+			"name": "color",
+			"type": "vec4"
+		},
+		{
+			"name": "outputColor",
+			"type": "vec4"
+		}
+	],
+	"methodBody": "outputColor.rgba = texture(MainTexture, uv).rgba * color;",
+	"outputType": "Fragment",
+	"TSPATH": "",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"nameKey": "vfxgraph_set_main_texture_name",
+	"categoryKey": "vfxgraph_category_output",
+	"descriptionKey": "vfxgraph_set_main_texture_description"
+}

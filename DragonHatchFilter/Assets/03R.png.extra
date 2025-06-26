@@ -1,0 +1,27 @@
+[
+  {
+    "guid": {
+      "a": "7885551a-960f-12f2-8521-a42406c0fbd0",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "03R",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512
+  }
+]

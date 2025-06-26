@@ -1,0 +1,42 @@
+{
+	"name": "Floor",
+	"id": "ef9a8324-fbb3-fac2-efd4-1e5590fc8176",
+	"inputs": [
+		{
+			"name": "A",
+			"type": "Double",
+			"default_value": "0",
+			"description": "The value to round down",
+			"displayType": "Number",
+			"nameKey": "graph_floor_input_a",
+			"descriptionKey": "graph_floor_input_a_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Result",
+			"type": "Int",
+			"description": "The value rounded down",
+			"displayType": "Number",
+			"nameKey": "graph_floor_output_result",
+			"descriptionKey": "graph_floor_output_result_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"js": "CGFloor.js",
+	"version": "1.0.1",
+	"category": "Math",
+	"description": "Round down the input value. It is first integer smaller or equal to the input.",
+	"supportedValueTypes": [
+		"Double"
+	],
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"nameKey": "graph_floor_name",
+	"categoryKey": "graph_category_math",
+	"descriptionKey": "graph_floor_description"
+}

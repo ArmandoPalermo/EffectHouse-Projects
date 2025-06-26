@@ -1,0 +1,127 @@
+{
+	"name": "CollideWithSpherePBD",
+	"function": "CollideWithSpherePBD",
+	"id": "5577b8d9-7875-43c2-9380-e7ce9d17f813",
+	"NodeType": "VFXGRAPHBLOCK",
+	"options": [
+		{
+			"type": "Collision Mode",
+			"values": [
+				"Solid",
+				"Inverted"
+			],
+			"typeKey": "vfxgraph_collide_with_sphere_option_type_collisionmode",
+			"valuesKey": [
+				"vfxgraph_collide_with_sphere_option_value_solid",
+				"vfxgraph_collide_with_sphere_option_value_inverted"
+			]
+		}
+	],
+	"inputs": [
+		{
+			"name": "Radius",
+			"shaderName": "Radius",
+			"description": "The radius of the sphere",
+			"type": "Float",
+			"default": 5.00001,
+			"allowedTypes": [],
+			"nameKey": "vfxgraph_collide_with_sphere_input_radius",
+			"descriptionKey": "vfxgraph_collide_with_sphere_input_radius_description",
+			"displayType": "Float",
+			"displayTypeKey": "graph_type_float"
+		},
+		{
+			"name": "Position",
+			"shaderName": "Position",
+			"description": "The position of the sphere",
+			"type": "Vec3",
+			"allowedTypes": [],
+			"nameKey": "vfxgraph_collide_with_sphere_input_position",
+			"descriptionKey": "vfxgraph_collide_with_sphere_input_position_description",
+			"displayType": "Vec3",
+			"displayTypeKey": "graph_type_vec3"
+		},
+		{
+			"name": "Bounce",
+			"shaderName": "Bounce",
+			"description": "The amount of bounce to apply to the particles after collision. A value of 0 means the particles do not bounce; 1 means particles bounce at the same speed as when they hit the sphere.",
+			"type": "Float",
+			"default": 0.5,
+			"allowedTypes": [],
+			"nameKey": "vfxgraph_collide_with_sphere_input_bounce",
+			"descriptionKey": "vfxgraph_collide_with_sphere_input_bounce_description",
+			"displayType": "Float",
+			"displayTypeKey": "graph_type_float"
+		},
+		{
+			"name": "Friction",
+			"shaderName": "Friction",
+			"description": "The velocity that the particles lose after collision",
+			"type": "Float",
+			"default": 0.5,
+			"allowedTypes": [],
+			"nameKey": "vfxgraph_collide_with_sphere_input_friction",
+			"descriptionKey": "vfxgraph_collide_with_sphere_input_friction_description",
+			"displayType": "Float",
+			"displayTypeKey": "graph_type_float"
+		},
+		{
+			"name": "Life Loss",
+			"shaderName": "LifeLoss",
+			"description": "The age (normalized 0-1) that the particles lose after collision",
+			"type": "Float",
+			"default": 0.1,
+			"allowedTypes": [],
+			"nameKey": "vfxgraph_collide_with_sphere_input_lifeloss",
+			"descriptionKey": "vfxgraph_collide_with_sphere_input_lifeloss_description",
+			"displayType": "Float",
+			"displayTypeKey": "graph_type_float"
+		}
+	],
+	"outputs": [],
+	"category": "Collision",
+	"description": "Adds a sphere that particles can collide with",
+	"version": "1.0.0",
+	"compatibleContexts": [
+		"PhysicsUpdate"
+	],
+	"attributes": [
+		"position",
+		"velocity",
+		"normal",
+		"pointA",
+		"pointB",
+		"velN",
+		"particleRadius",
+		"hasCollision",
+		"age",
+		"lifetime",
+		"friction"
+	],
+	"usedelta": false,
+	"optionalMethodBodies": [
+		{
+			"optionType": "Collision Mode",
+			"optionValue": "Solid",
+			"shaderCode": "CollidewithSphere_Solid_PBD.glsl"
+		},
+		{
+			"optionType": "Collision Mode",
+			"optionValue": "Inverted",
+			"shaderCode": "CollidewithSphere_Inverted_PBD.glsl"
+		}
+	],
+	"TSPATH": "",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"contentFeature": [
+		"VFX_Collide"
+	],
+	"limitedDraggable": true,
+	"nameKey": "vfxgraph_collide_with_sphere_name",
+	"categoryKey": "vfxgraph_category_collision",
+	"descriptionKey": "vfxgraph_collide_with_sphere_description"
+}

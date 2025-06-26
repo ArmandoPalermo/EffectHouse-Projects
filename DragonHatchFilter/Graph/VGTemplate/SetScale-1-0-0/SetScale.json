@@ -1,0 +1,49 @@
+{
+	"name": "Set Scale",
+	"function": "SetScale",
+	"id": "cef24b7f-05bd-9c66-8925-c4064203e362",
+	"NodeType": "VFXGRAPHBLOCK",
+	"inputs": [
+		{
+			"name": "Scale",
+			"shaderName": "Scale",
+			"description": "The scale of the particles",
+			"type": "Vec3",
+			"default": {
+				"x": 1,
+				"y": 1,
+				"z": 1
+			},
+			"allowedTypes": [],
+			"nameKey": "vfxgraph_set_scale_input_scale",
+			"descriptionKey": "vfxgraph_set_scale_input_scale_description",
+			"displayType": "Vec3",
+			"displayTypeKey": "graph_type_vec3"
+		}
+	],
+	"outputs": [],
+	"category": "Attribute Set",
+	"description": "Sets the scale of the particles on screen",
+	"version": "1.0.0",
+	"compatibleContexts": [
+		"Init",
+		"Update",
+		"Output",
+		"MeshOutput",
+		"PhysicsMeshOutput"
+	],
+	"attributes": [
+		"scale"
+	],
+	"methodBody": "scale.xyz = Scale.xyz;",
+	"TSPATH": "",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"limitedDraggable": true,
+	"nameKey": "vfxgraph_set_scale_name",
+	"categoryKey": "vfxgraph_category_attributeset",
+	"descriptionKey": "vfxgraph_set_scale_description"
+}

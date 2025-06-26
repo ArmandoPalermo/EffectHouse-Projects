@@ -1,0 +1,80 @@
+{
+	"name": "Set Physics Object Shape",
+	"function": "SetPhysicsObjectShape",
+	"id": "f0cf7230-d713-4f56-9076-a87e9a13a186",
+	"NodeType": "VFXGRAPHBLOCK",
+	"options": [
+		{
+			"type": "ObjectType",
+			"values": [
+				"Sphere",
+				"Cube"
+			],
+			"typeKey": "vfxgraph_set_physics_object_shape_option_type_objecttype",
+			"valuesKey": [
+				"vfxgraph_set_physics_object_shape_option_value_sphere",
+				"vfxgraph_set_physics_object_shape_option_value_cube"
+			]
+		}
+	],
+	"optionalMethodBodies": [
+		{
+			"optionType": "ObjectType",
+			"optionValue": "Sphere",
+			"methodBody": ""
+		},
+		{
+			"optionType": "ObjectType",
+			"optionValue": "Cube",
+			"methodBody": ""
+		}
+	],
+	"inputs": [
+		{
+			"name": "Mesh ID",
+			"shaderName": "MeshID",
+			"description": "The identifier that matches the shape of the physics object to the output mesh shape",
+			"type": "Uint",
+			"visible": false,
+			"allowedTypes": [],
+			"range": [
+				[
+					0,
+					9999,
+					1
+				]
+			],
+			"nameKey": "vfxgraph_set_physics_object_shape_input_meshid",
+			"descriptionKey": "vfxgraph_set_physics_object_shape_input_meshid_description",
+			"displayType": "Uint",
+			"displayTypeKey": "graph_type_uint"
+		}
+	],
+	"outputs": [],
+	"category": "Attribute Set",
+	"description": "The shape of the simulated collision object. This now supports cubes and spheres",
+	"version": "1.0.0",
+	"compatibleContexts": [
+		"PhysicsInit"
+	],
+	"attributes": [
+		"meshID"
+	],
+	"methodBody": "meshID = uint(MeshID);",
+	"TSPATH": "",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"limitedDraggable": true,
+	"hideEnableCheckbox": true,
+	"showInLibrary": [],
+	"groupEnable": false,
+	"deletable": false,
+	"cloneable": false,
+	"draggable": false,
+	"nameKey": "vfxgraph_set_physics_object_shape_name",
+	"categoryKey": "vfxgraph_category_attributeset",
+	"descriptionKey": "vfxgraph_set_physics_object_shape_description"
+}

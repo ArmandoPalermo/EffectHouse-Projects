@@ -1,0 +1,23 @@
+[
+  {
+    "guid": {
+      "a": "cd14bd7f-7596-7100-483a-4bba757fea22",
+      "b": ""
+    },
+    "extraType": "ResItemVFXGraph",
+    "name": "Basic Particles",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "VFXProfile",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "resourceFilePath": "C:\\Users\\Armando\\AppData\\Local\\Effect House\\Resources\\BuiltinResource\\InternalPlugins\\VFXComponent\\PluginResource\\vg\\Basic Particles.vg",
+    "references": [
+      {
+        "propertyName": "MainTexture",
+        "guid": "00000000-0000-0000-0000-00000000004g"
+      }
+    ]
+  }
+]

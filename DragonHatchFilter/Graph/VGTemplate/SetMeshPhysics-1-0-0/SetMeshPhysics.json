@@ -1,0 +1,75 @@
+{
+	"name": "Set Physics Mesh",
+	"function": "SetMeshPhysics",
+	"id": "b16f9a6b-b92f-4ec3-8039-651ae16cd1fb",
+	"NodeType": "VFXGRAPHBLOCK",
+	"inputs": [
+		{
+			"name": "Mesh",
+			"shaderName": "Mesh",
+			"description": "The physics output mesh of the particles",
+			"type": "Mesh",
+			"allowedTypes": [],
+			"nameKey": "vfxgraph_set_physics_mesh_input_mesh",
+			"descriptionKey": "vfxgraph_set_physics_mesh_input_mesh_description",
+			"displayType": "Mesh",
+			"displayTypeKey": "graph_type_mesh"
+		},
+		{
+			"name": "Material",
+			"shaderName": "Material",
+			"description": "The material this block references",
+			"type": "Material",
+			"allowedTypes": [],
+			"nameKey": "vfxgraph_set_physics_mesh_input_material",
+			"descriptionKey": "vfxgraph_set_physics_mesh_input_material_description",
+			"displayType": "Material",
+			"displayTypeKey": "graph_type_material"
+		},
+		{
+			"name": "Mesh ID",
+			"shaderName": "MeshID",
+			"description": "The identifier that matches the shape of the physics object to the shape of the output mesh",
+			"type": "Uint",
+			"visible": false,
+			"allowedTypes": [],
+			"range": [
+				[
+					0,
+					9999,
+					1
+				]
+			],
+			"nameKey": "vfxgraph_set_physics_mesh_input_meshid",
+			"descriptionKey": "vfxgraph_set_physics_mesh_input_meshid_description",
+			"displayType": "Uint",
+			"displayTypeKey": "graph_type_uint"
+		}
+	],
+	"outputs": [],
+	"category": "Attribute Set",
+	"description": "Sets the physics output mesh of the particles",
+	"version": "1.0.0",
+	"compatibleContexts": [
+		"PhysicsMeshOutput"
+	],
+	"hideEnableCheckbox": true,
+	"showInLibrary": [],
+	"groupEnable": false,
+	"attributes": [
+		"position"
+	],
+	"usedelta": "true",
+	"TSPATH": "",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"deletable": false,
+	"cloneable": false,
+	"draggable": false,
+	"nameKey": "vfxgraph_set_physics_mesh_name",
+	"categoryKey": "vfxgraph_category_attributeset",
+	"descriptionKey": "vfxgraph_set_physics_mesh_description"
+}

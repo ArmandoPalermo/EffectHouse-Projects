@@ -1,0 +1,27 @@
+[
+  {
+    "guid": {
+      "a": "a83bbe1b-8a1a-1caa-f634-1e1b3684fcb0",
+      "b": ""
+    },
+    "extraType": "ResItemVFXGraph",
+    "name": "Physics Particles",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "VFXProfile",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "resourceFilePath": "C:\\Users\\Armando\\AppData\\Local\\Effect House\\Resources\\BuiltinResource\\InternalPlugins\\VFXComponent\\PluginResource\\vg\\Physics Particles.vg",
+    "references": [
+      {
+        "propertyName": "Mesh",
+        "guid": "00000000-0000-0000-0000-000000000001"
+      },
+      {
+        "propertyName": "Material",
+        "guid": "00000000-0000-0000-0000-00000000000c"
+      }
+    ]
+  }
+]

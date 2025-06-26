@@ -1,0 +1,192 @@
+{
+	"name": "Transit by Time",
+	"id": "d8d6548e-e155-7781-8066-0575a4002a3d",
+	"inputs": [
+		{
+			"name": "Start",
+			"description": "Start the transition at the From value",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_transit_by_time_input_start",
+			"descriptionKey": "graph_transit_by_time_input_start_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Pause",
+			"description": "Pause the transition",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_transit_by_time_input_pause",
+			"descriptionKey": "graph_transit_by_time_input_pause_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Resume",
+			"description": "Resume the transition",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_transit_by_time_input_resume",
+			"descriptionKey": "graph_transit_by_time_input_resume_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Stop",
+			"description": "Stop the transition",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_transit_by_time_input_stop",
+			"descriptionKey": "graph_transit_by_time_input_stop_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "From",
+			"description": "The start value of the transition",
+			"type": "Double",
+			"displayType": "Number",
+			"dynamic": true,
+			"nameKey": "graph_transit_by_time_input_from",
+			"descriptionKey": "graph_transit_by_time_input_from_description",
+			"displayTypeKey": "graph_type_number"
+		},
+		{
+			"name": "To",
+			"description": "The end value of the transition",
+			"type": "Double",
+			"displayType": "Number",
+			"dynamic": true,
+			"nameKey": "graph_transit_by_time_input_to",
+			"descriptionKey": "graph_transit_by_time_input_to_description",
+			"displayTypeKey": "graph_type_number"
+		},
+		{
+			"name": "Duration",
+			"description": "The total time of the transition",
+			"type": "Double",
+			"displayType": "Number",
+			"range": [
+				[
+					0,
+					"inf",
+					1
+				]
+			],
+			"nameKey": "graph_transit_by_time_input_duration",
+			"descriptionKey": "graph_transit_by_time_input_duration_description",
+			"displayTypeKey": "graph_type_number"
+		},
+		{
+			"name": "Interpolator",
+			"description": "The type of interpolators, supporting Linear, Ease-in, Ease-out, Ease-in-out, and Ease-out-in",
+			"type": "String",
+			"value_list": [
+				"Linear",
+				"Ease-in",
+				"Ease-out",
+				"Ease-in-out",
+				"Ease-out-in"
+			],
+			"displayType": "String",
+			"nameKey": "graph_transit_by_time_input_interpolator",
+			"descriptionKey": "graph_transit_by_time_input_interpolator_description",
+			"displayTypeKey": "graph_type_string",
+			"value_list_i18n_keys": [
+				"graph_transit_by_time_input_interpolator_valueList_linear",
+				"graph_transit_by_time_input_interpolator_valueList_easein",
+				"graph_transit_by_time_input_interpolator_valueList_easeout",
+				"graph_transit_by_time_input_interpolator_valueList_easeinout",
+				"graph_transit_by_time_input_interpolator_valueList_easeoutin"
+			]
+		},
+		{
+			"name": "Loop",
+			"description": "The number of times of looping the transition",
+			"type": "Int",
+			"displayType": "Number",
+			"default_value": 1,
+			"range": [
+				[
+					1,
+					"inf",
+					1
+				]
+			],
+			"nameKey": "graph_transit_by_time_input_loop",
+			"descriptionKey": "graph_transit_by_time_input_loop_description",
+			"displayTypeKey": "graph_type_number"
+		},
+		{
+			"name": "Ping-pong",
+			"description": "Select it to make the transition changing from the start value to the end value, then changing backward",
+			"type": "Bool",
+			"displayType": "Boolean",
+			"default_value": false,
+			"nameKey": "graph_transit_by_time_input_pingpong",
+			"descriptionKey": "graph_transit_by_time_input_pingpong_description",
+			"displayTypeKey": "graph_type_boolean"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Begin",
+			"description": "Execute the next node when the transition begins",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_transit_by_time_output_begin",
+			"descriptionKey": "graph_transit_by_time_output_begin_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Stay",
+			"description": "Keep executing the next node when the transition stays working",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_transit_by_time_output_stay",
+			"descriptionKey": "graph_transit_by_time_output_stay_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "End",
+			"description": "Execute the next node when the whole transition is finished",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_transit_by_time_output_end",
+			"descriptionKey": "graph_transit_by_time_output_end_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Current",
+			"description": "The current interpolated value",
+			"type": "Double",
+			"displayType": "Number",
+			"dynamic": true,
+			"nameKey": "graph_transit_by_time_output_current",
+			"descriptionKey": "graph_transit_by_time_output_current_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"category": "Utility",
+	"description": "Transition from one value to another according to a certain interpolator within a certain time range. Supported types: Number, Vec2, Vec3, Vec4, and Color.",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"js": "CGTransitByTime.js",
+	"nodeEvent": [
+		"beforeStart",
+		"onUpdate",
+		"resetOnRecord"
+	],
+	"supportedValueTypes": [
+		"Double",
+		"Vector2f",
+		"Vector3f",
+		"Vector4f",
+		"Color"
+	],
+	"version": "4.0.0",
+	"onlineWebsite": "graph_transit_by_time_website",
+	"nameKey": "graph_transit_by_time_name",
+	"categoryKey": "graph_category_utility",
+	"descriptionKey": "graph_transit_by_time_description"
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "guid": {
+      "a": "41d53489-c738-2c02-6291-f156f173f736",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "01R",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512
+  }
+]

@@ -1,0 +1,68 @@
+{
+	"name": "Set Random Velocity",
+	"function": "SetRandomVelocity",
+	"id": "0942421e-7e19-2b64-33e1-09b6d206a56e",
+	"NodeType": "VFXGRAPHBLOCK",
+	"inputs": [
+		{
+			"name": "Min",
+			"shaderName": "Min",
+			"description": "The minimum velocity of the particles",
+			"type": "Vec3",
+			"default": {
+				"x": -1,
+				"y": -1,
+				"z": -1
+			},
+			"allowedTypes": [],
+			"nameKey": "vfxgraph_set_random_velocity_input_min",
+			"descriptionKey": "vfxgraph_set_random_velocity_input_min_description",
+			"displayType": "Vec3",
+			"displayTypeKey": "graph_type_vec3"
+		},
+		{
+			"name": "Max",
+			"shaderName": "Max",
+			"description": "The maxium velocity of the particles",
+			"type": "Vec3",
+			"default": {
+				"x": 1,
+				"y": 1,
+				"z": 1
+			},
+			"allowedTypes": [],
+			"nameKey": "vfxgraph_set_random_velocity_input_max",
+			"descriptionKey": "vfxgraph_set_random_velocity_input_max_description",
+			"displayType": "Vec3",
+			"displayTypeKey": "graph_type_vec3"
+		}
+	],
+	"outputs": [],
+	"category": "Attribute Set",
+	"description": "Sets a random velocity for the particles within a specified minimum and maximum values",
+	"version": "1.0.0",
+	"compatibleContexts": [
+		"Init",
+		"Update",
+		"Output",
+		"MeshOutput",
+		"PhysicsInit"
+	],
+	"attributes": [
+		"velocity",
+		"seed"
+	],
+	"methodBody": "velocity.xyz = random3(seed, Min.xyz, Max.xyz);",
+	"TSPATH": "",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"prevAliases": [
+		"SetRandomVelocity"
+	],
+	"nameKey": "vfxgraph_set_random_velocity_name",
+	"categoryKey": "vfxgraph_category_attributeset",
+	"descriptionKey": "vfxgraph_set_random_velocity_description"
+}

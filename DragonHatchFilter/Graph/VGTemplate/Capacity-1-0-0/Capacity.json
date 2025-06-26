@@ -1,0 +1,48 @@
+{
+	"name": "Capacity",
+	"function": "Capacity",
+	"id": "60cdbd19-93e4-f4d1-d6a0-e181b0fe35bc",
+	"NodeType": "VFXGRAPHBLOCK",
+	"inputs": [
+		{
+			"shaderName": "Capacity",
+			"name": "Capacity",
+			"description": "The fixed amount of elements in the simulation",
+			"type": "Uint",
+			"default": 2000,
+			"visible": false,
+			"allowedTypes": [],
+			"range": [
+				[
+					0,
+					500000,
+					1
+				]
+			],
+			"nameKey": "vfxgraph_capacity_input_capacity",
+			"descriptionKey": "vfxgraph_capacity_input_capacity_description",
+			"displayTypeKey": "graph_type_uint",
+			"displayType": "Uint"
+		}
+	],
+	"outputs": [],
+	"category": "Attribute Set",
+	"description": "Defines the amount of elements in the simulation",
+	"version": "1.0.0",
+	"compatibleContexts": [
+		"Init"
+	],
+	"attributes": [
+		"position",
+		"size"
+	],
+	"TSPATH": "",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"nameKey": "vfxgraph_capacity_name",
+	"categoryKey": "vfxgraph_category_attributeset",
+	"descriptionKey": "vfxgraph_capacity_description"
+}

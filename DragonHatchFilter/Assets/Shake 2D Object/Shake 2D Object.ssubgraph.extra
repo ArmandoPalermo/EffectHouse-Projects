@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "90c96dba-38d7-e2fe-9d80-5f7e12cf5cd8",
+      "b": ""
+    },
+    "extraType": "ResItemVSSubgraph",
+    "name": "Shake 2D Object",
+    "expandInPanel": false,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "assetPackageID": "7430653765893521409",
+    "resourceFilePath": "C:\\Users\\Armando\\AppData\\Roaming\\EffectHouse\\Instances\\Instance1\\EHpackage\\7430653765893521409\\Shake 2D Object.ssubgraph",
+    "combinedWithNodeLibary": true,
+    "assetID": "7430653765893521409"
+  }
+]

@@ -1,0 +1,45 @@
+{
+	"name": "Capacity",
+	"function": "CapacityPhysics",
+	"id": "c4101293-5846-4fa7-b702-5d984ea57aa8",
+	"NodeType": "VFXGRAPHBLOCK",
+	"inputs": [
+		{
+			"shaderName": "Capacity",
+			"name": "Capacity",
+			"description": "The fixed amount of elements in the simulation",
+			"type": "Uint",
+			"default": 200,
+			"visible": false,
+			"allowedTypes": [],
+			"range": [
+				[
+					0,
+					5000,
+					1
+				]
+			],
+			"nameKey": "vfxgraph_capacity_input_capacity",
+			"descriptionKey": "vfxgraph_capacity_input_capacity_description",
+			"displayTypeKey": "graph_type_uint",
+			"displayType": "Uint"
+		}
+	],
+	"outputs": [],
+	"category": "Attribute Set",
+	"description": "Defines the amount of elements in the simulation",
+	"version": "1.0.0",
+	"compatibleContexts": [
+		"PhysicsInit"
+	],
+	"attributes": [],
+	"TSPATH": "",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"nameKey": "vfxgraph_capacity_name",
+	"categoryKey": "vfxgraph_category_attributeset",
+	"descriptionKey": "vfxgraph_capacity_description"
+}

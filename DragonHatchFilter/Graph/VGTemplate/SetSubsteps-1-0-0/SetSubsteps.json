@@ -1,0 +1,52 @@
+{
+	"name": "Set Substeps",
+	"function": "SetSubsteps",
+	"id": "daa28393-6a81-4f4f-96a9-94022a581ecd",
+	"NodeType": "VFXGRAPHBLOCK",
+	"inputs": [
+		{
+			"name": "Substeps",
+			"shaderName": "substeps",
+			"description": "The substep length for the physics solver",
+			"type": "Uint",
+			"default": 3,
+			"visible": false,
+			"allowedTypes": [],
+			"range": [
+				[
+					1,
+					10,
+					1
+				]
+			],
+			"nameKey": "vfxgraph_set_substeps_input_substeps",
+			"descriptionKey": "vfxgraph_set_substeps_input_substeps_description",
+			"displayTypeKey": "graph_type_uint",
+			"displayType": "Uint"
+		}
+	],
+	"outputs": [],
+	"category": "Physics",
+	"description": "Sets the substep length for the physics solver",
+	"version": "1.0.0",
+	"compatibleContexts": [
+		"PhysicsUpdate"
+	],
+	"attributes": [],
+	"TSPATH": "",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"limitedDraggable": true,
+	"hideEnableCheckbox": true,
+	"showInLibrary": [],
+	"groupEnable": false,
+	"deletable": false,
+	"cloneable": false,
+	"draggable": false,
+	"nameKey": "vfxgraph_set_substeps_name",
+	"categoryKey": "vfxgraph_category_physics",
+	"descriptionKey": "vfxgraph_set_substeps_description"
+}

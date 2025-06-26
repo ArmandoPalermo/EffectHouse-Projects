@@ -1,0 +1,227 @@
+{
+	"name": "Spawn Rate",
+	"function": "SpawnRate",
+	"id": "914193a0-0acb-41c4-b584-56b134253080",
+	"NodeType": "VFXGRAPHBLOCK",
+	"options": [
+		{
+			"type": "Mode",
+			"values": [
+				"Constant",
+				"Random",
+				"Periodic Burst"
+			],
+			"typeKey": "vfxgraph_spawn_rate_option_type_mode",
+			"valuesKey": [
+				"vfxgraph_spawn_rate_option_value_constant",
+				"vfxgraph_spawn_rate_option_value_random",
+				"vfxgraph_spawn_rate_option_value_periodicburst"
+			]
+		}
+	],
+	"inputs": [
+		{
+			"name": "Expose Parameters",
+			"shaderName": "ExposeParameters",
+			"description": "Enable control from outside the graph asset",
+			"type": "Bool",
+			"default": false,
+			"visible": false,
+			"allowedTypes": [],
+			"nameKey": "vfxgraph_spawn_rate_input_exposeparameters",
+			"descriptionKey": "vfxgraph_spawn_rate_input_exposeparameters_description",
+			"displayType": "Boolean",
+			"displayTypeKey": "graph_type_boolean"
+		}
+	],
+	"optionalInputs": [
+		{
+			"optionType": "Mode",
+			"optionValue": "Constant",
+			"input": {
+				"name": "Spawn Rate",
+				"shaderName": "spawnRate",
+				"description": "The spawn rate per second",
+				"type": "Float",
+				"default": 5.0001,
+				"visible": false,
+				"allowedTypes": [],
+				"range": [
+					[
+						0,
+						500000,
+						0.001
+					]
+				],
+				"nameKey": "vfxgraph_spawn_rate_optional_input_spawnrate",
+				"descriptionKey": "vfxgraph_spawn_rate_optional_input_spawnrate_description",
+				"displayType": "Float",
+				"displayTypeKey": "graph_type_float"
+			}
+		},
+		{
+			"optionType": "Mode",
+			"optionValue": "Random",
+			"input": {
+				"name": "Count Min",
+				"shaderName": "spawnRateMin",
+				"description": "The minimum number of particles to spawn",
+				"type": "Int",
+				"default": 10,
+				"visible": false,
+				"allowedTypes": [],
+				"range": [
+					[
+						0,
+						500000,
+						1
+					]
+				],
+				"nameKey": "vfxgraph_spawn_rate_optional_input_countmin",
+				"descriptionKey": "vfxgraph_spawn_rate_optional_input_countmin_description",
+				"displayType": "Int",
+				"displayTypeKey": "graph_type_int"
+			}
+		},
+		{
+			"optionType": "Mode",
+			"optionValue": "Random",
+			"input": {
+				"name": "Count Max",
+				"shaderName": "spawnRateMax",
+				"description": "The maximum number of particles to spawn",
+				"type": "Int",
+				"default": 30,
+				"visible": false,
+				"allowedTypes": [],
+				"range": [
+					[
+						0,
+						500000,
+						1
+					]
+				],
+				"nameKey": "vfxgraph_spawn_rate_optional_input_countmax",
+				"descriptionKey": "vfxgraph_spawn_rate_optional_input_countmax_description",
+				"displayType": "Int",
+				"displayTypeKey": "graph_type_int"
+			}
+		},
+		{
+			"optionType": "Mode",
+			"optionValue": "Random",
+			"input": {
+				"name": "Delay Min",
+				"shaderName": "delayMin",
+				"description": "The minimum duration of the delay this Block waits for before it spawns a burst of particles",
+				"type": "Float",
+				"default": 0.0001,
+				"visible": false,
+				"allowedTypes": [],
+				"range": [
+					[
+						0,
+						"inf",
+						0.001
+					]
+				],
+				"nameKey": "vfxgraph_spawn_rate_optional_input_delaymin",
+				"descriptionKey": "vfxgraph_spawn_rate_optional_input_delaymin_description",
+				"displayType": "Float",
+				"displayTypeKey": "graph_type_float"
+			}
+		},
+		{
+			"optionType": "Mode",
+			"optionValue": "Random",
+			"input": {
+				"name": "Delay Max",
+				"shaderName": "delayMax",
+				"description": "The maximum duration of the delay this Block waits for before it spawns a burst of particles",
+				"type": "Float",
+				"default": 0.50001,
+				"visible": false,
+				"allowedTypes": [],
+				"range": [
+					[
+						0,
+						"inf",
+						0.001
+					]
+				],
+				"nameKey": "vfxgraph_spawn_rate_optional_input_delaymax",
+				"descriptionKey": "vfxgraph_spawn_rate_optional_input_delaymax_description",
+				"displayType": "Float",
+				"displayTypeKey": "graph_type_float"
+			}
+		},
+		{
+			"optionType": "Mode",
+			"optionValue": "Periodic Burst",
+			"input": {
+				"name": "Count",
+				"shaderName": "burstCount",
+				"description": "The number of particles in each burst spawn",
+				"type": "Int",
+				"default": 10,
+				"visible": false,
+				"allowedTypes": [],
+				"range": [
+					[
+						0,
+						500000,
+						1
+					]
+				],
+				"nameKey": "vfxgraph_spawn_rate_optional_input_count",
+				"descriptionKey": "vfxgraph_spawn_rate_optional_input_count_description",
+				"displayType": "Int",
+				"displayTypeKey": "graph_type_int"
+			}
+		},
+		{
+			"optionType": "Mode",
+			"optionValue": "Periodic Burst",
+			"input": {
+				"name": "Delay",
+				"shaderName": "burstDelay",
+				"description": "The duration of the delay this Block waits for before it spawns a burst of particles",
+				"type": "Float",
+				"default": 3.0001,
+				"visible": false,
+				"allowedTypes": [],
+				"range": [
+					[
+						0,
+						"inf",
+						0.001
+					]
+				],
+				"nameKey": "vfxgraph_spawn_rate_optional_input_delay",
+				"descriptionKey": "vfxgraph_spawn_rate_optional_input_delay_description",
+				"displayType": "Float",
+				"displayTypeKey": "graph_type_float"
+			}
+		}
+	],
+	"outputs": [],
+	"category": "Spawn",
+	"description": "Spawns a number of particles in different modes.Constant: Add a spawn count over time at a constant rate. For instance, if the rate is 10, this Block tiggers 10 spawn events per second for its Spawner Context. Periodic: Spawn a number of particles instantly periodically using a delay. Random: Spawns a random number of particles between two boundaries. The delay time is of a random duration between two boundaries.",
+	"version": "1.0.0",
+	"compatibleContexts": [
+		"Spawn"
+	],
+	"TSPATH": "",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"hideEnableCheckbox": true,
+	"deletable": false,
+	"cloneable": false,
+	"draggable": false,
+	"nameKey": "vfxgraph_spawn_rate_name",
+	"categoryKey": "vfxgraph_category_spawn",
+	"descriptionKey": "vfxgraph_spawn_rate_description"
+}

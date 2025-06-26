@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "4065f9f7-6619-e392-b472-060aa8d151cf",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "Shake 2D Object",
+    "expandInPanel": false,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

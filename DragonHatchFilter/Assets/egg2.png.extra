@@ -1,0 +1,27 @@
+[
+  {
+    "guid": {
+      "a": "e510a08d-3af8-a0fd-91c7-acce63a42adc",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "egg2",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512
+  }
+]

@@ -1,0 +1,116 @@
+{
+	"name": "Collision Event 2D",
+	"id": "f61e3641-67ab-ce7b-cb34-4274627a2d45",
+	"inputs": [
+		{
+			"name": "Collider Component",
+			"type": "Component",
+			"item_type": "",
+			"description": "The object to track for collision events",
+			"displayType": "Component",
+			"nameKey": "graph_collision2d_event_input_collidercomponent",
+			"descriptionKey": "graph_collision2d_event_input_collidercomponent_description",
+			"displayTypeKey": "graph_type_component"
+		},
+		{
+			"name": "Event Type",
+			"description": "Trigger Next depending on event type",
+			"type": "String",
+			"value_list": [
+				"onEnter",
+				"onStay",
+				"onExit"
+			],
+			"displayType": "String",
+			"nameKey": "graph_collision2d_event_input_eventtype",
+			"descriptionKey": "graph_collision2d_event_input_eventtype_description",
+			"displayTypeKey": "graph_type_string",
+			"value_list_i18n_keys": [
+				"graph_collision2d_event_input_eventtype_valueList_onenter",
+				"graph_collision2d_event_input_eventtype_valueList_stay",
+				"graph_collision2d_event_input_eventtype_valueList_onexit"
+			]
+		}
+	],
+	"outputs": [
+		{
+			"name": "Next",
+			"description": "Execute the next node.",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_collision2d_event_output_next",
+			"descriptionKey": "graph_collision2d_event_output_next_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Self Collider",
+			"type": "Component",
+			"description": "Outputs the collider component of itself.",
+			"displayType": "Component",
+			"nameKey": "graph_collision2d_event_output_selfcollider",
+			"descriptionKey": "graph_collision2d_event_output_selfcollider_description",
+			"displayTypeKey": "graph_type_component"
+		},
+		{
+			"name": "Other Collider",
+			"type": "Component",
+			"description": "Outputs the collider body component of the collided object.",
+			"displayType": "Component",
+			"nameKey": "graph_collision2d_event_output_othercollider",
+			"descriptionKey": "graph_collision2d_event_output_othercollider_description",
+			"displayTypeKey": "graph_type_component"
+		},
+		{
+			"name": "Hit Point",
+			"description": "The position information of the collision point.",
+			"type": "Vector2f",
+			"displayType": "Vec2",
+			"nameKey": "graph_collision2d_event_output_hitpoint",
+			"descriptionKey": "graph_collision2d_event_output_hitpoint_description",
+			"displayTypeKey": "graph_type_vec2"
+		},
+		{
+			"name": "Hit Normal",
+			"description": "The direction of the collision normal.",
+			"type": "Vector2f",
+			"displayType": "Vec2",
+			"nameKey": "graph_collision2d_event_output_hitnormal",
+			"descriptionKey": "graph_collision2d_event_output_hitnormal_description",
+			"displayTypeKey": "graph_type_vec2"
+		},
+		{
+			"name": "Normal Impulse",
+			"description": "The magnitude of the force in the direction of the collision normal at the collision point.",
+			"type": "Double",
+			"displayType": "Number",
+			"nameKey": "graph_collision2d_event_output_normalimpulse",
+			"descriptionKey": "graph_collision2d_event_output_normalimpulse_description",
+			"displayTypeKey": "graph_type_number"
+		},
+		{
+			"name": "Tangent Impulse",
+			"description": "The magnitude of the force in the direction tangential to the collision normal at the collision point.",
+			"type": "Double",
+			"displayType": "Number",
+			"nameKey": "graph_collision2d_event_output_tangentimpulse",
+			"descriptionKey": "graph_collision2d_event_output_tangentimpulse_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"category": "Physics",
+	"productTypes": [
+		"EHO",
+		"EHI"
+	],
+	"nodeEvent": [
+		"beforeStart"
+	],
+	"scriptSupport": "js",
+	"js": "CGCollision2DEvent.js",
+	"description": "Detects collision events between Rigid Body components and outputs relevant information through the Collision Info node",
+	"version": "1.0.0",
+	"SDKVersion": "16.1.0",
+	"nameKey": "graph_collision_event_2d_name",
+	"categoryKey": "graph_category_physics",
+	"descriptionKey": "graph_collision2d_event_description"
+}

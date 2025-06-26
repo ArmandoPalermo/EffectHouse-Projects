@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "2e5ae7b6-14c7-a5c4-0ad8-d734e65001c4",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "Classic15",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "resourceFilePath": "C:\\Users\\Armando\\OneDrive\\Desktop\\ProgettiEffectHouse\\PAC-MAN_Assets\\PAC-MAN_Assets\\Classic\\Classic15.png",
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false
+  }
+]

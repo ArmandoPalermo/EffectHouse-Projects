@@ -1,0 +1,16 @@
+[
+  {
+    "guid": {
+      "a": "69b3ae05-e68a-fe74-b32a-ac6d6af10007",
+      "b": ""
+    },
+    "extraType": "JSAssetAnimSequence",
+    "name": "FlyingGameCharacter",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false
+  }
+]

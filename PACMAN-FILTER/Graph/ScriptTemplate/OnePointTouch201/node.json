@@ -1,0 +1,82 @@
+{
+	"name": "Finger Touch 1-Point",
+	"id": "0d990e75-52d1-4fe3-b946-f0d1b498a579",
+	"inputs": [],
+	"outputs": [
+		{
+			"name": "Idle",
+			"type": "Pulse",
+			"description": "Execute the next node when no finger touch detected on the device screen",
+			"displayType": "Exec",
+			"nameKey": "graph_finger_touch_1point_output_idle",
+			"descriptionKey": "graph_finger_touch_1point_output_idle_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "On Start",
+			"type": "Pulse",
+			"description": "Execute the next node as soon as someone's finger touches the device screen",
+			"displayType": "Exec",
+			"nameKey": "graph_finger_touch_1point_output_onstart",
+			"descriptionKey": "graph_finger_touch_1point_output_onstart_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Stay",
+			"type": "Pulse",
+			"description": "Execute the next node when someone's finger stays on the device screen",
+			"displayType": "Exec",
+			"nameKey": "graph_finger_touch_1point_output_stay",
+			"descriptionKey": "graph_finger_touch_1point_output_stay_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "On Stop",
+			"type": "Pulse",
+			"description": "Execute the next node as soon as someone's finger leaves the device screen",
+			"displayType": "Exec",
+			"nameKey": "graph_finger_touch_1point_output_onstop",
+			"descriptionKey": "graph_finger_touch_1point_output_onstop_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Current Position",
+			"type": "Vector2f",
+			"description": "The position of tapping point in the current frame. If the node execution is Idle (no touch detected), this position returns (-1, -1).",
+			"displayType": "Vec2",
+			"nameKey": "graph_finger_touch_1point_output_currentposition",
+			"descriptionKey": "graph_finger_touch_1point_output_currentposition_description",
+			"displayTypeKey": "graph_type_vec2"
+		},
+		{
+			"name": "Last Updated",
+			"type": "Vector2f",
+			"description": "The position of last updated tapping point",
+			"displayType": "Vec2",
+			"nameKey": "graph_finger_touch_1point_output_lastupdated",
+			"descriptionKey": "graph_finger_touch_1point_output_lastupdated_description",
+			"displayTypeKey": "graph_type_vec2"
+		}
+	],
+	"nodeEvent": [
+		"beforeStart",
+		"onUpdate",
+		"onEvent"
+	],
+	"category": "Event",
+	"graphAlgorithms": [
+		"TouchGes"
+	],
+	"js": "OnePointTouch.js",
+	"version": "2.0.1",
+	"description": "Take different executions when the device screen is touched by one finger and when it is not touched.",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"onlineWebsite": "graph_finger_touch_1point_website",
+	"nameKey": "graph_finger_touch_1point_name",
+	"categoryKey": "graph_category_event",
+	"descriptionKey": "graph_finger_touch_1point_description"
+}

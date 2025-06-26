@@ -1,0 +1,57 @@
+{
+	"name": "Component Info",
+	"nameKey": "graph_component_info_name",
+	"id": "97e3a9b7-47e4-da1a-5f46-38eb7b03ff0d",
+	"inputs": [
+		{
+			"name": "Target Component",
+			"nameKey": "graph_component_info_input_targetcomponent",
+			"description": "The component to get properties from.",
+			"descriptionKey": "graph_component_info_input_targetcomponent_description",
+			"type": "Component",
+			"displayType": "Component",
+			"displayTypeKey": "graph_type_component"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Scene Object",
+			"nameKey": "graph_component_info_output_sceneobject",
+			"description": "The scene object this component is attached to.",
+			"descriptionKey": "graph_component_info_output_sceneobject_description",
+			"type": "Entity",
+			"displayType": "Scene Object",
+			"displayTypeKey": "graph_type_sceneobject"
+		},
+		{
+			"name": "Transform",
+			"nameKey": "graph_component_info_output_transform",
+			"description": "The transform that is attached to the same scene object.",
+			"descriptionKey": "graph_component_info_output_transform_description",
+			"type": "Transform",
+			"displayType": "Transform",
+			"displayTypeKey": "graph_type_transform"
+		},
+		{
+			"name": "Is Enabled",
+			"nameKey": "graph_component_info_output_isenabled",
+			"description": "True if the component is currently enabled, otherwise false.",
+			"descriptionKey": "graph_component_info_output_isenabled_description",
+			"type": "Bool",
+			"displayType": "Boolean",
+			"displayTypeKey": "graph_type_boolean"
+		}
+	],
+	"category": "Utility",
+	"categoryKey": "graph_category_utility",
+	"version": "1.0.0",
+	"description": "Get the relevant properties of a component.",
+	"descriptionKey": "graph_component_info_description",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"js": "CGComponentInfo.js",
+	"onlineWebsite": "graph_component_info_website"
+}

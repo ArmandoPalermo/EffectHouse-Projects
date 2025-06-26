@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "b10f20a9-cfd9-9082-cb73-17a079045524",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "Designer_7_-removebg-preview",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "resourceFilePath": "C:\\Users\\Armando\\OneDrive\\Desktop\\ProgettiEffectHouse\\MULTIPLAYERDRAGONFILTER\\images\\Designer_7_-removebg-preview.png"
+  }
+]

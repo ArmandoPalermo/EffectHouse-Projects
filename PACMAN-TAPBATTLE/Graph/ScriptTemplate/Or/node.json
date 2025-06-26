@@ -1,0 +1,56 @@
+{
+	"name": "Or",
+	"id": "1f7430eb-4ee9-82e8-e4a6-43593b046911",
+	"inputs": [
+		{
+			"name": "A",
+			"type": "Bool",
+			"item_type": "",
+			"default_value": "0",
+			"description": "The first input value",
+			"displayType": "Boolean",
+			"nameKey": "graph_or_input_a",
+			"descriptionKey": "graph_or_input_a_description",
+			"displayTypeKey": "graph_type_boolean"
+		},
+		{
+			"name": "B",
+			"type": "Bool",
+			"item_type": "",
+			"default_value": "0",
+			"description": "The second input value",
+			"displayType": "Boolean",
+			"nameKey": "graph_or_input_b",
+			"descriptionKey": "graph_or_input_b_description",
+			"displayTypeKey": "graph_type_boolean"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Result",
+			"type": "Bool",
+			"item_type": "",
+			"description": "If A or B is true, this value is true. If both A and B are false, this value is false.",
+			"displayType": "Boolean",
+			"nameKey": "graph_or_output_result",
+			"descriptionKey": "graph_or_output_result_description",
+			"displayTypeKey": "graph_type_boolean"
+		}
+	],
+	"js": "CGOr.js",
+	"lua": "CGOr.lua",
+	"version": "1.1.0",
+	"amazingVersion": "10.40.0",
+	"luaFuncName": "CGOr",
+	"category": "Logic",
+	"description": "Check if one of the inputs is true.",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"onlineWebsite": "graph_or_website",
+	"nameKey": "graph_or_name",
+	"categoryKey": "graph_category_logic",
+	"descriptionKey": "graph_or_description"
+}

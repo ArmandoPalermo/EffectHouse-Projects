@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "0561fd0e-6103-3561-aa4d-a4f3ed880093",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "AI Textures",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

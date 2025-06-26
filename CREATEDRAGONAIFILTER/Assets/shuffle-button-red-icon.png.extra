@@ -1,0 +1,27 @@
+[
+  {
+    "guid": {
+      "a": "8aeefa3a-9c55-e83c-b597-d17d8078280c",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "shuffle-button-red-icon",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512
+  }
+]

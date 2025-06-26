@@ -1,0 +1,69 @@
+{
+	"name": "Get Item from Array",
+	"id": "834af7d5-45f8-a01d-7956-f3hxb9f77efa",
+	"inputs": [
+		{
+			"name": "Index",
+			"type": "Int",
+			"item_type": "",
+			"displayType": "Number",
+			"description": "The index of the item location in the array. 0 is the first item.",
+			"nameKey": "graph_get_item_from_array_input_index",
+			"descriptionKey": "graph_get_item_from_array_input_index_description",
+			"displayTypeKey": "graph_type_number"
+		},
+		{
+			"name": "{dataType} Array",
+			"generic": "T",
+			"description": "The input array to get the item from",
+			"dynamic": true,
+			"type": "Array",
+			"displayType": "{dataType} Array",
+			"nameKey": "graph_get_item_from_array_input_arrayt",
+			"descriptionKey": "graph_get_item_from_array_input_arrayt_description",
+			"displayTypeKey": "graph_type_generic_array"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Item",
+			"type": "Double",
+			"dynamic": true,
+			"item_type": "",
+			"displayType": "Number",
+			"description": "The item in the input array according to the index position",
+			"nameKey": "graph_get_item_from_array_output_item",
+			"descriptionKey": "graph_get_item_from_array_output_item_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"supportedValueTypes": [
+		"Double",
+		"Bool",
+		"String",
+		"Rect",
+		"Vector2f",
+		"Vector3f",
+		"Vector4f",
+		"Color",
+		"Texture2D",
+		"Entity",
+		"Material",
+		"ContactInfo",
+		"RayHitInfo2D",
+		"RayHitInfo"
+	],
+	"js": "CGGetItemFromArray.js",
+	"version": "3.0.0",
+	"category": "Utility",
+	"description": "Get a specific item from an array, supports all variables types.",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"onlineWebsite": "graph_get_item_from_array_website",
+	"nameKey": "graph_get_item_from_array_name",
+	"categoryKey": "graph_category_utility",
+	"descriptionKey": "graph_get_item_from_array_description"
+}

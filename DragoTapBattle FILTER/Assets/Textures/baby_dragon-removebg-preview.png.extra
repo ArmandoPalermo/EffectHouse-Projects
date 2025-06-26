@@ -12,10 +12,6 @@
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
-    "resourceFilePath": "C:\\Users\\arman\\OneDrive\\Desktop\\ProgettiEffectHouse\\DragonballAFFilter\\DragonballImages\\baby_dragon-removebg-preview.png",
-    "compressionType": 0,
-    "quality": 0,
-    "maxResolution": 512,
     "enableMipmap": false,
     "filterMin": 1,
     "filterMag": 1,
@@ -23,6 +19,10 @@
     "wrapModeS": 0,
     "wrapModeT": 0,
     "wrapModeR": 0,
-    "premultiplyAlpha": false
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "resourceFilePath": "C:\\Users\\arman\\OneDrive\\Desktop\\ProgettiEffectHouse\\DragonballAFFilter\\DragonballImages\\baby_dragon-removebg-preview.png"
   }
 ]

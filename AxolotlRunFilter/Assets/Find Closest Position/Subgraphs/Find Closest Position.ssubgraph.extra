@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "cad05584-8c3f-8ca8-f1d8-686f4529ca50",
+      "b": ""
+    },
+    "extraType": "ResItemVSSubgraph",
+    "name": "Find Closest Position",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "assetPackageID": "7293732841232334850",
+    "resourceFilePath": "C:\\Users\\arman\\AppData\\Roaming\\EffectHouse\\package\\7293732841232334850\\Subgraphs\\Find Closest Position.ssubgraph",
+    "combinedWithNodeLibary": true,
+    "assetID": "7293732841232334850"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "b941f246-a69b-6160-9290-bc30f101a6b7",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "TILE1",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "resourceFilePath": "C:\\Users\\arman\\OneDrive\\Desktop\\TILE1.png"
+  }
+]

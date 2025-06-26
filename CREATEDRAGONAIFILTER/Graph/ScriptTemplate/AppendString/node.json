@@ -1,0 +1,56 @@
+{
+	"name": "Append Strings",
+	"id": "C494C23A-7ECA-F3EF-17E3-B392F4C2BA45",
+	"inputs": [
+		{
+			"name": "String 0",
+			"description": "The first string",
+			"dynamic": true,
+			"type": "String",
+			"displayType": "String",
+			"nameKey": "graph_append_strings_input_string0",
+			"descriptionKey": "graph_append_strings_input_string0_description",
+			"displayTypeKey": "graph_type_string"
+		},
+		{
+			"name": "String 1",
+			"description": "The second string to be appended to the first string",
+			"dynamic": true,
+			"type": "String",
+			"displayType": "String",
+			"nameKey": "graph_append_strings_input_string1",
+			"descriptionKey": "graph_append_strings_input_string1_description",
+			"displayTypeKey": "graph_type_string"
+		}
+	],
+	"outputs": [
+		{
+			"name": "New String",
+			"description": "The string created from the combined strings",
+			"dynamic": true,
+			"type": "String",
+			"displayType": "String",
+			"nameKey": "graph_append_strings_output_newstring",
+			"descriptionKey": "graph_append_strings_output_newstring_description",
+			"displayTypeKey": "graph_type_string"
+		}
+	],
+	"addableInput": {
+		"index": 1,
+		"baseName": "String ",
+		"baseNameKey": "graph_port_addable_appendstring",
+		"increaseStartIndex": 2
+	},
+	"js": "CGAppendString.js",
+	"version": "1.0.0",
+	"category": "Utility",
+	"description": "Combines two or more strings at once in a specific order",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"nameKey": "graph_append_strings_name",
+	"categoryKey": "graph_category_utility",
+	"descriptionKey": "graph_append_strings_description"
+}

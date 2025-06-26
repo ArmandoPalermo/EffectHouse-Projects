@@ -1,0 +1,27 @@
+[
+  {
+    "guid": {
+      "a": "ab44b41a-29c7-3acd-d94b-9f6f496b88c6",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "ssbgoku",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512
+  }
+]

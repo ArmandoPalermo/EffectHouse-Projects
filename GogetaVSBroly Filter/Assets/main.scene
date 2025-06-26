@@ -1,0 +1,970 @@
+%YAML 1.1
+--- !Scene &1
+name: !<str> ""
+guid: {a: 7875085725817850609, b: 329766013828765107}
+editSceneGuid: {a: 0, b: 0}
+calibrateVer: !<str> V5
+entities:
+  - __class: Entity
+    name: !<str> Camera
+    guid: {a: 10180214583793075010, b: 13085474825770890632}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 2}
+      - __class: Camera
+        name: !<str> ""
+        guid: {a: 18393534764065644695, b: 16547619468206596491}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderOrder: 0
+        type:
+          __class: CameraType
+          value: PERSPECTIVE
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        orthoScale: 1
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+        sortMethod:
+          __class: CameraSortMethod
+          value: RENDERQUEUE_AND_DEPTH
+        rtBackupMode:
+          __class: CameraRTBackupMode
+          value: CAMERA_CHANGED
+    layer: 0
+  - __class: Entity
+    name: !<str> General
+    guid: {a: 8235238043598186243, b: 16840308208679013795}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 3}
+      - __class: EffectNode
+        name: !<str> ""
+        guid: {a: 14792803682663561050, b: 6161520050080348315}
+        enabled: true
+        outputTextures:
+          - {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        renderOrder: 8001
+        minorOrder: 0
+        type:
+          __class: EffectNodeTag
+          value: Other
+        version: 2
+        rendererType:
+          __class: RendererType
+          value: OpenGLES30
+    layer: 0
+  - __class: Entity
+    name: !<str> Directional Light
+    guid: {a: 815069582473778930, b: 3860102513852982437}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 4}
+      - __class: DirectionalLight
+        name: !<str> ""
+        guid: {a: 8739102965005804130, b: 6461487404246441657}
+        enabled: true
+        color: {x: 1, y: 1, z: 1}
+        intensiy: 1
+        shadowEnable: false
+        shadowEnableNew: false
+        shadowResolution: {x: 256, y: 256}
+        shadowBias: 0
+        shadowStrength: 1
+        useSoftShadow: false
+        shadowSoftness: 1
+        blurRadius: 1.299999952316284
+        blurNum: 0
+        selfShadowGradient: 0
+        shadowColor: {x: 0, y: 0, z: 0}
+        InitStrength: 0.300000011920929
+        EsmC: 0.03500000014901161
+        lightingLayers: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderMode:
+          __class: LightRenderMode
+          value: AUTO
+        shadowArea: 100
+        autoShadowFrustum: true
+        autoShadowFrustumSize: true
+        shadowFrustumZNear: 1
+        shadowFrustumZFar: 100
+        useFastShadow: true
+        cookieSize: 1
+        softShadowType:
+          __class: SoftShadowType
+          value: PCF
+        EVSMExponents: {x: 4, y: 4}
+        contactShadowEnable: false
+        lightUnit:
+          __class: LightUnit
+          value: Lux
+    layer: 0
+  - __class: Entity
+    name: !<str> Environment Light
+    guid: {a: 11406181728386468509, b: 5972158861532600762}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 5}
+      - __class: Envmap
+        name: !<str> ""
+        guid: {a: 16737500510660696093, b: 7610174286501797273}
+        enabled: true
+        envmapLayers: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        specularEnvmap: {localId: 1, path: 00000000-0000-0000-0000-000000000805--00000000-0000-0000-0000-000000000805.texture}
+        IBLMode: true
+        intensity: 0.699999988079071
+        rotation: 0.699999988079071
+    layer: 0
+  - __class: Entity
+    name: !<str> 2D Camera
+    guid: {a: 5263242823666836109, b: 9677007891754968754}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 6}
+      - __class: Camera
+        name: !<str> ""
+        guid: {a: 5193973541562886437, b: 14619476433148901551}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderOrder: 0
+        type:
+          __class: CameraType
+          value: ORTHO
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        orthoScale: 20
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+        sortMethod:
+          __class: CameraSortMethod
+          value: STRICT_SORT_ORDER
+        rtBackupMode:
+          __class: CameraRTBackupMode
+          value: CAMERA_CHANGED
+    layer: 0
+  - __class: Entity
+    name: !<str> 2D Foreground
+    guid: {a: 5499943606040166160, b: 16948393804574664381}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 7}
+      - __class: EffectNode
+        name: !<str> ""
+        guid: {a: 4785050108777378460, b: 7911403938262954628}
+        enabled: true
+        outputTextures:
+          - {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        renderOrder: 9001
+        minorOrder: 0
+        type:
+          __class: EffectNodeTag
+          value: Other
+        version: 2
+        rendererType:
+          __class: RendererType
+          value: OpenGLES30
+    layer: 0
+  - __class: Entity
+    name: !<str> broly
+    guid: {a: 4614112594871498156, b: 2658152053367774338}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 8}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 5719123594865373208, b: 10323462081084444813}
+        enabled: true
+        sharedMaterials:
+          - {localId: 0}
+        sortingOrder: 0
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: 2b8b886b-7aa6-dfa8-5fd1-26b903f73ce1--2b8b886b-7aa6-dfa8-5fd1-26b903f73ce1.png}
+        opacity: 1
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 10, y: 10}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Fit
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+    layer: 0
+  - __class: Entity
+    name: !<str> goku
+    guid: {a: 5617071503903840574, b: 5468951369774177973}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 9}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 5474262139357986289, b: 11769435005420577438}
+        enabled: true
+        sharedMaterials:
+          - {localId: 0}
+        sortingOrder: 1
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: d3576834-5bc9-2957-99ef-2a805c965ce2--d3576834-5bc9-2957-99ef-2a805c965ce2.png}
+        opacity: 1
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 10, y: 10}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Fit
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 4854098595854664702, b: 14658012717707335079}
+        enabled: true
+        path: !<str> js/RigidBody2D.js
+        properties:
+          __class: Map
+          angularDamping: 0
+          angularVelocity: 0
+          damping: 0
+          externalForce: {x: 0, y: 9.8}
+          externalTorque: 0
+          freezeX: false
+          freezeY: false
+          freezeZ: false
+          gravityScale: 1
+          isStatic: false
+          mass: 1
+          velocity: {x: 0, y: 0}
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5363393893794169513, b: 14491126491569037476}
+        enabled: true
+        path: !<str> js/BoxCollider2D.js
+        properties:
+          __class: Map
+          categoryBits: 1
+          isTangible: true
+          maskBits: {__class: DynamicBitset, numBits: 16, values: [65535]}
+          offset: {x: 0, y: 0}
+          showCollider: true
+          size: {x: 6, y: 8}
+    layer: 0
+  - __class: Entity
+    name: !<str> vegeta
+    guid: {a: 5694226907545643124, b: 17603197244896344734}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 10}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 5490858607601926946, b: 18259489209713078201}
+        enabled: true
+        sharedMaterials:
+          - {localId: 0}
+        sortingOrder: 2
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: f4749689-de2b-516d-d1f3-40dcc6444ee2--f4749689-de2b-516d-d1f3-40dcc6444ee2.png}
+        opacity: 1
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 10, y: 10}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Fit
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 4697535725573761797, b: 5805069161865480329}
+        enabled: true
+        path: !<str> js/RigidBody2D.js
+        properties:
+          __class: Map
+          angularDamping: 0
+          angularVelocity: 0
+          damping: 0
+          externalForce: {x: 0, y: 9.8}
+          externalTorque: 0
+          freezeX: false
+          freezeY: false
+          freezeZ: false
+          gravityScale: 1
+          isStatic: false
+          mass: 1
+          velocity: {x: 0, y: 0}
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5632375618028699585, b: 15285528151708278667}
+        enabled: true
+        path: !<str> js/BoxCollider2D.js
+        properties:
+          __class: Map
+          categoryBits: 1
+          isTangible: true
+          maskBits: {__class: DynamicBitset, numBits: 16, values: [65535]}
+          offset: {x: 0, y: 0}
+          showCollider: true
+          size: {x: 4, y: 8}
+    layer: 0
+  - __class: Entity
+    name: !<str> broly power
+    guid: {a: 5253876507808160103, b: 16492044461043927173}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 11}
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5555003844718944215, b: 6006383500782574780}
+        enabled: true
+        path: !<str> js/Text.js
+        properties:
+          __class: Map
+          TextGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001559--00000000-0000-0000-0000-000000001559.material}
+          TextNeonGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001568--00000000-0000-0000-0000-000000001568.material}
+          autoSortingOrder: true
+          backgroundEnable: false
+          bloomColor: {r: 1, g: 1, b: 1, a: 1}
+          bloomOption: !<str> OutWard
+          bold: false
+          enableRTL: true
+          fontSize: 72
+          fontType: !<str> Classic.ttf
+          glow: false
+          glowHorizontalAngle: 0
+          glowIntensity: 0.5
+          glowRange: 0.5
+          glowVerticalAngle: 0
+          input: !<str> 10000
+          italic: false
+          letterAlpha: 1
+          letterBgAlpha: 1
+          letterBgColor: {r: 0, g: 0, b: 0, a: 1}
+          letterColor: {r: 0.300614, g: 1, b: 0.008333334, a: 1}
+          letterSpacing: 0
+          lineSpacing: 0
+          outlineAlpha: 1
+          outlineColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          outlineEnable: true
+          outlineWidth: 30
+          shadowAlpha: 0.9
+          shadowAngle: -45
+          shadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          shadowDistance: 10
+          shadowEnable: false
+          shadowSmooth: 0
+          sortingOrder: 3
+          textTypeSettingKindAlign: 1
+          underline: false
+    layer: 0
+  - __class: Entity
+    name: !<str> vegeta power
+    guid: {a: 4929524645460357465, b: 15924031201727287707}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 12}
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5625259450408466017, b: 11726431197768866705}
+        enabled: true
+        path: !<str> js/Text.js
+        properties:
+          __class: Map
+          TextGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001559--00000000-0000-0000-0000-000000001559.material}
+          TextNeonGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001568--00000000-0000-0000-0000-000000001568.material}
+          autoSortingOrder: true
+          backgroundEnable: false
+          bloomColor: {r: 1, g: 1, b: 1, a: 1}
+          bloomOption: !<str> OutWard
+          bold: false
+          enableRTL: true
+          fontSize: 72
+          fontType: !<str> Classic.ttf
+          glow: false
+          glowHorizontalAngle: 0
+          glowIntensity: 0.5
+          glowRange: 0.5
+          glowVerticalAngle: 0
+          input: !<str> 0
+          italic: false
+          letterAlpha: 1
+          letterBgAlpha: 1
+          letterBgColor: {r: 0, g: 0, b: 0, a: 1}
+          letterColor: {r: 0.1201754, g: 0.01666667, b: 1, a: 1}
+          letterSpacing: 0
+          lineSpacing: 0
+          outlineAlpha: 1
+          outlineColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          outlineEnable: true
+          outlineWidth: 30
+          shadowAlpha: 0.9
+          shadowAngle: -45
+          shadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          shadowDistance: 10
+          shadowEnable: false
+          shadowSmooth: 0
+          sortingOrder: 5
+          textTypeSettingKindAlign: 1
+          underline: false
+    layer: 0
+  - __class: Entity
+    name: !<str> goku power
+    guid: {a: 5015256499206565022, b: 17834328805139570327}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 13}
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5352479501894383795, b: 10386028888591298997}
+        enabled: true
+        path: !<str> js/Text.js
+        properties:
+          __class: Map
+          TextGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001559--00000000-0000-0000-0000-000000001559.material}
+          TextNeonGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001568--00000000-0000-0000-0000-000000001568.material}
+          autoSortingOrder: true
+          backgroundEnable: false
+          bloomColor: {r: 1, g: 1, b: 1, a: 1}
+          bloomOption: !<str> OutWard
+          bold: false
+          enableRTL: true
+          fontSize: 72
+          fontType: !<str> Classic.ttf
+          glow: false
+          glowHorizontalAngle: 0
+          glowIntensity: 0.5
+          glowRange: 0.5
+          glowVerticalAngle: 0
+          input: !<str> 0
+          italic: false
+          letterAlpha: 1
+          letterBgAlpha: 1
+          letterBgColor: {r: 0, g: 0, b: 0, a: 1}
+          letterColor: {r: 1, g: 0.3555263, b: 0.0125, a: 1}
+          letterSpacing: 0
+          lineSpacing: 0
+          outlineAlpha: 1
+          outlineColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          outlineEnable: true
+          outlineWidth: 30
+          shadowAlpha: 0.9
+          shadowAngle: -45
+          shadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          shadowDistance: 10
+          shadowEnable: false
+          shadowSmooth: 0
+          sortingOrder: 7
+          textTypeSettingKindAlign: 1
+          underline: false
+    layer: 0
+  - __class: Entity
+    name: !<str> TIMER
+    guid: {a: 5416185040705438095, b: 13166129686714502029}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 14}
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5113490209700062141, b: 345627137018070705}
+        enabled: true
+        path: !<str> js/Text.js
+        properties:
+          __class: Map
+          TextGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001559--00000000-0000-0000-0000-000000001559.material}
+          TextNeonGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001568--00000000-0000-0000-0000-000000001568.material}
+          autoSortingOrder: true
+          backgroundEnable: false
+          bloomColor: {r: 1, g: 1, b: 1, a: 1}
+          bloomOption: !<str> OutWard
+          bold: false
+          enableRTL: true
+          fontSize: 72
+          fontType: !<str> Classic.ttf
+          glow: false
+          glowHorizontalAngle: 0
+          glowIntensity: 0.5
+          glowRange: 0.5
+          glowVerticalAngle: 0
+          input: !<str> "10\n"
+          italic: false
+          letterAlpha: 1
+          letterBgAlpha: 1
+          letterBgColor: {r: 0, g: 0, b: 0, a: 1}
+          letterColor: {r: 1, g: 1, b: 1, a: 1}
+          letterSpacing: 0
+          lineSpacing: 0
+          outlineAlpha: 1
+          outlineColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          outlineEnable: true
+          outlineWidth: 30
+          shadowAlpha: 0.9
+          shadowAngle: -45
+          shadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          shadowDistance: 10
+          shadowEnable: false
+          shadowSmooth: 0
+          sortingOrder: 9
+          textTypeSettingKindAlign: 1
+          underline: false
+    layer: 0
+  - __class: Entity
+    name: !<str> gogeta
+    guid: {a: 5376992428379213505, b: 12432120273912696983}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 15}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 4965683925196217060, b: 13302177595431296934}
+        enabled: true
+        sharedMaterials:
+          - {localId: 0}
+        sortingOrder: 11
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: 00000000-0000-0000-0000-0000000000c0--00000000-0000-0000-0000-0000000000c0.png}
+        opacity: 0
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 10, y: 10}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Fit
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+    layer: 0
+  - __class: Entity
+    name: !<str> gogetaPower
+    guid: {a: 4990238208952289021, b: 7943231070244112555}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 16}
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5696939032005343565, b: 18095666636024890012}
+        enabled: true
+        path: !<str> js/Text.js
+        properties:
+          __class: Map
+          TextGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001559--00000000-0000-0000-0000-000000001559.material}
+          TextNeonGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001568--00000000-0000-0000-0000-000000001568.material}
+          autoSortingOrder: true
+          backgroundEnable: false
+          bloomColor: {r: 1, g: 1, b: 1, a: 1}
+          bloomOption: !<str> OutWard
+          bold: false
+          enableRTL: true
+          fontSize: 72
+          fontType: !<str> Classic.ttf
+          glow: false
+          glowHorizontalAngle: 0
+          glowIntensity: 0.5
+          glowRange: 0.5
+          glowVerticalAngle: 0
+          input: !<str> 0
+          italic: false
+          letterAlpha: 0
+          letterBgAlpha: 1
+          letterBgColor: {r: 0, g: 0, b: 0, a: 1}
+          letterColor: {r: 0.9708334, g: 0.9506502, b: 0.01213542, a: 1}
+          letterSpacing: 0
+          lineSpacing: 0
+          outlineAlpha: 0
+          outlineColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          outlineEnable: true
+          outlineWidth: 30
+          shadowAlpha: 0.9
+          shadowAngle: -45
+          shadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          shadowDistance: 10
+          shadowEnable: false
+          shadowSmooth: 0
+          sortingOrder: 12
+          textTypeSettingKindAlign: 1
+          underline: false
+    layer: 0
+  - __class: Entity
+    name: !<str> ESITO
+    guid: {a: 5464143994509922233, b: 3639412686194412441}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 17}
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 4924558036792997948, b: 13759372402412582273}
+        enabled: true
+        path: !<str> js/Text.js
+        properties:
+          __class: Map
+          TextGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001559--00000000-0000-0000-0000-000000001559.material}
+          TextNeonGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001568--00000000-0000-0000-0000-000000001568.material}
+          autoSortingOrder: true
+          backgroundEnable: false
+          bloomColor: {r: 1, g: 1, b: 1, a: 1}
+          bloomOption: !<str> OutWard
+          bold: false
+          enableRTL: true
+          fontSize: 72
+          fontType: !<str> Classic.ttf
+          glow: false
+          glowHorizontalAngle: 0
+          glowIntensity: 0.5
+          glowRange: 0.5
+          glowVerticalAngle: 0
+          input: !<str> Text
+          italic: false
+          letterAlpha: 0
+          letterBgAlpha: 1
+          letterBgColor: {r: 0, g: 0, b: 0, a: 1}
+          letterColor: {r: 1, g: 1, b: 1, a: 1}
+          letterSpacing: 0
+          lineSpacing: 0
+          outlineAlpha: 0
+          outlineColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          outlineEnable: true
+          outlineWidth: 30
+          shadowAlpha: 0.9
+          shadowAngle: -45
+          shadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          shadowDistance: 10
+          shadowEnable: false
+          shadowSmooth: 0
+          sortingOrder: 14
+          textTypeSettingKindAlign: 1
+          underline: false
+    layer: 0
+visible: true
+config:
+  __class: Map
+msaa:
+  __class: MSAAMode
+  value: _4X
+jsScriptSystems:
+  - !<str> js/GraphSystem.js
+  - !<str> js/Main.js
+  - !<str> js/JSAssetSystem.js
+  - !<str> js/PhysicsSystem2D.js
+enableMultiTouch: false
+enableLightMultiPass: false
+pixelLightCount: 4
+resourceRendererType:
+  __class: RendererType
+  value: Auto
+--- !Transform &2
+name: !<str> ""
+guid: {a: 14145000689903744101, b: 6111037265461598351}
+enabled: true
+localPosition: {x: 0, y: 0, z: 40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 3}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &3
+name: !<str> ""
+guid: {a: 12629985132416961300, b: 14387677276955654788}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+children:
+  - {localId: 2}
+  - {localId: 4}
+  - {localId: 5}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &4
+name: !<str> ""
+guid: {a: 15367742060568528024, b: 10146237304508457363}
+enabled: true
+localPosition: {x: -30, y: 20, z: -20}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: -0.9816272, x: 0.1908088, y: 0, z: 0}
+parent: {localId: 3}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &5
+name: !<str> ""
+guid: {a: 2038139312557020282, b: 1886311758165782682}
+enabled: true
+localPosition: {x: 0, y: 30, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.7071068, x: 0, y: 0.7071068, z: 0}
+parent: {localId: 3}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &6
+name: !<str> ""
+guid: {a: 5392731339978880801, b: 17219368621813048742}
+enabled: true
+localPosition: {x: 0, y: 0, z: 40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 7}
+children:
+  - {localId: 8}
+  - {localId: 9}
+  - {localId: 10}
+  - {localId: 11}
+  - {localId: 12}
+  - {localId: 13}
+  - {localId: 14}
+  - {localId: 15}
+  - {localId: 16}
+  - {localId: 17}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &7
+name: !<str> ""
+guid: {a: 5460569958519225475, b: 6720920632212394388}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+children:
+  - {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !ScreenTransform &8
+name: !<str> ""
+guid: {a: 4992400100307369409, b: 6927319819158903734}
+enabled: true
+localPosition: {x: 0, y: 7.421653, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: -2.842171e-14, y: 237.4929}
+sizeDelta: {x: 321.9233, y: 474.9858}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &9
+name: !<str> ""
+guid: {a: 5209384694637758188, b: 8992777063004023209}
+enabled: true
+localPosition: {x: 5.474834, y: -4.412391, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 175.1947, y: -141.1965}
+sizeDelta: {x: 268.644, y: 404.8603}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &10
+name: !<str> ""
+guid: {a: 5266475039674039581, b: 3070354422394366109}
+enabled: true
+localPosition: {x: -4.676876, y: -4.694118, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: -149.66, y: -150.2118}
+sizeDelta: {x: 299.3201, y: 518.5095}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &11
+name: !<str> ""
+guid: {a: 5169231514421217877, b: 6284960804658182274}
+enabled: true
+localPosition: {x: 0, y: 2.874665, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 2.842171e-14, y: 91.98928}
+sizeDelta: {x: 278.2363, y: 183.9786}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &12
+name: !<str> ""
+guid: {a: 4998250658649281459, b: 7881544921496842683}
+enabled: true
+localPosition: {x: -5.097022, y: -11.4265, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: -163.1047, y: -365.6479}
+sizeDelta: {x: 253.3707, y: 111.2834}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &13
+name: !<str> ""
+guid: {a: 5323713222627702528, b: 4740292854977802370}
+enabled: true
+localPosition: {x: 5.120084, y: -11.60897, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 163.8427, y: -371.4871}
+sizeDelta: {x: 327.6853, y: 104.3265}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &14
+name: !<str> ""
+guid: {a: 5242871813411086536, b: 11201247346460307084}
+enabled: true
+localPosition: {x: 0, y: 14.09888, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 0, y: 451.164}
+sizeDelta: {x: 518.6541, y: 101.7541}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &15
+name: !<str> ""
+guid: {a: 4828428889183672483, b: 14586806370339917457}
+enabled: true
+localPosition: {x: 0, y: -5.046651, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 2.842171e-14, y: -161.4928}
+sizeDelta: {x: 334.0872, y: 322.9857}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &16
+name: !<str> ""
+guid: {a: 4988935946914645570, b: 17966139224454725032}
+enabled: true
+localPosition: {x: 0, y: -10.48676, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 0, y: -335.5764}
+sizeDelta: {x: 359.2553, y: 139.0403}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &17
+name: !<str> ""
+guid: {a: 4614764321497556558, b: 5009421359988032952}
+enabled: true
+localPosition: {x: 0, y: 0, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 0, y: 0}
+sizeDelta: {x: 720, y: 1280}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32

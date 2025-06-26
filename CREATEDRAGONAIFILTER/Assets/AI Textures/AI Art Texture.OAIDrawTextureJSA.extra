@@ -1,0 +1,16 @@
+[
+  {
+    "guid": {
+      "a": "3779d716-ff2e-8128-598a-d1d5462d4502",
+      "b": ""
+    },
+    "extraType": "JSAssetAIDrawTexture",
+    "name": "AI Art Texture",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "RenderTexture",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false
+  }
+]

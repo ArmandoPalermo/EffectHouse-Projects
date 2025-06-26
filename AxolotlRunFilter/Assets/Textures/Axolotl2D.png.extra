@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "89f2beb0-5a2a-3298-8358-004df57c0374",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "Axolotl2D",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "resourceFilePath": "C:\\Users\\arman\\OneDrive\\Desktop\\ProgettiEffectHouse\\AxolotlRunFilter\\Assets\\Axolotl2D.png"
+  }
+]

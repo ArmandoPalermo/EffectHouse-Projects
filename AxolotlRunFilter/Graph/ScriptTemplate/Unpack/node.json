@@ -1,0 +1,138 @@
+{
+	"name": "Split",
+	"id": "ab48e932-45f8-d528-500e-e052b59df6cf",
+	"description": "Unpack a vector or color data into separate output values. The number of outputs depends on the selected data type. Supported types: Vec2, Vec3, Vec4, and Color.",
+	"outputChangeFollowInput": [
+		{
+			"inputKey": "Vector2f",
+			"outputNames": [
+				"X",
+				"Y"
+			],
+			"outputTypes": [
+				"Double",
+				"Double"
+			],
+			"outputDescriptions": [
+				"unpacked numbers",
+				"unpacked numbers"
+			]
+		},
+		{
+			"inputKey": "Vector3f",
+			"outputNames": [
+				"X",
+				"Y",
+				"Z"
+			],
+			"outputTypes": [
+				"Double",
+				"Double",
+				"Double"
+			],
+			"outputDescriptions": [
+				"unpacked numbers",
+				"unpacked numbers",
+				"unpacked numbers"
+			]
+		},
+		{
+			"inputKey": "Vector4f",
+			"outputNames": [
+				"X",
+				"Y",
+				"Z",
+				"W"
+			],
+			"outputTypes": [
+				"Double",
+				"Double",
+				"Double",
+				"Double"
+			],
+			"outputDescriptions": [
+				"unpacked numbers",
+				"unpacked numbers",
+				"unpacked numbers",
+				"unpacked numbers"
+			]
+		},
+		{
+			"inputKey": "Color",
+			"outputNames": [
+				"R",
+				"G",
+				"B",
+				"A"
+			],
+			"outputTypes": [
+				"Double",
+				"Double",
+				"Double",
+				"Double"
+			],
+			"outputDescriptions": [
+				"unpacked numbers",
+				"unpacked numbers",
+				"unpacked numbers",
+				"unpacked numbers"
+			]
+		}
+	],
+	"inputs": [
+		{
+			"name": "A",
+			"type": "Vector2f",
+			"description": "The input value to unpack.",
+			"dynamic": true,
+			"default_value": "0",
+			"item_type": "",
+			"displayType": "Vec2",
+			"nameKey": "graph_split_input_a",
+			"descriptionKey": "graph_split_input_a_description",
+			"displayTypeKey": "graph_type_vec2"
+		}
+	],
+	"outputs": [
+		{
+			"name": "X",
+			"type": "Double",
+			"item_type": "",
+			"description": "split numbers",
+			"displayType": "Number",
+			"nameKey": "graph_split_output_x",
+			"descriptionKey": "graph_split_output_x_description",
+			"displayTypeKey": "graph_type_number"
+		},
+		{
+			"name": "Y",
+			"type": "Double",
+			"item_type": "",
+			"description": "split numbers",
+			"displayType": "Number",
+			"nameKey": "graph_split_output_y",
+			"descriptionKey": "graph_split_output_y_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"js": "CGUnpackNode.js",
+	"lua": "CGUnpackNode.lua",
+	"luaFuncName": "CGUnpackNode",
+	"category": "Utility",
+	"supportedValueTypes": [
+		"Vector2f",
+		"Vector3f",
+		"Vector4f",
+		"Color"
+	],
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"version": "1.1.0",
+	"onlineWebsite": "graph_split_website",
+	"nameKey": "graph_split_name",
+	"categoryKey": "graph_category_utility",
+	"descriptionKey": "graph_split_description"
+}

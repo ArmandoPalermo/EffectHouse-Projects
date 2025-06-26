@@ -1,0 +1,27 @@
+[
+  {
+    "guid": {
+      "a": "cf7fe3ad-b27b-842c-f34e-15756eb953c3",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "basegogeta",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512
+  }
+]

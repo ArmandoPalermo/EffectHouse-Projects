@@ -1,0 +1,50 @@
+{
+	"name": "Get Component by Type",
+	"id": "fd53d45e-37d8-d2f2-ad81-90eedbdc408a",
+	"inputs": [
+		{
+			"name": "Scene Object",
+			"description": "The Scene Object to get component from",
+			"type": "Entity",
+			"displayType": "Scene Object",
+			"nameKey": "graph_get_component_by_type_input_sceneobject",
+			"descriptionKey": "graph_get_component_by_type_input_sceneobject_description",
+			"displayTypeKey": "graph_type_sceneobject"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Component",
+			"description": "The component to get from the Scene Object",
+			"type": "Transform",
+			"dynamic": true,
+			"displayType": "Transform",
+			"nameKey": "graph_get_component_by_type_output_component",
+			"descriptionKey": "graph_get_component_by_type_output_component_description",
+			"displayTypeKey": "graph_type_transform"
+		}
+	],
+	"supportedValueTypes": [
+		"Transform",
+		"ScreenTransform",
+		"Camera",
+		"Renderer",
+		"Animator",
+		"ImageRenderer",
+		"AudioComponent",
+		"FaceStretchComponent"
+	],
+	"category": "Utility",
+	"version": "4.0.0",
+	"description": "Captures the specified component of a Scene Object",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"js": "CGGetComponentbyType.js",
+	"nameKey": "graph_get_component_by_type_name",
+	"categoryKey": "graph_category_utility",
+	"descriptionKey": "graph_get_component_by_type_description",
+	"onlineWebsite": "graph_get_component_by_type_website"
+}

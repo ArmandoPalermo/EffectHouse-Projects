@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "74bf7c73-8ca2-5812-b2f1-710a381be1cc",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "Raycast Object Picker",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

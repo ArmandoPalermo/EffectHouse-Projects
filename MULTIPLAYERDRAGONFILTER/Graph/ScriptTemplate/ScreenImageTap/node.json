@@ -1,0 +1,55 @@
+{
+	"name": "Screen Image Tap",
+	"id": "ad63330f-27b0-cb2a-e3ad-8d0bdf7ff86c",
+	"inputs": [
+		{
+			"name": "Image",
+			"type": "ImageRenderer",
+			"description": "The image people will tap to interact",
+			"displayType": "Image",
+			"nameKey": "graph_screen_image_tap_input_image",
+			"descriptionKey": "graph_screen_image_tap_input_image_description",
+			"displayTypeKey": "graph_type_image"
+		}
+	],
+	"outputs": [
+		{
+			"name": "On Image Tapped",
+			"type": "Pulse",
+			"description": "Execute the next node when people tapped the input image",
+			"displayType": "Exec",
+			"nameKey": "graph_screen_image_tap_output_onimagetapped",
+			"descriptionKey": "graph_screen_image_tap_output_onimagetapped_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Is Tapped",
+			"type": "Bool",
+			"description": "Return true when the image is tapped otherwise return false",
+			"displayType": "Boolean",
+			"nameKey": "graph_screen_image_tap_output_istapped",
+			"descriptionKey": "graph_screen_image_tap_output_istapped_description",
+			"displayTypeKey": "graph_type_boolean"
+		}
+	],
+	"js": "CGScreenImageTap.js",
+	"version": "1.0.0",
+	"category": "Utility",
+	"description": "Execute next node when an input image is tapped.",
+	"graphAlgorithms": [
+		"TouchGes"
+	],
+	"nodeEvent": [
+		"onEvent",
+		"onUpdate"
+	],
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"onlineWebsite": "graph_screen_image_tap_website",
+	"nameKey": "graph_screen_image_tap_name",
+	"categoryKey": "graph_category_utility",
+	"descriptionKey": "graph_screen_image_tap_description"
+}

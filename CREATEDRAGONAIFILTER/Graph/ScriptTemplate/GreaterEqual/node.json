@@ -1,0 +1,62 @@
+{
+	"name": "Greater or Equal",
+	"id": "6084c606-3eed-9b4b-ab22-dd46ddd602cf",
+	"inputs": [
+		{
+			"name": "A",
+			"type": "Int",
+			"item_type": "",
+			"dynamic": true,
+			"description": "The first input to compare",
+			"default_value": "0",
+			"displayType": "Number",
+			"nameKey": "graph_greater_or_equal_input_a",
+			"descriptionKey": "graph_greater_or_equal_input_a_description",
+			"displayTypeKey": "graph_type_number"
+		},
+		{
+			"name": "B",
+			"type": "Int",
+			"item_type": "",
+			"dynamic": true,
+			"description": "The second value to compare",
+			"default_value": "0",
+			"displayType": "Number",
+			"nameKey": "graph_greater_or_equal_input_b",
+			"descriptionKey": "graph_greater_or_equal_input_b_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Result",
+			"type": "Bool",
+			"item_type": "",
+			"description": "If A is greater than or equal to B, this value is true. Otherwise, this value is false.",
+			"displayType": "Boolean",
+			"nameKey": "graph_greater_or_equal_output_result",
+			"descriptionKey": "graph_greater_or_equal_output_result_description",
+			"displayTypeKey": "graph_type_boolean"
+		}
+	],
+	"js": "CGGreaterEqual.js",
+	"lua": "CGGreaterEqual.lua",
+	"version": "1.1.0",
+	"amazingVersion": "10.40.0",
+	"luaFuncName": "CGGreaterEqual",
+	"category": "Logic",
+	"description": "Compare two inputs and check if the first input is greater than or equal to the second input value.",
+	"supportedValueTypes": [
+		"Int",
+		"Double"
+	],
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"onlineWebsite": "graph_greater_or_equal_website",
+	"nameKey": "graph_greater_or_equal_name",
+	"categoryKey": "graph_category_logic",
+	"descriptionKey": "graph_greater_or_equal_description"
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "ddaf4331-a119-44cd-ac45-f99de76dde4a",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "Find Closest Position",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

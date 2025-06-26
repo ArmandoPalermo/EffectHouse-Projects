@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "210e0acc-aa6e-3658-b0f3-1be3db58482f",
+      "b": ""
+    },
+    "extraType": "ResItemVSSubgraph",
+    "name": "Looping Object Motion",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "assetPackageID": "7255444182825762817",
+    "resourceFilePath": "C:\\Users\\Armando\\AppData\\Roaming\\EffectHouse\\package\\7255444182825762817\\Looping Object Motion.ssubgraph",
+    "combinedWithNodeLibary": true,
+    "assetID": "7255444182825762817"
+  }
+]

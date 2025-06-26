@@ -1,0 +1,112 @@
+{
+	"name": "AI Generation Controller",
+	"id": "55753bb9-a57f-41fa-996e-673c530105df",
+	"inputs": [
+		{
+			"name": "Start",
+			"description": "Begins the generation process",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_ai_generation_controller_input_start",
+			"descriptionKey": "graph_ai_generation_controller_input_start_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Stop",
+			"description": "Ends the generation process",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_ai_generation_controller_input_stop",
+			"descriptionKey": "graph_ai_generation_controller_input_stop_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "AI Texture",
+			"nameKey": "graph_ai_generation_controller_input_aitexture",
+			"description": "The AI texture to use, such as AI Art texture, Face Fusion texture, etc.",
+			"descriptionKey": "graph_ai_generation_controller_input_aitexture_description",
+			"type": "Texture2D",
+			"displayType": "Texture 2D",
+			"displayTypeKey": "graph_type_texture2d"
+		}
+	],
+	"outputs": [
+		{
+			"name": "On Waiting",
+			"type": "Pulse",
+			"description": "Executes the next node when the generation query is sent but still waiting",
+			"displayType": "Exec",
+			"nameKey": "graph_ai_generation_controller_output_onwaiting",
+			"descriptionKey": "graph_ai_generation_controller_output_onwaiting_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "On Start",
+			"type": "Pulse",
+			"description": "Executes the next node when the generation starts",
+			"displayType": "Exec",
+			"nameKey": "graph_ai_generation_controller_output_onstart",
+			"descriptionKey": "graph_ai_generation_controller_output_onstart_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "During",
+			"type": "Pulse",
+			"description": "Executes the next node while the generation is in progress",
+			"displayType": "Exec",
+			"nameKey": "graph_ai_generation_controller_output_during",
+			"descriptionKey": "graph_ai_generation_controller_output_during_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "On Success",
+			"type": "Pulse",
+			"description": "Executes the next node when the generation ends",
+			"displayType": "Exec",
+			"nameKey": "graph_ai_generation_controller_output_onsuccess",
+			"descriptionKey": "graph_ai_generation_controller_output_onsuccess_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "On Failed",
+			"type": "Pulse",
+			"description": "Executes the next node when the generation fails",
+			"displayType": "Exec",
+			"nameKey": "graph_ai_generation_controller_output_onfailed",
+			"descriptionKey": "graph_ai_generation_controller_output_onfailed_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Result",
+			"description": "The resulting AI-generated texture",
+			"type": "Texture2D",
+			"displayType": "Texture 2D",
+			"nameKey": "graph_ai_generation_controller_output_result",
+			"descriptionKey": "graph_ai_generation_controller_output_result_description",
+			"displayTypeKey": "graph_type_texture2d"
+		},
+		{
+			"name": "Server Message",
+			"description": "The message sent from the server at different stage during the generation process",
+			"type": "String",
+			"displayType": "String",
+			"nameKey": "graph_ai_generation_controller_output_servermessage",
+			"descriptionKey": "graph_ai_generation_controller_output_servermessage_description",
+			"displayTypeKey": "graph_type_string"
+		}
+	],
+	"js": "CGAITextureGeneralGenerator.js",
+	"nodeEvent": [
+		"onUpdate"
+	],
+	"version": "3.0.0",
+	"SDKVersion": "15.2.0",
+	"category": "Utility",
+	"description": "AI recalls events and relative info and properties.",
+	"productTypes": [
+		"EHO", "EHI", "EHD"
+	],
+	"nameKey": "graph_ai_generation_controller_name",
+	"categoryKey": "graph_category_utility",
+	"descriptionKey": "graph_ai_generation_controller_description"
+}

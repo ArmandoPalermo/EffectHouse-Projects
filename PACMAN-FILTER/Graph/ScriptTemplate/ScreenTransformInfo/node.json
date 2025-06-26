@@ -1,0 +1,75 @@
+{
+	"name": "Screen Transform Info",
+	"id": "aa002a44-e506-3a41-5e0b-55394b7cf828",
+	"inputs": [
+		{
+			"name": "Screen Transform",
+			"description": "The Screen Transform component to get properties from",
+			"type": "ScreenTransform",
+			"displayType": "Screen Transform",
+			"nameKey": "graph_screen_transform_info_input_screentransform",
+			"descriptionKey": "graph_screen_transform_info_input_screentransform_description",
+			"displayTypeKey": "graph_type_screentransform"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Position",
+			"description": "The position of the target Screen Transform",
+			"type": "Vector2f",
+			"displayType": "Vec2",
+			"nameKey": "graph_screen_transform_info_output_position",
+			"descriptionKey": "graph_screen_transform_info_output_position_description",
+			"displayTypeKey": "graph_type_vec2"
+		},
+		{
+			"name": "Size",
+			"description": "The size of the target Screen Transform",
+			"type": "Vector2f",
+			"displayType": "Vec2",
+			"nameKey": "graph_screen_transform_info_output_size",
+			"descriptionKey": "graph_screen_transform_info_output_size_description",
+			"displayTypeKey": "graph_type_vec2"
+		},
+		{
+			"name": "Pivot",
+			"description": "The pivot position of the target Screen Transform",
+			"type": "Vector2f",
+			"displayType": "Vec2",
+			"nameKey": "graph_screen_transform_info_output_pivot",
+			"descriptionKey": "graph_screen_transform_info_output_pivot_description",
+			"displayTypeKey": "graph_type_vec2"
+		},
+		{
+			"name": "Rotation",
+			"description": "The rotation of the target Screen Transform",
+			"type": "Double",
+			"displayType": "Number",
+			"nameKey": "graph_screen_transform_info_output_rotation",
+			"descriptionKey": "graph_screen_transform_info_output_rotation_description",
+			"displayTypeKey": "graph_type_number"
+		},
+		{
+			"name": "Scale 2D",
+			"description": "The scale of the target Screen Transform",
+			"type": "Vector2f",
+			"displayType": "Vec2",
+			"nameKey": "graph_screen_transform_info_output_scale2d",
+			"descriptionKey": "graph_screen_transform_info_output_scale2d_description",
+			"displayTypeKey": "graph_type_vec2"
+		}
+	],
+	"category": "Utility",
+	"version": "1.0.0",
+	"description": "Captures the component properties of the specified Screen Transform component",
+	"onlineWebsite": "graph_screen_transform_info_website",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"js": "CGScreenTransformInfo.js",
+	"nameKey": "graph_screen_transform_info_name",
+	"categoryKey": "graph_category_utility",
+	"descriptionKey": "graph_screen_transform_info_description"
+}

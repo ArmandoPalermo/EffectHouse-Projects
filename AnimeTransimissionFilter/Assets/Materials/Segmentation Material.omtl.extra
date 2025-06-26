@@ -1,0 +1,29 @@
+[
+  {
+    "guid": {
+      "a": "daec3a0c-a81b-7686-729e-2a7467eb2a19",
+      "b": ""
+    },
+    "extraType": "ResItemMaterialOmtl",
+    "name": "Segmentation Material",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Material",
+    "version": "0.6.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "resourceFilePath": "C:\\Users\\Armando\\AppData\\Local\\Effect House\\Resources\\BuiltinResource\\InternalPlugins\\Segmentation\\PluginResource\\materials\\Default_Segmentation_Material.omtl",
+    "skinObjGuid": "Guid(4712013968379495803, 12015523553398420877)",
+    "references": [
+      {
+        "propertyName": "_SegTex",
+        "guid": "bc13e4e2-2d95-6ca3-126b-6b614eb1414e"
+      },
+      {
+        "propertyName": "_MainTex",
+        "guid": "00000000-0000-0000-0000-000000001544"
+      }
+    ],
+    "currAuslVersion": "1.0.0"
+  }
+]

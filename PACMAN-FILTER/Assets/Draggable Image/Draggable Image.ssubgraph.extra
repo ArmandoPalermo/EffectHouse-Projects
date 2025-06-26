@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "76b75372-733b-de55-105c-3b6b61155683",
+      "b": ""
+    },
+    "extraType": "ResItemVSSubgraph",
+    "name": "Draggable Image",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "assetPackageID": "7255444182825811969",
+    "resourceFilePath": "C:\\Users\\Armando\\AppData\\Roaming\\EffectHouse\\package\\7255444182825811969\\Draggable Image.ssubgraph",
+    "combinedWithNodeLibary": true,
+    "assetID": "7255444182825811969"
+  }
+]

@@ -1,0 +1,924 @@
+%YAML 1.1
+--- !Scene &1
+name: !<str> ""
+guid: {a: 7875085725817850609, b: 329766013828765107}
+editSceneGuid: {a: 0, b: 0}
+calibrateVer: !<str> V5
+entities:
+  - __class: Entity
+    name: !<str> Camera
+    guid: {a: 10180214583793075010, b: 13085474825770890632}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 2}
+      - __class: Camera
+        name: !<str> ""
+        guid: {a: 18393534764065644695, b: 16547619468206596491}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderOrder: 0
+        type:
+          __class: CameraType
+          value: PERSPECTIVE
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        orthoScale: 1
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+        sortMethod:
+          __class: CameraSortMethod
+          value: RENDERQUEUE_AND_DEPTH
+        rtBackupMode:
+          __class: CameraRTBackupMode
+          value: CAMERA_CHANGED
+    layer: 0
+  - __class: Entity
+    name: !<str> General
+    guid: {a: 8235238043598186243, b: 16840308208679013795}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 3}
+      - __class: EffectNode
+        name: !<str> ""
+        guid: {a: 14792803682663561050, b: 6161520050080348315}
+        enabled: true
+        outputTextures:
+          - {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        renderOrder: 8001
+        minorOrder: 0
+        type:
+          __class: EffectNodeTag
+          value: Other
+        version: 2
+        rendererType:
+          __class: RendererType
+          value: OpenGLES30
+    layer: 0
+  - __class: Entity
+    name: !<str> Directional Light
+    guid: {a: 815069582473778930, b: 3860102513852982437}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 4}
+      - __class: DirectionalLight
+        name: !<str> ""
+        guid: {a: 8739102965005804130, b: 6461487404246441657}
+        enabled: true
+        color: {x: 1, y: 1, z: 1}
+        intensiy: 1
+        shadowEnable: false
+        shadowEnableNew: false
+        shadowResolution: {x: 256, y: 256}
+        shadowBias: 0
+        shadowStrength: 1
+        useSoftShadow: false
+        shadowSoftness: 1
+        blurRadius: 1.299999952316284
+        blurNum: 0
+        selfShadowGradient: 0
+        shadowColor: {x: 0, y: 0, z: 0}
+        InitStrength: 0.300000011920929
+        EsmC: 0.03500000014901161
+        lightingLayers: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderMode:
+          __class: LightRenderMode
+          value: AUTO
+        shadowArea: 100
+        autoShadowFrustum: true
+        shadowFrustumZNear: 1
+        shadowFrustumZFar: 100
+        cookieSize: 1
+        softShadowType:
+          __class: SoftShadowType
+          value: PCF
+        EVSMExponents: {x: 4, y: 4}
+        contactShadowEnable: false
+        lightUnit:
+          __class: LightUnit
+          value: Lux
+    layer: 0
+  - __class: Entity
+    name: !<str> Environment Light
+    guid: {a: 11406181728386468509, b: 5972158861532600762}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 5}
+      - __class: Envmap
+        name: !<str> ""
+        guid: {a: 16737500510660696093, b: 7610174286501797273}
+        enabled: true
+        envmapLayers: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        specularEnvmap: {localId: 1, path: 00000000-0000-0000-0000-000000000800--00000000-0000-0000-0000-000000000800.texture}
+        IBLMode: true
+        intensity: 1
+        rotation: 0
+    layer: 0
+  - __class: Entity
+    name: !<str> 2D Camera
+    guid: {a: 5454448525594324806, b: 12970727104153922221}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 6}
+      - __class: Camera
+        name: !<str> ""
+        guid: {a: 5055822538649554890, b: 5544309708723338163}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderOrder: 0
+        type:
+          __class: CameraType
+          value: ORTHO
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        orthoScale: 20
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+        sortMethod:
+          __class: CameraSortMethod
+          value: STRICT_SORT_ORDER
+        rtBackupMode:
+          __class: CameraRTBackupMode
+          value: CAMERA_CHANGED
+    layer: 0
+  - __class: Entity
+    name: !<str> 2D Foreground
+    guid: {a: 5604601239373125114, b: 1360876944691024803}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 7}
+      - __class: EffectNode
+        name: !<str> ""
+        guid: {a: 5324690863061731123, b: 11330241015280060304}
+        enabled: true
+        outputTextures:
+          - {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        renderOrder: 9001
+        minorOrder: 0
+        type:
+          __class: EffectNodeTag
+          value: Other
+        version: 2
+        rendererType:
+          __class: RendererType
+          value: OpenGLES30
+    layer: 0
+  - __class: Entity
+    name: !<str> pacman
+    guid: {a: 5158001460537439356, b: 6653084281180096134}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 8}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 4869675932642756523, b: 1372751276189507228}
+        enabled: true
+        sharedMaterials:
+          - {localId: 0}
+        sortingOrder: 0
+        autoSortingOrder: false
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: custom://5d16e3e7-a2e0-7b32-d53e-640e239db4f3}
+        opacity: 1
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 10, y: 10}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Fit
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5226431506080526425, b: 236976852028612521}
+        enabled: true
+        path: !<str> js/BoxCollider2D.js
+        properties:
+          __class: Map
+          categoryBits: 1
+          isTangible: true
+          maskBits: {__class: DynamicBitset, numBits: 16, values: [65535]}
+          offset: {x: 0, y: 0}
+          showCollider: true
+          size: {x: 3, y: 3.3}
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5359116858411083225, b: 5240124276212447417}
+        enabled: true
+        path: !<str> js/RigidBody2D.js
+        properties:
+          __class: Map
+          angularDamping: 0
+          angularVelocity: 0
+          damping: 0
+          externalForce: {x: 0, y: 9.8}
+          externalTorque: 0
+          freezeX: false
+          freezeY: false
+          freezeZ: false
+          gravityScale: 1
+          isStatic: true
+          mass: 1
+          velocity: {x: 0, y: 0}
+    layer: 0
+  - __class: Entity
+    name: !<str> ghost2
+    guid: {a: 5459413888407465374, b: 3476717436616556465}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 9}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 4792705803452385102, b: 8786831505625822865}
+        enabled: true
+        sharedMaterials:
+          - {localId: 0}
+        sortingOrder: 0
+        autoSortingOrder: false
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: c4ab3a61-1c6f-d26b-5d46-a267288bb901--c4ab3a61-1c6f-d26b-5d46-a267288bb901.png}
+        opacity: 1
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 10, y: 10}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Fit
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5068971173844520882, b: 17364492176728709531}
+        enabled: true
+        path: !<str> js/BoxCollider2D.js
+        properties:
+          __class: Map
+          categoryBits: 1
+          isTangible: true
+          maskBits: {__class: DynamicBitset, numBits: 16, values: [65535]}
+          offset: {x: 0, y: 0}
+          showCollider: true
+          size: {x: 3.5, y: 3.5}
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5047953553610808456, b: 10805428549141165990}
+        enabled: true
+        path: !<str> js/RigidBody2D.js
+        properties:
+          __class: Map
+          angularDamping: 0
+          angularVelocity: 0
+          damping: 0
+          externalForce: {x: 0, y: 9.8}
+          externalTorque: 0
+          freezeX: false
+          freezeY: false
+          freezeZ: false
+          gravityScale: 1
+          isStatic: false
+          mass: 1
+          velocity: {x: 20, y: 0}
+    layer: 0
+  - __class: Entity
+    name: !<str> ghost3
+    guid: {a: 5715085256462949551, b: 10860710808229786262}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 10}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 4661089814499565909, b: 14834719767412855700}
+        enabled: true
+        sharedMaterials:
+          - {localId: 0}
+        sortingOrder: 0
+        autoSortingOrder: false
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: 7d59a2f7-fa7e-d6f6-8c80-3cf5c10b3e2a--7d59a2f7-fa7e-d6f6-8c80-3cf5c10b3e2a.png}
+        opacity: 1
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 10, y: 10}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Fit
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5547086245151168305, b: 17244692893530325900}
+        enabled: true
+        path: !<str> js/BoxCollider2D.js
+        properties:
+          __class: Map
+          categoryBits: 1
+          isTangible: true
+          maskBits: {__class: DynamicBitset, numBits: 16, values: [65535]}
+          offset: {x: 0, y: 0}
+          showCollider: true
+          size: {x: 3.5, y: 3.5}
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 4611707625388144906, b: 68347722655130496}
+        enabled: true
+        path: !<str> js/RigidBody2D.js
+        properties:
+          __class: Map
+          angularDamping: 0
+          angularVelocity: 0
+          damping: 0
+          externalForce: {x: 0, y: 9.8}
+          externalTorque: 0
+          freezeX: false
+          freezeY: false
+          freezeZ: false
+          gravityScale: 1
+          isStatic: false
+          mass: 1
+          velocity: {x: 30, y: 0}
+    layer: 0
+  - __class: Entity
+    name: !<str> start
+    guid: {a: 5511556353842352421, b: 12842686903794282117}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 12}
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 4745796306853712839, b: 142619554607517596}
+        enabled: true
+        path: !<str> js/BoxCollider2D.js
+        properties:
+          __class: Map
+          categoryBits: 1
+          isTangible: true
+          maskBits: {__class: DynamicBitset, numBits: 16, values: [65535]}
+          offset: {x: 0, y: 0}
+          showCollider: true
+          size: {x: 1, y: 30}
+    layer: 0
+  - __class: Entity
+    name: !<str> end
+    guid: {a: 4816162123782772025, b: 9748004564354558622}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 13}
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 4656825409723276237, b: 3406113513251766936}
+        enabled: true
+        path: !<str> js/BoxCollider2D.js
+        properties:
+          __class: Map
+          categoryBits: 1
+          isTangible: true
+          maskBits: {__class: DynamicBitset, numBits: 16, values: [65535]}
+          offset: {x: 0, y: 0}
+          showCollider: true
+          size: {x: 1, y: 30}
+    layer: 0
+  - __class: Entity
+    name: !<str> ghost4
+    guid: {a: 5108832356518995616, b: 7389928459630457737}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 11}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 5253400025144138237, b: 14671636030806333342}
+        enabled: true
+        sharedMaterials:
+          - {localId: 0}
+        sortingOrder: 0
+        autoSortingOrder: false
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: 88754bbd-f4a6-9fe8-6018-b972027e6cb5--88754bbd-f4a6-9fe8-6018-b972027e6cb5.png}
+        opacity: 1
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 10, y: 10}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Fit
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 4982687988372648949, b: 669500926821487014}
+        enabled: true
+        path: !<str> js/BoxCollider2D.js
+        properties:
+          __class: Map
+          categoryBits: 1
+          isTangible: true
+          maskBits: {__class: DynamicBitset, numBits: 16, values: [65535]}
+          offset: {x: 0, y: 0}
+          showCollider: true
+          size: {x: 3.5, y: 3.5}
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 4890082356414648812, b: 6616778318248987546}
+        enabled: true
+        path: !<str> js/RigidBody2D.js
+        properties:
+          __class: Map
+          angularDamping: 0
+          angularVelocity: 0
+          damping: 0
+          externalForce: {x: 0, y: 9.8}
+          externalTorque: 0
+          freezeX: false
+          freezeY: false
+          freezeZ: false
+          gravityScale: 1
+          isStatic: false
+          mass: 1
+          velocity: {x: 40, y: 0}
+    layer: 0
+  - __class: Entity
+    name: !<str> winnerBall
+    guid: {a: 5292092286371759951, b: 3914134699510217630}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 14}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 5199075689921585978, b: 13547606912903070345}
+        enabled: true
+        sharedMaterials:
+          - {localId: 0}
+        sortingOrder: 0
+        autoSortingOrder: false
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: aa03203f-fabe-fa29-8a17-e08b3e7bb582--aa03203f-fabe-fa29-8a17-e08b3e7bb582.png}
+        opacity: 1
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 10, y: 10}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Fit
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5181191578921029433, b: 4621444699883026821}
+        enabled: true
+        path: !<str> js/CircleCollider2D.js
+        properties:
+          __class: Map
+          categoryBits: 1
+          isTangible: true
+          maskBits: {__class: DynamicBitset, numBits: 16, values: [65535]}
+          offset: {x: 0, y: 0}
+          radius: 1
+          showCollider: true
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5638039204521945780, b: 17512480796373431941}
+        enabled: true
+        path: !<str> js/RigidBody2D.js
+        properties:
+          __class: Map
+          angularDamping: 0
+          angularVelocity: 0
+          damping: 0
+          externalForce: {x: 0, y: 9.8}
+          externalTorque: 0
+          freezeX: false
+          freezeY: false
+          freezeZ: false
+          gravityScale: 1
+          isStatic: false
+          mass: 1
+          velocity: {x: 0, y: 0}
+    layer: 0
+  - __class: Entity
+    name: !<str> winnertext
+    guid: {a: 4825627175582669411, b: 10922554994728356491}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 15}
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 5104119504701415973, b: 18003978465158912948}
+        enabled: true
+        path: !<str> js/Text.js
+        properties:
+          __class: Map
+          TextGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001559--00000000-0000-0000-0000-000000001559.material}
+          TextNeonGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001568--00000000-0000-0000-0000-000000001568.material}
+          autoSortingOrder: true
+          backgroundEnable: false
+          bloomColor: {r: 1, g: 1, b: 1, a: 1}
+          bloomOption: !<str> OutWard
+          bold: false
+          enableRTL: true
+          fontSize: 72
+          fontType: !<str> Classic.ttf
+          glow: false
+          glowHorizontalAngle: 0
+          glowIntensity: 0.5
+          glowRange: 0.5
+          glowVerticalAngle: 0
+          input: !<str> YOU WIN
+          italic: false
+          letterAlpha: 0
+          letterBgAlpha: 1
+          letterBgColor: {r: 0, g: 0, b: 0, a: 1}
+          letterColor: {r: 0, g: 0.1157895, b: 1, a: 1}
+          letterSpacing: 0
+          lineSpacing: 0
+          outlineAlpha: 0
+          outlineColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          outlineEnable: true
+          outlineWidth: 30
+          shadowAlpha: 0.9
+          shadowAngle: -45
+          shadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          shadowDistance: 10
+          shadowEnable: false
+          shadowSmooth: 0
+          sortingOrder: 0
+          textTypeSettingKindAlign: 1
+          underline: false
+    layer: 0
+  - __class: Entity
+    name: !<str> loserText
+    guid: {a: 4960265525914993904, b: 13601361367772115634}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 16}
+      - __class: JSScriptComponent
+        name: !<str> ""
+        guid: {a: 4726314391845579860, b: 325478063521416120}
+        enabled: true
+        path: !<str> js/Text.js
+        properties:
+          __class: Map
+          TextGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001559--00000000-0000-0000-0000-000000001559.material}
+          TextNeonGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001568--00000000-0000-0000-0000-000000001568.material}
+          autoSortingOrder: true
+          backgroundEnable: false
+          bloomColor: {r: 1, g: 1, b: 1, a: 1}
+          bloomOption: !<str> OutWard
+          bold: false
+          enableRTL: true
+          fontSize: 72
+          fontType: !<str> Classic.ttf
+          glow: false
+          glowHorizontalAngle: 0
+          glowIntensity: 0.5
+          glowRange: 0.5
+          glowVerticalAngle: 0
+          input: !<str> "YOU LOSE\n"
+          italic: false
+          letterAlpha: 0
+          letterBgAlpha: 1
+          letterBgColor: {r: 0, g: 0, b: 0, a: 1}
+          letterColor: {r: 0, g: 0.1157895, b: 1, a: 1}
+          letterSpacing: 0
+          lineSpacing: 0
+          outlineAlpha: 0
+          outlineColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          outlineEnable: true
+          outlineWidth: 30
+          shadowAlpha: 0.9
+          shadowAngle: -45
+          shadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          shadowDistance: 10
+          shadowEnable: false
+          shadowSmooth: 0
+          sortingOrder: 1
+          textTypeSettingKindAlign: 1
+          underline: false
+    layer: 0
+visible: true
+config:
+  __class: Map
+msaa:
+  __class: MSAAMode
+  value: NONE
+jsScriptSystems:
+  - !<str> js/GraphSystem.js
+  - !<str> js/Main.js
+  - !<str> js/JSAssetSystem.js
+  - !<str> js/PhysicsSystem2D.js
+enableMultiTouch: false
+enableLightMultiPass: false
+pixelLightCount: 4
+resourceRendererType:
+  __class: RendererType
+  value: Auto
+--- !Transform &2
+name: !<str> ""
+guid: {a: 14145000689903744101, b: 6111037265461598351}
+enabled: true
+localPosition: {x: 0, y: 0, z: 40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 3}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &3
+name: !<str> ""
+guid: {a: 12629985132416961300, b: 14387677276955654788}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+children:
+  - {localId: 2}
+  - {localId: 4}
+  - {localId: 5}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &4
+name: !<str> ""
+guid: {a: 15367742060568528024, b: 10146237304508457363}
+enabled: true
+localPosition: {x: -30, y: 20, z: -20}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.6123727, x: -0.3535534, y: -0.6123724, z: -0.3535532}
+parent: {localId: 3}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &5
+name: !<str> ""
+guid: {a: 2038139312557020282, b: 1886311758165782682}
+enabled: true
+localPosition: {x: 0, y: 30, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.7071068, x: 0, y: 0.7071068, z: 0}
+parent: {localId: 3}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &6
+name: !<str> ""
+guid: {a: 4914396677881874876, b: 491351557252416416}
+enabled: true
+localPosition: {x: 0, y: 0, z: 40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 7}
+children:
+  - {localId: 8}
+  - {localId: 9}
+  - {localId: 10}
+  - {localId: 11}
+  - {localId: 12}
+  - {localId: 13}
+  - {localId: 14}
+  - {localId: 15}
+  - {localId: 16}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &7
+name: !<str> ""
+guid: {a: 4993300517913013532, b: 2510943139259369629}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+children:
+  - {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !ScreenTransform &8
+name: !<str> ""
+guid: {a: 4821509216894183089, b: 10495924013083733657}
+enabled: true
+localPosition: {x: -0.2054101, y: -10.44595, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: -0.7058175, x: 0, y: 0, z: 0.7083938}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: -6.573124, y: -334.2705}
+sizeDelta: {x: 124.3652, y: 221.0937}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &9
+name: !<str> ""
+guid: {a: 5018429796080222754, b: 11279865807149488828}
+enabled: true
+localPosition: {x: -6.220694, y: -4.653734, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: -199.0622, y: -148.9195}
+sizeDelta: {x: 70.89548, y: 126.0364}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &10
+name: !<str> ""
+guid: {a: 4658513655804742985, b: 6471851570279017916}
+enabled: true
+localPosition: {x: -1.661771, y: 10.56679, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: -53.17667, y: 338.1372}
+sizeDelta: {x: 106.3533, y: 73.55285}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &11
+name: !<str> ""
+guid: {a: 5567310026133831872, b: 4427236006971267513}
+enabled: true
+localPosition: {x: 5.108637, y: 2.22427, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 163.4764, y: 71.17665}
+sizeDelta: {x: 72.98407, y: 79.95226}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &12
+name: !<str> ""
+guid: {a: 5630311720702760812, b: 10155311090005292700}
+enabled: true
+localPosition: {x: 11.25, y: 0, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 360, y: 0}
+sizeDelta: {x: 105.0177, y: 951.3989}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &13
+name: !<str> ""
+guid: {a: 4995821756566443437, b: 9036813586637855417}
+enabled: true
+localPosition: {x: -11.25, y: 0, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: -360, y: 0}
+sizeDelta: {x: 92.14688, y: 1199.162}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &14
+name: !<str> ""
+guid: {a: 5743983618215820790, b: 2411909599443043755}
+enabled: true
+localPosition: {x: 0, y: 16.51904, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 0, y: 528.6094}
+sizeDelta: {x: 135.7868, y: 151.9918}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &15
+name: !<str> ""
+guid: {a: 5729611076507891371, b: 10299594012149450906}
+enabled: true
+localPosition: {x: 0, y: 0, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 0, y: 0}
+sizeDelta: {x: 720, y: 1280}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+--- !ScreenTransform &16
+name: !<str> ""
+guid: {a: 4742059185287603611, b: 11024200546641879482}
+enabled: true
+localPosition: {x: 0, y: 0, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 6}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 0, y: 0}
+sizeDelta: {x: 720, y: 1280}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32

@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "d6d031ba-ef54-8277-021e-0f6320d66adc",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "Subgraphs",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

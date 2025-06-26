@@ -1,0 +1,27 @@
+[
+  {
+    "guid": {
+      "a": "63496d11-4d99-6474-e3df-88a32739b041",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "animation_test_by_yordisz_dbwqv4m-350t",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512
+  }
+]

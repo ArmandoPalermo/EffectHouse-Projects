@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "a96fd6d5-4d79-648e-8bde-f4137efaea1f",
+      "b": ""
+    },
+    "extraType": "ResItemVSSubgraph",
+    "name": "Raycast Object Picker",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "assetPackageID": "7270559134733369345",
+    "resourceFilePath": "C:\\Users\\arman\\AppData\\Roaming\\EffectHouse\\package\\7270559134733369345\\Raycast Object Picker.ssubgraph",
+    "combinedWithNodeLibary": true,
+    "assetID": "7270559134733369345"
+  }
+]

@@ -1,0 +1,203 @@
+{
+	"name": "Data Convert",
+	"id": "196f91d3-603c-24d4-6164-390a539628b7",
+	"outputChangeFollowInput": [
+		{
+			"inputKey": "Int",
+			"displayType": "Number",
+			"outputNames": [
+				"Vector2f",
+				"Vector3f",
+				"Vector4f",
+				"Color",
+				"String"
+			],
+			"outputTypes": [
+				"Vector2f",
+				"Vector3f",
+				"Vector4f",
+				"Color",
+				"String"
+			],
+			"outputDescriptions": [
+				"Convert to vector2f",
+				"Convert to vector3f",
+				"Convert to vector4f",
+				"Convert to color",
+				"Convert to string"
+			]
+		},
+		{
+			"inputKey": "Double",
+			"displayType": "Number",
+			"outputNames": [
+				"Vector2f",
+				"Vector3f",
+				"Vector4f",
+				"Color",
+				"String"
+			],
+			"outputTypes": [
+				"Vector2f",
+				"Vector3f",
+				"Vector4f",
+				"Color",
+				"String"
+			],
+			"outputDescriptions": [
+				"Convert to vector2f",
+				"Convert to vector3f",
+				"Convert to vector4f",
+				"Convert to color",
+				"Convert to string"
+			]
+		},
+		{
+			"inputKey": "Vector2f",
+			"outputNames": [
+				"Vector3f",
+				"Vector4f",
+				"String"
+			],
+			"outputTypes": [
+				"Vector3f",
+				"Vector4f",
+				"String"
+			],
+			"outputDescriptions": [
+				"Convert to vector3f",
+				"Convert to vector4f",
+				"Convert to string"
+			]
+		},
+		{
+			"inputKey": "Vector3f",
+			"outputNames": [
+				"Vector2f",
+				"Vector4f",
+				"Color",
+				"String"
+			],
+			"outputTypes": [
+				"Vector2f",
+				"Vector4f",
+				"Color",
+				"String"
+			],
+			"outputDescriptions": [
+				"Convert to vector2f",
+				"Convert to vector4f",
+				"Convert to color",
+				"Convert to string"
+			]
+		},
+		{
+			"inputKey": "Vector4f",
+			"outputNames": [
+				"Vector2f",
+				"Vector3f",
+				"Color",
+				"String",
+				"Rect"
+			],
+			"outputTypes": [
+				"Vector2f",
+				"Vector3f",
+				"Color",
+				"String",
+				"Rect"
+			],
+			"outputDescriptions": [
+				"Convert to vector2f",
+				"Convert to vector3f",
+				"Convert to color",
+				"Convert to string",
+				"Convert to rect"
+			]
+		},
+		{
+			"inputKey": "Color",
+			"outputNames": [
+				"Vector3f",
+				"Vector4f",
+				"String"
+			],
+			"outputTypes": [
+				"Vector3f",
+				"Vector4f",
+				"String"
+			],
+			"outputDescriptions": [
+				"Convert to Vector3f",
+				"Convert to Vector4f",
+				"Convert to string"
+			]
+		},
+		{
+			"inputKey": "Bool",
+			"outputNames": [
+				"String"
+			],
+			"outputTypes": [
+				"String"
+			],
+			"outputDescriptions": [
+				"Convert to string"
+			]
+		},
+		{
+			"inputKey": "Rect",
+			"outputNames": [
+				"Vector4f",
+				"String"
+			],
+			"outputTypes": [
+				"Vector4f",
+				"String"
+			],
+			"outputDescriptions": [
+				"Convert to vector4f",
+				"Convert to string"
+			]
+		}
+	],
+	"inputs": [
+		{
+			"name": "Input",
+			"type": "Double",
+			"item_type": "",
+			"dynamic": true,
+			"description": "The value to convert",
+			"displayType": "Number",
+			"nameKey": "graph_data_convert_input_input",
+			"descriptionKey": "graph_data_convert_input_input_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"outputs": [],
+	"js": "CGDataConvert.js",
+	"lua": "CGDataConvert.lua",
+	"version": "1.1.0",
+	"amazingVersion": "10.40.0",
+	"luaFuncName": "CGDataConvert",
+	"category": "Utility",
+	"description": "Convert input value to other types. Supported types: Number, Vec2, Vec3, Vec4, Color, Boolean, Rect, and String.",
+	"supportedValueTypes": [
+		"Double",
+		"Vector2f",
+		"Vector3f",
+		"Vector4f",
+		"Color",
+		"Bool",
+		"Rect"
+	],
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"onlineWebsite": "graph_data_convert_website",
+	"nameKey": "graph_data_convert_name",
+	"categoryKey": "graph_category_utility",
+	"descriptionKey": "graph_data_convert_description"
+}

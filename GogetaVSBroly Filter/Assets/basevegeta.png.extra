@@ -1,0 +1,27 @@
+[
+  {
+    "guid": {
+      "a": "f4749689-de2b-516d-d1f3-40dcc6444ee2",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "basevegeta",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512
+  }
+]

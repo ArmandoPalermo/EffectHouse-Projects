@@ -1,0 +1,27 @@
+[
+  {
+    "guid": {
+      "a": "19469767-4c5e-8c49-dea4-15b9cfb19d60",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "Buttons-removebg-preview",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512
+  }
+]

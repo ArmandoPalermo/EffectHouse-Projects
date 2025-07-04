@@ -1,27 +1,29 @@
-# 🎭 EffectHouse Projects – Filtri TikTok Creativi
+# 🎨 EffectHouse Projects – Creative TikTok Filters
 
-Benvenuto in questo repository che raccoglie una serie di **filtri TikTok** sviluppati con **Effect House**, la piattaforma ufficiale di TikTok per la creazione di effetti AR. Ogni filtro è stato progettato per offrire un'esperienza interattiva, divertente o visivamente sorprendente.
+This repository contains a collection of **TikTok filters** developed using **Effect House**, TikTok’s official platform for creating augmented reality (AR) effects. Each filter is designed to offer a fun, interactive, or visually engaging experience.
 
+## 🧪 Included Filters
 
-Ecco alcuni dei filtri presenti nella repository:
+Here are some of the filters featured in this repository:
 
-- 🐉 **CREATEDRAGONAIFILTER** – Genera un drago con intelligenza artificiale
-- 🥚 **DragonHatchFilter** – Guarda un drago nascere da un uovo
-- 🕹️ **PACMAN-FILTER** e **PACMAN-TAPBATTLE** – Ispirati al classico arcade, con interazione touch
-- 🧠 **ReflexTest TAP** – Testa i tuoi riflessi con un semplice tap
-- 🦊 **AnimeTransimissionFilter** – Effetto in stile anime
-- 🦦 **AxolotlRunFilter** – Un axolotl in fuga!
-- 🚗 **FirstCarrotFilter** – Un filtro a tema “carota”
-- 🎅🐰 **easterBunnyVSsantaClaus FILTER** – Scontro epico tra Babbo Natale e il Coniglio Pasquale
-- 🕵️ **LupinFrilter** – Effetto ispirato al celebre ladro gentiluomo
-- ⚔️ **GogetaVSBroly Filter** – Duello tra due leggende dell’universo anime
-- 🐉 **MULTIPLAYERDRAGONFILTER** – Filtro multiplayer con draghi
+- 🐉 **CREATEDRAGONAIFILTER** – Generate a dragon using AI
+- 🥚 **DragonHatchFilter** – Watch a dragon hatch from an egg
+- 🕹️ **PACMAN-FILTER** and **PACMAN-TAPBATTLE** – Arcade-inspired filters with tap interaction
+- ⚡ **ReflexTest TAP** – Test your reflexes with a simple tap
+- 🦊 **AnimeTransimissionFilter** – Anime-style transformation effect
+- 🦦 **AxolotlRunFilter** – An axolotl on the run!
+- 🥕 **FirstCarrotFilter** – A quirky carrot-themed driving filter
+- 🎅🐰 **easterBunnyVSsantaClaus FILTER** – Epic showdown between Santa Claus and the Easter Bunny
+- 🕵️ **LupinFrilter** – Inspired by the iconic gentleman thief
+- ⚔️ **GogetaVSBroly Filter** – A duel between two anime legends
+- 🐲 **MULTIPLAYERDRAGONFILTER** – Multiplayer dragon-themed experience
 
-> Ogni cartella contiene i file sorgente del filtro, pronti per essere caricati o modificati in Effect House.
+> Each folder contains the source files for the filter, ready to be opened or customized in Effect House.
 
-## 🛠️ Requisiti
+## 🛠 Requirements
 
-- [Effect House](https://effecthouse.tiktok.com/) installato sul tuo computer
-- Account TikTok per testare e pubblicare i filtri
+- [Effect House](https://effecthouse.tiktok.com/) installed on your computer
+- A TikTok account to test and publish filters
+
 
 

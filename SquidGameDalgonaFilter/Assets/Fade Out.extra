@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "43569b23-a351-8dfe-3583-072dc02a1843",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "Fade Out",
+    "expandInPanel": false,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

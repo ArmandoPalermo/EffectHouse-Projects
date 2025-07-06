@@ -1,0 +1,40 @@
+{
+	"name": "Get Component Property",
+	"id": "5e78cdc9-4273-4e81-6304-960879f7025e",
+	"inputs": [
+		{
+			"name": "Source",
+			"type": "Component",
+			"description": "Source component",
+			"displayType": "Component",
+			"nameKey": "graph_get_component_property_input_source",
+			"descriptionKey": "graph_get_component_property_input_source_description",
+			"displayTypeKey": "graph_type_component"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Value",
+			"type": "any",
+			"description": "Value to get from component property",
+			"displayType": "Any",
+			"nameKey": "graph_get_component_property_output_value",
+			"descriptionKey": "graph_get_component_property_output_value_description",
+			"displayTypeKey": "graph_type_any"
+		}
+	],
+	"js": "CGGetComponentPropertyValue.js",
+	"version": "1.0.0",
+	"builtinClass": "PropertyNode",
+	"category": "Component Property",
+	"description": "Get property value of a component",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"showInLibrary": [],
+	"nameKey": "graph_get_component_property_name",
+	"categoryKey": "graph_category_componentproperty",
+	"descriptionKey": "graph_get_component_property_description"
+}

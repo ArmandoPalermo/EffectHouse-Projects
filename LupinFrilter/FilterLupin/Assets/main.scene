@@ -28,7 +28,13 @@ entities:
         alwaysClear: true
         viewport: {x: 0, y: 0, w: 1, h: 1}
         fovy: 60
+        fovType:
+          __class: CameraFovType
+          value: CUSTOM
         orthoScale: 1
+        fitMode:
+          __class: CameraFitMode
+          value: NONE
         zNear: 0.1000000014901161
         zFar: 1000
         renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
@@ -36,6 +42,9 @@ entities:
         sortMethod:
           __class: CameraSortMethod
           value: SORT_ORDER_AND_RENDERQUEUES
+        rtBackupMode:
+          __class: CameraRTBackupMode
+          value: NEVER
     layer: 0
   - __class: Entity
     name: !<str> General
@@ -92,8 +101,10 @@ entities:
           value: AUTO
         shadowArea: 100
         autoShadowFrustum: true
+        autoShadowFrustumSize: true
         shadowFrustumZNear: 1
         shadowFrustumZFar: 100
+        useFastShadow: true
         cookieSize: 1
         softShadowType:
           __class: SoftShadowType
@@ -120,6 +131,7 @@ entities:
         IBLMode: true
         intensity: 1
         rotation: 0
+        tintColor: {r: 1, g: 1, b: 1, a: 1}
     layer: 0
   - __class: Entity
     name: !<str> 2D Camera
@@ -144,7 +156,13 @@ entities:
         alwaysClear: true
         viewport: {x: 0, y: 0, w: 1, h: 1}
         fovy: 60
+        fovType:
+          __class: CameraFovType
+          value: CUSTOM
         orthoScale: 20
+        fitMode:
+          __class: CameraFitMode
+          value: NONE
         zNear: 0.1000000014901161
         zFar: 1000
         renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
@@ -152,6 +170,9 @@ entities:
         sortMethod:
           __class: CameraSortMethod
           value: SORT_ORDER_AND_RENDERQUEUES
+        rtBackupMode:
+          __class: CameraRTBackupMode
+          value: NEVER
     layer: 0
   - __class: Entity
     name: !<str> 2D Foreground
@@ -188,7 +209,7 @@ entities:
         guid: {a: 4993566790154555719, b: 15138138921005403529}
         enabled: true
         sharedMaterials:
-          - {localId: 0}
+          - {localId: 1, path: material/4701822004039078054-4322925094861297827.material}
         sortingOrder: 0
         autoSortingOrder: true
         useFrustumCulling: true
@@ -214,22 +235,29 @@ entities:
           _filledRange: 1
           _filledType: 0
           _startPoint: 0
-      - __class: JSScriptComponent
-        name: !<str> ""
+      - __class: DynamicComponent
+        name: !<str> RigidBody
         guid: {a: 5675726242963549949, b: 9998401573273153720}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 5689448456697190164, b: 8370083013578123}
+          properties:
+            __class: Map
+            angularDamping: 0
+            damping: 0
+            externalForce: {x: 0, y: 9.8, z: 0}
+            externalTorque: {x: 0, y: 0, z: 0}
+            force: {x: 0, y: 9.8, z: 0}
+            freezeX: false
+            freezeY: false
+            freezeZ: false
+            isKinematic: true
+            mass: 1
+            static: true
+            torque: {x: 0, y: 0, z: 0}
         enabled: true
-        path: !<str> js/RigidBody.js
-        properties:
-          __class: Map
-          angularDamping: 0
-          damping: 0
-          externalForce: {x: 0, y: 9.8, z: 0}
-          externalTorque: {x: 0, y: 0, z: 0}
-          freezeX: false
-          freezeY: false
-          freezeZ: false
-          isKinematic: true
-          mass: 1
+        className: !<str> RigidBody
       - __class: JSScriptComponent
         name: !<str> ""
         guid: {a: 5412933250126402328, b: 7106554907309007785}
@@ -238,7 +266,9 @@ entities:
         properties:
           __class: Map
           center: {x: 0, y: 0, z: 0}
+          extraType: !<str> BoxCollider
           fitMesh: true
+          interactable: true
           isTangible: true
           rotation: {x: 0, y: 0, z: 0}
           showCollider: true
@@ -256,7 +286,7 @@ entities:
         guid: {a: 4617727517947604283, b: 16728622564999136700}
         enabled: true
         sharedMaterials:
-          - {localId: 0}
+          - {localId: 1, path: material/4778056644344991716-3079742774605695920.material}
         sortingOrder: 1
         autoSortingOrder: true
         useFrustumCulling: true
@@ -282,22 +312,28 @@ entities:
           _filledRange: 1
           _filledType: 0
           _startPoint: 0
-      - __class: JSScriptComponent
-        name: !<str> ""
+      - __class: DynamicComponent
+        name: !<str> RigidBody
         guid: {a: 4782306304704804946, b: 17680877826294120125}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 5633998259166696616, b: 7766528801293402790}
+          properties:
+            __class: Map
+            angularDamping: 0
+            damping: 0
+            externalForce: {x: 0, y: 9.8, z: 0}
+            externalTorque: {x: 0, y: 0, z: 0}
+            force: {x: 0, y: 9.8, z: 0}
+            freezeX: false
+            freezeY: false
+            freezeZ: false
+            isKinematic: false
+            mass: 1
+            torque: {x: 0, y: 0, z: 0}
         enabled: true
-        path: !<str> js/RigidBody.js
-        properties:
-          __class: Map
-          angularDamping: 0
-          damping: 0
-          externalForce: {x: 0, y: 9.8, z: 0}
-          externalTorque: {x: 0, y: 0, z: 0}
-          freezeX: false
-          freezeY: false
-          freezeZ: false
-          isKinematic: false
-          mass: 1
+        className: !<str> RigidBody
       - __class: JSScriptComponent
         name: !<str> ""
         guid: {a: 5438009206988964628, b: 598493153069898406}
@@ -306,7 +342,9 @@ entities:
         properties:
           __class: Map
           center: {x: 0, y: 0, z: 0}
+          extraType: !<str> BoxCollider
           fitMesh: true
+          interactable: true
           isTangible: false
           rotation: {x: 0, y: 0, z: 0}
           showCollider: true
@@ -324,7 +362,7 @@ entities:
         guid: {a: 5500808286760882536, b: 12813206099271356600}
         enabled: true
         sharedMaterials:
-          - {localId: 0}
+          - {localId: 1, path: material/5549530293139522888-525989113247010724.material}
         sortingOrder: 5
         autoSortingOrder: true
         useFrustumCulling: true
@@ -350,22 +388,28 @@ entities:
           _filledRange: 1
           _filledType: 0
           _startPoint: 0
-      - __class: JSScriptComponent
-        name: !<str> ""
+      - __class: DynamicComponent
+        name: !<str> RigidBody
         guid: {a: 5386935635828293077, b: 15965111351515376540}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 4965603042291286477, b: 4948558987670517392}
+          properties:
+            __class: Map
+            angularDamping: 0
+            damping: 0
+            externalForce: {x: 0, y: 9.8, z: 0}
+            externalTorque: {x: 0, y: 0, z: 0}
+            force: {x: 0, y: 9.8, z: 0}
+            freezeX: true
+            freezeY: false
+            freezeZ: true
+            isKinematic: false
+            mass: 1
+            torque: {x: 0, y: 0, z: 0}
         enabled: true
-        path: !<str> js/RigidBody.js
-        properties:
-          __class: Map
-          angularDamping: 0
-          damping: 0
-          externalForce: {x: 0, y: 9.8, z: 0}
-          externalTorque: {x: 0, y: 0, z: 0}
-          freezeX: true
-          freezeY: false
-          freezeZ: true
-          isKinematic: false
-          mass: 1
+        className: !<str> RigidBody
       - __class: JSScriptComponent
         name: !<str> ""
         guid: {a: 5279740546815801665, b: 4220908168120976024}
@@ -374,7 +418,9 @@ entities:
         properties:
           __class: Map
           center: {x: 0, y: 0, z: 0}
+          extraType: !<str> BoxCollider
           fitMesh: true
+          interactable: true
           isTangible: false
           rotation: {x: 0, y: 0, z: 0}
           showCollider: true
@@ -392,7 +438,7 @@ entities:
         guid: {a: 5690980779350543112, b: 10712703124429668285}
         enabled: true
         sharedMaterials:
-          - {localId: 0}
+          - {localId: 1, path: material/4652546912304222371-12000859175593804420.material}
         sortingOrder: 2
         autoSortingOrder: true
         useFrustumCulling: true
@@ -418,22 +464,28 @@ entities:
           _filledRange: 1
           _filledType: 0
           _startPoint: 0
-      - __class: JSScriptComponent
-        name: !<str> ""
+      - __class: DynamicComponent
+        name: !<str> RigidBody
         guid: {a: 5249309048003190196, b: 14841184197620038788}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 5367703011810972250, b: 6539342953483206295}
+          properties:
+            __class: Map
+            angularDamping: 0
+            damping: 0
+            externalForce: {x: 0, y: 9.8, z: 0}
+            externalTorque: {x: 0, y: 0, z: 0}
+            force: {x: 0, y: 9.8, z: 0}
+            freezeX: true
+            freezeY: false
+            freezeZ: true
+            isKinematic: false
+            mass: 1
+            torque: {x: 0, y: 0, z: 0}
         enabled: true
-        path: !<str> js/RigidBody.js
-        properties:
-          __class: Map
-          angularDamping: 0
-          damping: 0
-          externalForce: {x: 0, y: 9.8, z: 0}
-          externalTorque: {x: 0, y: 0, z: 0}
-          freezeX: true
-          freezeY: false
-          freezeZ: true
-          isKinematic: false
-          mass: 1
+        className: !<str> RigidBody
       - __class: JSScriptComponent
         name: !<str> ""
         guid: {a: 4958800156562858103, b: 7809266854175665577}
@@ -442,7 +494,9 @@ entities:
         properties:
           __class: Map
           center: {x: 0, y: 0, z: 0}
+          extraType: !<str> BoxCollider
           fitMesh: true
+          interactable: true
           isTangible: false
           rotation: {x: 0, y: 0, z: 0}
           showCollider: true
@@ -460,7 +514,7 @@ entities:
         guid: {a: 4865963808834455797, b: 754651132298509471}
         enabled: true
         sharedMaterials:
-          - {localId: 0}
+          - {localId: 1, path: material/5105423117489125339-12029951785280686988.material}
         sortingOrder: 3
         autoSortingOrder: true
         useFrustumCulling: true
@@ -486,22 +540,28 @@ entities:
           _filledRange: 1
           _filledType: 0
           _startPoint: 0
-      - __class: JSScriptComponent
-        name: !<str> ""
+      - __class: DynamicComponent
+        name: !<str> RigidBody
         guid: {a: 5754826451655504784, b: 5479924135321094534}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 5274046358845335111, b: 7787236081383936132}
+          properties:
+            __class: Map
+            angularDamping: 0
+            damping: 0
+            externalForce: {x: 0, y: 9.8, z: 0}
+            externalTorque: {x: 0, y: 0, z: 0}
+            force: {x: 0, y: 9.8, z: 0}
+            freezeX: true
+            freezeY: false
+            freezeZ: true
+            isKinematic: false
+            mass: 1
+            torque: {x: 0, y: 0, z: 0}
         enabled: true
-        path: !<str> js/RigidBody.js
-        properties:
-          __class: Map
-          angularDamping: 0
-          damping: 0
-          externalForce: {x: 0, y: 9.8, z: 0}
-          externalTorque: {x: 0, y: 0, z: 0}
-          freezeX: true
-          freezeY: false
-          freezeZ: true
-          isKinematic: false
-          mass: 1
+        className: !<str> RigidBody
       - __class: JSScriptComponent
         name: !<str> ""
         guid: {a: 5630046198460250923, b: 14885203806597985670}
@@ -510,7 +570,9 @@ entities:
         properties:
           __class: Map
           center: {x: 0, y: 0, z: 0}
+          extraType: !<str> BoxCollider
           fitMesh: true
+          interactable: true
           isTangible: false
           rotation: {x: 0, y: 0, z: 0}
           showCollider: true
@@ -528,7 +590,7 @@ entities:
         guid: {a: 5742998305894335997, b: 5255967523650219942}
         enabled: true
         sharedMaterials:
-          - {localId: 0}
+          - {localId: 1, path: material/5366794567503100297-15789069476322693307.material}
         sortingOrder: 4
         autoSortingOrder: true
         useFrustumCulling: true
@@ -554,22 +616,28 @@ entities:
           _filledRange: 1
           _filledType: 0
           _startPoint: 0
-      - __class: JSScriptComponent
-        name: !<str> ""
+      - __class: DynamicComponent
+        name: !<str> RigidBody
         guid: {a: 5432271547046935787, b: 7246789326875077265}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 4963339081493168961, b: 14108918959648376726}
+          properties:
+            __class: Map
+            angularDamping: 0
+            damping: 0
+            externalForce: {x: 0, y: 9.8, z: 0}
+            externalTorque: {x: 0, y: 0, z: 0}
+            force: {x: 0, y: 9.8, z: 0}
+            freezeX: true
+            freezeY: false
+            freezeZ: true
+            isKinematic: false
+            mass: 1
+            torque: {x: 0, y: 0, z: 0}
         enabled: true
-        path: !<str> js/RigidBody.js
-        properties:
-          __class: Map
-          angularDamping: 0
-          damping: 0
-          externalForce: {x: 0, y: 9.8, z: 0}
-          externalTorque: {x: 0, y: 0, z: 0}
-          freezeX: true
-          freezeY: false
-          freezeZ: true
-          isKinematic: false
-          mass: 1
+        className: !<str> RigidBody
       - __class: JSScriptComponent
         name: !<str> ""
         guid: {a: 4714262975418970899, b: 3689102417220055709}
@@ -578,7 +646,9 @@ entities:
         properties:
           __class: Map
           center: {x: 0, y: 0, z: 0}
+          extraType: !<str> BoxCollider
           fitMesh: true
+          interactable: true
           isTangible: false
           rotation: {x: 0, y: 0, z: 0}
           showCollider: true
@@ -596,7 +666,7 @@ entities:
         guid: {a: 4938188117419974952, b: 4982296130026645408}
         enabled: true
         sharedMaterials:
-          - {localId: 0}
+          - {localId: 1, path: material/5414227754493670278-11767358682378959038.material}
         sortingOrder: 6
         autoSortingOrder: true
         useFrustumCulling: true
@@ -622,22 +692,28 @@ entities:
           _filledRange: 1
           _filledType: 0
           _startPoint: 0
-      - __class: JSScriptComponent
-        name: !<str> ""
+      - __class: DynamicComponent
+        name: !<str> RigidBody
         guid: {a: 4968924960503591374, b: 10762959916659406208}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 5728622425838023255, b: 4332265815425947296}
+          properties:
+            __class: Map
+            angularDamping: 0
+            damping: 0
+            externalForce: {x: 0, y: 9.8, z: 0}
+            externalTorque: {x: 0, y: 0, z: 0}
+            force: {x: 0, y: 9.8, z: 0}
+            freezeX: true
+            freezeY: false
+            freezeZ: true
+            isKinematic: false
+            mass: 1
+            torque: {x: 0, y: 0, z: 0}
         enabled: true
-        path: !<str> js/RigidBody.js
-        properties:
-          __class: Map
-          angularDamping: 0
-          damping: 0
-          externalForce: {x: 0, y: 9.8, z: 0}
-          externalTorque: {x: 0, y: 0, z: 0}
-          freezeX: true
-          freezeY: false
-          freezeZ: true
-          isKinematic: false
-          mass: 1
+        className: !<str> RigidBody
       - __class: JSScriptComponent
         name: !<str> ""
         guid: {a: 5220405437352754106, b: 13009674514173937065}
@@ -646,7 +722,9 @@ entities:
         properties:
           __class: Map
           center: {x: 0, y: 0, z: 0}
+          extraType: !<str> BoxCollider
           fitMesh: true
+          interactable: true
           isTangible: false
           rotation: {x: 0, y: 0, z: 0}
           showCollider: true
@@ -664,7 +742,7 @@ entities:
         guid: {a: 5038444535746837468, b: 5707097932919807393}
         enabled: true
         sharedMaterials:
-          - {localId: 0}
+          - {localId: 1, path: material/4803305536647287274-2872804110822607289.material}
         sortingOrder: 11
         autoSortingOrder: true
         useFrustumCulling: true
@@ -690,22 +768,28 @@ entities:
           _filledRange: 1
           _filledType: 0
           _startPoint: 0
-      - __class: JSScriptComponent
-        name: !<str> ""
+      - __class: DynamicComponent
+        name: !<str> RigidBody
         guid: {a: 5486772965664588001, b: 14513965055793405619}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 4811040521223169588, b: 17308381792739198380}
+          properties:
+            __class: Map
+            angularDamping: 0
+            damping: 0
+            externalForce: {x: 0, y: 9.8, z: 0}
+            externalTorque: {x: 0, y: 0, z: 0}
+            force: {x: 0, y: 9.8, z: 0}
+            freezeX: true
+            freezeY: false
+            freezeZ: true
+            isKinematic: false
+            mass: 1
+            torque: {x: 0, y: 0, z: 0}
         enabled: true
-        path: !<str> js/RigidBody.js
-        properties:
-          __class: Map
-          angularDamping: 0
-          damping: 0
-          externalForce: {x: 0, y: 9.8, z: 0}
-          externalTorque: {x: 0, y: 0, z: 0}
-          freezeX: true
-          freezeY: false
-          freezeZ: true
-          isKinematic: false
-          mass: 1
+        className: !<str> RigidBody
       - __class: JSScriptComponent
         name: !<str> ""
         guid: {a: 4861833164606998601, b: 138201104078456467}
@@ -714,7 +798,9 @@ entities:
         properties:
           __class: Map
           center: {x: 0, y: 0, z: 0}
+          extraType: !<str> BoxCollider
           fitMesh: true
+          interactable: true
           isTangible: true
           rotation: {x: 0, y: 0, z: 0}
           showCollider: true
@@ -734,22 +820,101 @@ entities:
         path: !<str> js/Text.js
         properties:
           __class: Map
+          TextGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001559--00000000-0000-0000-0000-000000001559.material}
+          TextNeonGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001568--00000000-0000-0000-0000-000000001568.material}
+          artText: {localId: 1, path: 00000000-0000-0000-0000-000000008000--00000000-0000-0000-0000-000000008000.ata}
           autoSortingOrder: true
           backgroundEnable: false
+          bloomColor: {r: 1, g: 1, b: 1, a: 1}
+          bloomOption: !<str> OutWard
           bold: false
+          canvasSize: {x: -1, y: -1}
+          enableRTL: true
+          extraType: !<str> TextJS
           fontSize: 72
           fontType: !<str> Classic.ttf
+          forceUpdateArtText: false
+          glow: false
+          glowHorizontalAngle: 0
+          glowIntensity: 0.5
+          glowRange: 0.5
+          glowVerticalAngle: 0
+          hasScreenTransform: true
+          horizontalAlignment: 1
+          innerShadowAlpha: 0.9
+          innerShadowAngle: -30
+          innerShadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          innerShadowDistance: 5
+          innerShadowEnable: false
+          innerShadowFillMode: 0
+          innerShadowGradientAngle: 90
+          innerShadowGradientColor1: {r: 0, g: 0, b: 0, a: 1}
+          innerShadowGradientColor2: {r: 0, g: 0, b: 0, a: 1}
+          innerShadowGradientColor3: {r: 0, g: 0, b: 0, a: 1}
+          innerShadowGradientColorPos1: 0
+          innerShadowGradientColorPos2: 1
+          innerShadowGradientColorPos3: 0.5
+          innerShadowGradientQuality: 0
+          innerShadowGradientRangeMode: 1
+          innerShadowSmooth: 0
+          innerShadowTexture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
+          innerShadowTextureAlpha: 1
+          innerShadowTextureAngle: 0
+          innerShadowTextureFlipX: false
+          innerShadowTextureFlipY: false
+          innerShadowTextureOffsetX: 0
+          innerShadowTextureOffsetY: 0
+          innerShadowTextureRange: -1
+          innerShadowTextureScale: 1
           input: !<str> "200\n"
           italic: false
           letterAlpha: 1
           letterBgAlpha: 1
           letterBgColor: {r: 0, g: 0, b: 0, a: 1}
+          letterBgFillMode: 0
+          letterBgGradientAngle: 90
+          letterBgGradientColor1: {r: 0, g: 0, b: 0, a: 1}
+          letterBgGradientColor2: {r: 0, g: 0, b: 0, a: 1}
+          letterBgGradientColor3: {r: 0, g: 0, b: 0, a: 1}
+          letterBgGradientColorPos1: 0
+          letterBgGradientColorPos2: 1
+          letterBgGradientColorPos3: 0.5
+          letterBgGradientQuality: 0
+          letterBgHeightCustomized: 0
+          letterBgRoundRadiusScale: 0
+          letterBgTexture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
+          letterBgTextureOffsetX: 0
+          letterBgTextureOffsetY: 0
+          letterBgTextureScale: 1
+          letterBgWidthCustomized: 0
           letterColor: {r: 0.1587674, g: 0.04097222, b: 0.9833333, a: 1}
+          letterFillMode: 0
+          letterGradientAngle: 90
+          letterGradientColor1: {r: 1, g: 1, b: 1, a: 1}
+          letterGradientColor2: {r: 1, g: 1, b: 1, a: 1}
+          letterGradientColor3: {r: 1, g: 1, b: 1, a: 1}
+          letterGradientColorPos1: 0
+          letterGradientColorPos2: 1
+          letterGradientColorPos3: 0.5
+          letterGradientQuality: 0
+          letterGradientRangeMode: 1
           letterSpacing: 0
+          letterTexture: {localId: 1, path: 00000000-0000-0000-0000-00000000001c--00000000-0000-0000-0000-00000000001c.png}
+          letterTextureAlpha: 1
+          letterTextureAngle: 0
+          letterTextureFlipX: false
+          letterTextureFlipY: false
+          letterTextureOffsetX: 0
+          letterTextureOffsetY: 0
+          letterTextureRange: -1
+          letterTextureScale: 1
+          lineBreakType: 1
           lineSpacing: 0
           outlineAlpha: 1
           outlineColorRGBA: {r: 0, g: 0, b: 0, a: 1}
-          outlineEnable: true
+          outlineEnable: false
+          outlineLayers:
+            - {localId: 24}
           outlineWidth: 30
           shadowAlpha: 0.9
           shadowAngle: -45
@@ -757,9 +922,13 @@ entities:
           shadowDistance: 10
           shadowEnable: false
           shadowSmooth: 0
+          shadowSmoothVersion: 0
           sortingOrder: 0
-          textTypeSettingKindAlign: 1
+          textAdaptiveCanvasEnabled: false
+          textinputLock: false
           underline: false
+          verticalAlignment: 1
+          writingDirection: 0
     layer: 0
   - __class: Entity
     name: !<str> pz
@@ -775,22 +944,101 @@ entities:
         path: !<str> js/Text.js
         properties:
           __class: Map
+          TextGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001559--00000000-0000-0000-0000-000000001559.material}
+          TextNeonGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001568--00000000-0000-0000-0000-000000001568.material}
+          artText: {localId: 1, path: 00000000-0000-0000-0000-000000008000--00000000-0000-0000-0000-000000008000.ata}
           autoSortingOrder: true
           backgroundEnable: false
+          bloomColor: {r: 1, g: 1, b: 1, a: 1}
+          bloomOption: !<str> OutWard
           bold: false
+          canvasSize: {x: -1, y: -1}
+          enableRTL: true
+          extraType: !<str> TextJS
           fontSize: 72
           fontType: !<str> Classic.ttf
+          forceUpdateArtText: false
+          glow: false
+          glowHorizontalAngle: 0
+          glowIntensity: 0.5
+          glowRange: 0.5
+          glowVerticalAngle: 0
+          hasScreenTransform: true
+          horizontalAlignment: 1
+          innerShadowAlpha: 0.9
+          innerShadowAngle: -30
+          innerShadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+          innerShadowDistance: 5
+          innerShadowEnable: false
+          innerShadowFillMode: 0
+          innerShadowGradientAngle: 90
+          innerShadowGradientColor1: {r: 0, g: 0, b: 0, a: 1}
+          innerShadowGradientColor2: {r: 0, g: 0, b: 0, a: 1}
+          innerShadowGradientColor3: {r: 0, g: 0, b: 0, a: 1}
+          innerShadowGradientColorPos1: 0
+          innerShadowGradientColorPos2: 1
+          innerShadowGradientColorPos3: 0.5
+          innerShadowGradientQuality: 0
+          innerShadowGradientRangeMode: 1
+          innerShadowSmooth: 0
+          innerShadowTexture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
+          innerShadowTextureAlpha: 1
+          innerShadowTextureAngle: 0
+          innerShadowTextureFlipX: false
+          innerShadowTextureFlipY: false
+          innerShadowTextureOffsetX: 0
+          innerShadowTextureOffsetY: 0
+          innerShadowTextureRange: -1
+          innerShadowTextureScale: 1
           input: !<str> 20000
           italic: false
           letterAlpha: 1
           letterBgAlpha: 1
           letterBgColor: {r: 0, g: 0, b: 0, a: 1}
+          letterBgFillMode: 0
+          letterBgGradientAngle: 90
+          letterBgGradientColor1: {r: 0, g: 0, b: 0, a: 1}
+          letterBgGradientColor2: {r: 0, g: 0, b: 0, a: 1}
+          letterBgGradientColor3: {r: 0, g: 0, b: 0, a: 1}
+          letterBgGradientColorPos1: 0
+          letterBgGradientColorPos2: 1
+          letterBgGradientColorPos3: 0.5
+          letterBgGradientQuality: 0
+          letterBgHeightCustomized: 0
+          letterBgRoundRadiusScale: 0
+          letterBgTexture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
+          letterBgTextureOffsetX: 0
+          letterBgTextureOffsetY: 0
+          letterBgTextureScale: 1
+          letterBgWidthCustomized: 0
           letterColor: {r: 0.1610156, g: 0.04770833, b: 0.9541667, a: 1}
+          letterFillMode: 0
+          letterGradientAngle: 90
+          letterGradientColor1: {r: 1, g: 1, b: 1, a: 1}
+          letterGradientColor2: {r: 1, g: 1, b: 1, a: 1}
+          letterGradientColor3: {r: 1, g: 1, b: 1, a: 1}
+          letterGradientColorPos1: 0
+          letterGradientColorPos2: 1
+          letterGradientColorPos3: 0.5
+          letterGradientQuality: 0
+          letterGradientRangeMode: 1
           letterSpacing: 0
+          letterTexture: {localId: 1, path: 00000000-0000-0000-0000-00000000001c--00000000-0000-0000-0000-00000000001c.png}
+          letterTextureAlpha: 1
+          letterTextureAngle: 0
+          letterTextureFlipX: false
+          letterTextureFlipY: false
+          letterTextureOffsetX: 0
+          letterTextureOffsetY: 0
+          letterTextureRange: -1
+          letterTextureScale: 1
+          lineBreakType: 1
           lineSpacing: 0
           outlineAlpha: 1
           outlineColorRGBA: {r: 0, g: 0, b: 0, a: 1}
-          outlineEnable: true
+          outlineEnable: false
+          outlineLayers:
+            - {localId: 25}
           outlineWidth: 30
           shadowAlpha: 0.9
           shadowAngle: -45
@@ -798,25 +1046,35 @@ entities:
           shadowDistance: 10
           shadowEnable: false
           shadowSmooth: 0
+          shadowSmoothVersion: 0
           sortingOrder: 0
-          textTypeSettingKindAlign: 1
+          textAdaptiveCanvasEnabled: false
+          textinputLock: false
           underline: false
-      - __class: JSScriptComponent
-        name: !<str> ""
+          verticalAlignment: 1
+          writingDirection: 0
+      - __class: DynamicComponent
+        name: !<str> RigidBody
         guid: {a: 5684757918535922354, b: 4325604080881563807}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 4925018232419972378, b: 489949354704944262}
+          properties:
+            __class: Map
+            angularDamping: 0
+            damping: 0
+            externalForce: {x: 0, y: 9.8, z: 0}
+            externalTorque: {x: 0, y: 0, z: 0}
+            force: {x: 0, y: 9.8, z: 0}
+            freezeX: true
+            freezeY: false
+            freezeZ: true
+            isKinematic: false
+            mass: 1
+            torque: {x: 0, y: 0, z: 0}
         enabled: true
-        path: !<str> js/RigidBody.js
-        properties:
-          __class: Map
-          angularDamping: 0
-          damping: 0
-          externalForce: {x: 0, y: 9.8, z: 0}
-          externalTorque: {x: 0, y: 0, z: 0}
-          freezeX: true
-          freezeY: false
-          freezeZ: true
-          isKinematic: false
-          mass: 1
+        className: !<str> RigidBody
     layer: 0
   - __class: Entity
     name: !<str> LoserImage
@@ -830,7 +1088,7 @@ entities:
         guid: {a: 5213452747650187622, b: 5003644463752730287}
         enabled: true
         sharedMaterials:
-          - {localId: 0}
+          - {localId: 1, path: material/4814718823274621024-5543216839853629316.material}
         sortingOrder: 0
         autoSortingOrder: false
         useFrustumCulling: true
@@ -869,7 +1127,7 @@ entities:
         guid: {a: 5099373273426906891, b: 15171410512881538466}
         enabled: true
         sharedMaterials:
-          - {localId: 0}
+          - {localId: 1, path: material/5448000769196248892-17869242321614393228.material}
         sortingOrder: 0
         autoSortingOrder: false
         useFrustumCulling: true
@@ -908,7 +1166,7 @@ entities:
         guid: {a: 5096292980433588620, b: 148780776148515511}
         enabled: true
         sharedMaterials:
-          - {localId: 0}
+          - {localId: 1, path: material/4988199667955395420-18109133535555677578.material}
         sortingOrder: 7
         autoSortingOrder: true
         useFrustumCulling: true
@@ -934,22 +1192,28 @@ entities:
           _filledRange: 1
           _filledType: 0
           _startPoint: 0
-      - __class: JSScriptComponent
-        name: !<str> ""
+      - __class: DynamicComponent
+        name: !<str> RigidBody
         guid: {a: 5230529284429881629, b: 17223832833598438310}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 5325363311455071633, b: 17850719925634804905}
+          properties:
+            __class: Map
+            angularDamping: 0
+            damping: 0
+            externalForce: {x: 0, y: 9.8, z: 0}
+            externalTorque: {x: 0, y: 0, z: 0}
+            force: {x: 0, y: 9.8, z: 0}
+            freezeX: true
+            freezeY: false
+            freezeZ: true
+            isKinematic: false
+            mass: 1
+            torque: {x: 0, y: 0, z: 0}
         enabled: true
-        path: !<str> js/RigidBody.js
-        properties:
-          __class: Map
-          angularDamping: 0
-          damping: 0
-          externalForce: {x: 0, y: 9.8, z: 0}
-          externalTorque: {x: 0, y: 0, z: 0}
-          freezeX: true
-          freezeY: false
-          freezeZ: true
-          isKinematic: false
-          mass: 1
+        className: !<str> RigidBody
       - __class: JSScriptComponent
         name: !<str> ""
         guid: {a: 5161248727741250754, b: 13521101822737048968}
@@ -958,7 +1222,9 @@ entities:
         properties:
           __class: Map
           center: {x: 0, y: 0, z: 0}
+          extraType: !<str> BoxCollider
           fitMesh: true
+          interactable: true
           isTangible: false
           rotation: {x: 0, y: 0, z: 0}
           showCollider: true
@@ -976,7 +1242,7 @@ entities:
         guid: {a: 5213059509479581717, b: 8409079499557438092}
         enabled: true
         sharedMaterials:
-          - {localId: 0}
+          - {localId: 1, path: material/5510542339918761695-6140690658647766420.material}
         sortingOrder: 8
         autoSortingOrder: true
         useFrustumCulling: true
@@ -1002,22 +1268,28 @@ entities:
           _filledRange: 1
           _filledType: 0
           _startPoint: 0
-      - __class: JSScriptComponent
-        name: !<str> ""
+      - __class: DynamicComponent
+        name: !<str> RigidBody
         guid: {a: 5211468293189944807, b: 1191276372979365296}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 5136072265942710048, b: 1808827363408080798}
+          properties:
+            __class: Map
+            angularDamping: 0
+            damping: 0
+            externalForce: {x: 0, y: 9.8, z: 0}
+            externalTorque: {x: 0, y: 0, z: 0}
+            force: {x: 0, y: 9.8, z: 0}
+            freezeX: true
+            freezeY: false
+            freezeZ: true
+            isKinematic: false
+            mass: 1
+            torque: {x: 0, y: 0, z: 0}
         enabled: true
-        path: !<str> js/RigidBody.js
-        properties:
-          __class: Map
-          angularDamping: 0
-          damping: 0
-          externalForce: {x: 0, y: 9.8, z: 0}
-          externalTorque: {x: 0, y: 0, z: 0}
-          freezeX: true
-          freezeY: false
-          freezeZ: true
-          isKinematic: false
-          mass: 1
+        className: !<str> RigidBody
       - __class: JSScriptComponent
         name: !<str> ""
         guid: {a: 5696221824675493415, b: 17997551577065842087}
@@ -1026,7 +1298,9 @@ entities:
         properties:
           __class: Map
           center: {x: 0, y: 0, z: 0}
+          extraType: !<str> BoxCollider
           fitMesh: true
+          interactable: true
           isTangible: false
           rotation: {x: 0, y: 0, z: 0}
           showCollider: true
@@ -1044,7 +1318,7 @@ entities:
         guid: {a: 4929267008344477839, b: 12939200090309646776}
         enabled: true
         sharedMaterials:
-          - {localId: 0}
+          - {localId: 1, path: material/5230333295605119923-5925877200712508331.material}
         sortingOrder: 10
         autoSortingOrder: true
         useFrustumCulling: true
@@ -1070,22 +1344,28 @@ entities:
           _filledRange: 1
           _filledType: 0
           _startPoint: 0
-      - __class: JSScriptComponent
-        name: !<str> ""
+      - __class: DynamicComponent
+        name: !<str> RigidBody
         guid: {a: 5707018530805149306, b: 12492960704127205553}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 5756617728739751140, b: 8811740283890070190}
+          properties:
+            __class: Map
+            angularDamping: 0
+            damping: 0
+            externalForce: {x: 0, y: 9.8, z: 0}
+            externalTorque: {x: 0, y: 0, z: 0}
+            force: {x: 0, y: 9.8, z: 0}
+            freezeX: true
+            freezeY: false
+            freezeZ: true
+            isKinematic: false
+            mass: 1
+            torque: {x: 0, y: 0, z: 0}
         enabled: true
-        path: !<str> js/RigidBody.js
-        properties:
-          __class: Map
-          angularDamping: 0
-          damping: 0
-          externalForce: {x: 0, y: 9.8, z: 0}
-          externalTorque: {x: 0, y: 0, z: 0}
-          freezeX: true
-          freezeY: false
-          freezeZ: true
-          isKinematic: false
-          mass: 1
+        className: !<str> RigidBody
       - __class: JSScriptComponent
         name: !<str> ""
         guid: {a: 5104001759956849251, b: 17371021560220252047}
@@ -1094,7 +1374,9 @@ entities:
         properties:
           __class: Map
           center: {x: 0, y: 0, z: 0}
+          extraType: !<str> BoxCollider
           fitMesh: true
+          interactable: true
           isTangible: false
           rotation: {x: 0, y: 0, z: 0}
           showCollider: true
@@ -1112,7 +1394,7 @@ entities:
         guid: {a: 5266093208555166068, b: 14425877503877328573}
         enabled: true
         sharedMaterials:
-          - {localId: 0}
+          - {localId: 1, path: material/5196849580252762261-11225281498636598667.material}
         sortingOrder: 9
         autoSortingOrder: true
         useFrustumCulling: true
@@ -1138,22 +1420,28 @@ entities:
           _filledRange: 1
           _filledType: 0
           _startPoint: 0
-      - __class: JSScriptComponent
-        name: !<str> ""
+      - __class: DynamicComponent
+        name: !<str> RigidBody
         guid: {a: 4939816393039878462, b: 17521031252260943004}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 4996118069398269360, b: 17383603690378696892}
+          properties:
+            __class: Map
+            angularDamping: 0
+            damping: 0
+            externalForce: {x: 0, y: 9.8, z: 0}
+            externalTorque: {x: 0, y: 0, z: 0}
+            force: {x: 0, y: 9.8, z: 0}
+            freezeX: true
+            freezeY: false
+            freezeZ: true
+            isKinematic: false
+            mass: 1
+            torque: {x: 0, y: 0, z: 0}
         enabled: true
-        path: !<str> js/RigidBody.js
-        properties:
-          __class: Map
-          angularDamping: 0
-          damping: 0
-          externalForce: {x: 0, y: 9.8, z: 0}
-          externalTorque: {x: 0, y: 0, z: 0}
-          freezeX: true
-          freezeY: false
-          freezeZ: true
-          isKinematic: false
-          mass: 1
+        className: !<str> RigidBody
       - __class: JSScriptComponent
         name: !<str> ""
         guid: {a: 4971432228267088312, b: 10172694962625308350}
@@ -1162,7 +1450,9 @@ entities:
         properties:
           __class: Map
           center: {x: 0, y: 0, z: 0}
+          extraType: !<str> BoxCollider
           fitMesh: true
+          interactable: true
           isTangible: false
           rotation: {x: 0, y: 0, z: 0}
           showCollider: true
@@ -1175,16 +1465,17 @@ msaa:
   __class: MSAAMode
   value: _4X
 jsScriptSystems:
-  - !<str> js/GraphSystem.js
-  - !<str> js/Main.js
+  - !<str> js/AmazingProRuntime.js
+  - !<str> js/Graph/GraphSystem.js
   - !<str> js/JSAssetSystem.js
   - !<str> js/PBDSystem.js
+  - !<str> js/AmazingProEditor.js
 enableMultiTouch: false
 enableLightMultiPass: false
 pixelLightCount: 4
 resourceRendererType:
   __class: RendererType
-  value: OpenGLES30
+  value: Auto
 --- !Transform &2
 name: !<str> ""
 guid: {a: 14145000689903744101, b: 6111037265461598351}
@@ -1216,7 +1507,7 @@ guid: {a: 15367742060568528024, b: 10146237304508457363}
 enabled: true
 localPosition: {x: -30, y: 20, z: -20}
 localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 0.6123727, x: -0.3535534, y: -0.6123724, z: -0.3535532}
+localOrientation: {w: 0.6123725, x: -0.3535534, y: -0.6123725, z: -0.3535534}
 parent: {localId: 3}
 mobility:
   __class: Mobility
@@ -1227,7 +1518,7 @@ guid: {a: 2038139312557020282, b: 1886311758165782682}
 enabled: true
 localPosition: {x: 0, y: 30, z: 0}
 localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 0.7071068, x: 0, y: 0.7071068, z: 0}
+localOrientation: {w: 0.7071069, x: 0, y: 0.7071067, z: 0}
 parent: {localId: 3}
 mobility:
   __class: Mobility
@@ -1288,6 +1579,7 @@ sizeDelta: {x: 199.8415, y: 355.2737}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
+enablePivotMatrix: false
 --- !ScreenTransform &9
 name: !<str> ""
 guid: {a: 4659249442291250811, b: 2190842366551202449}
@@ -1304,6 +1596,7 @@ sizeDelta: {x: 176.5627, y: 313.8892}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
+enablePivotMatrix: false
 --- !ScreenTransform &10
 name: !<str> ""
 guid: {a: 4733557383718942702, b: 10704698045456162953}
@@ -1320,6 +1613,7 @@ sizeDelta: {x: 176.5627, y: 313.8892}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
+enablePivotMatrix: false
 --- !ScreenTransform &11
 name: !<str> ""
 guid: {a: 4920486765509932013, b: 3119317936485202059}
@@ -1336,6 +1630,7 @@ sizeDelta: {x: 176.5627, y: 313.8892}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
+enablePivotMatrix: false
 --- !ScreenTransform &12
 name: !<str> ""
 guid: {a: 5128830869074886286, b: 11681549222996937637}
@@ -1352,6 +1647,7 @@ sizeDelta: {x: 176.5627, y: 313.8892}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
+enablePivotMatrix: false
 --- !ScreenTransform &13
 name: !<str> ""
 guid: {a: 5619743781912796878, b: 2582453789338651835}
@@ -1368,6 +1664,7 @@ sizeDelta: {x: 176.5627, y: 313.8892}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
+enablePivotMatrix: false
 --- !ScreenTransform &14
 name: !<str> ""
 guid: {a: 4647081691249703879, b: 13854170226156061870}
@@ -1384,6 +1681,7 @@ sizeDelta: {x: 176.5627, y: 313.8892}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
+enablePivotMatrix: false
 --- !ScreenTransform &15
 name: !<str> ""
 guid: {a: 5533621975144225388, b: 12285182113589566386}
@@ -1400,6 +1698,7 @@ sizeDelta: {x: 176.5627, y: 313.8892}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
+enablePivotMatrix: false
 --- !ScreenTransform &16
 name: !<str> ""
 guid: {a: 5148168080906622274, b: 10239545040329837233}
@@ -1416,6 +1715,7 @@ sizeDelta: {x: 176.5627, y: 313.8892}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
+enablePivotMatrix: false
 --- !ScreenTransform &17
 name: !<str> ""
 guid: {a: 5198574176910131149, b: 13068743933384684950}
@@ -1432,6 +1732,7 @@ sizeDelta: {x: 176.5627, y: 313.8892}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
+enablePivotMatrix: false
 --- !ScreenTransform &18
 name: !<str> ""
 guid: {a: 5575591234803467442, b: 483077873084002444}
@@ -1448,6 +1749,7 @@ sizeDelta: {x: 176.5627, y: 313.8892}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
+enablePivotMatrix: false
 --- !ScreenTransform &19
 name: !<str> ""
 guid: {a: 5109749053095966893, b: 15462577719033159858}
@@ -1464,6 +1766,7 @@ sizeDelta: {x: 297.5114, y: 528.9091}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
+enablePivotMatrix: false
 --- !ScreenTransform &20
 name: !<str> ""
 guid: {a: 5407092285854363272, b: 17355600444026608569}
@@ -1480,6 +1783,7 @@ sizeDelta: {x: 88.1707, y: 156.7479}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
+enablePivotMatrix: false
 --- !ScreenTransform &21
 name: !<str> ""
 guid: {a: 5761897818878765903, b: 18419743372087071153}
@@ -1491,11 +1795,12 @@ parent: {localId: 6}
 mobility:
   __class: Mobility
   value: Dynamic
-anchoredPosition: {x: -7.629395e-06, y: 4351.9}
+anchoredPosition: {x: -1.525879e-05, y: 4351.9}
 sizeDelta: {x: 408.8252, y: 277.0408}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
+enablePivotMatrix: false
 --- !ScreenTransform &22
 name: !<str> ""
 guid: {a: 5741311316565898210, b: 6762758277999496884}
@@ -1512,6 +1817,7 @@ sizeDelta: {x: 720, y: 1280}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
+enablePivotMatrix: false
 --- !ScreenTransform &23
 name: !<str> ""
 guid: {a: 5121342306942290302, b: 7227258938562751880}
@@ -1528,3 +1834,112 @@ sizeDelta: {x: 720, y: 1280}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
+enablePivotMatrix: false
+--- !LetterStyleLayer &24
+name: !<str> ""
+guid: {a: 5475470165685976192, b: 5935440299990540673}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  name: !<str> ""
+  guid: {a: 5043815970584597146, b: 1579043943325176216}
+  properties:
+    __class: Map
+    gradientColor1: {r: 1, g: 1, b: 1, a: 1}
+    gradientColor2: {r: 1, g: 1, b: 1, a: 1}
+    gradientColor3: {r: 1, g: 1, b: 1, a: 1}
+    gradientColorPos1: 0
+    gradientColorPos2: 1
+    gradientColorPos3: 0.5
+    gradientQuality: 0
+type:
+  __class: LetterStyleLayerType
+  value: STROKE
+enable: true
+alpha: 1
+renderType:
+  __class: LetterStyleLayerRenderType
+  value: SOLID
+color: {r: 0, g: 0, b: 0, a: 1}
+gradientColors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+gradientPoints: [0, 1]
+gradientAngle: 90
+gradientMode:
+  __class: LetterStyleLayerGradientMode
+  value: ALL
+texturePath: !<str> ""
+textureFlipX: false
+textureFlipY: false
+textureScale: 1
+textureAlpha: 1
+textureAngle: 0
+textureRange: 1
+textureBlend:
+  __class: LetterStyleLayerTextureBlend
+  value: NONE
+textureStretchMode:
+  __class: ImageStretchMode
+  value: Fit
+textureOffsetX: 0
+textureOffsetY: 0
+textureNoPremultiply: true
+strokeWidth: 0.05400000140070915
+shadowDistance: 0
+shadowAngle: -45
+shadowFeather: -1
+shadowDiffuse: -1
+--- !LetterStyleLayer &25
+name: !<str> ""
+guid: {a: 5077065387709855536, b: 14936379819027864722}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  name: !<str> ""
+  guid: {a: 5143204585481852218, b: 8287623087299283336}
+  properties:
+    __class: Map
+    gradientColor1: {r: 1, g: 1, b: 1, a: 1}
+    gradientColor2: {r: 1, g: 1, b: 1, a: 1}
+    gradientColor3: {r: 1, g: 1, b: 1, a: 1}
+    gradientColorPos1: 0
+    gradientColorPos2: 1
+    gradientColorPos3: 0.5
+    gradientQuality: 0
+type:
+  __class: LetterStyleLayerType
+  value: STROKE
+enable: true
+alpha: 1
+renderType:
+  __class: LetterStyleLayerRenderType
+  value: SOLID
+color: {r: 0, g: 0, b: 0, a: 1}
+gradientColors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+gradientPoints: [0, 1]
+gradientAngle: 90
+gradientMode:
+  __class: LetterStyleLayerGradientMode
+  value: ALL
+texturePath: !<str> ""
+textureFlipX: false
+textureFlipY: false
+textureScale: 1
+textureAlpha: 1
+textureAngle: 0
+textureRange: 1
+textureBlend:
+  __class: LetterStyleLayerTextureBlend
+  value: NONE
+textureStretchMode:
+  __class: ImageStretchMode
+  value: Fit
+textureOffsetX: 0
+textureOffsetY: 0
+textureNoPremultiply: true
+strokeWidth: 0.05400000140070915
+shadowDistance: 0
+shadowAngle: -45
+shadowFeather: -1
+shadowDiffuse: -1

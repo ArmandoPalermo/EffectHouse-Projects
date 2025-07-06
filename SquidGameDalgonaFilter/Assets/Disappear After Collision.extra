@@ -1,0 +1,15 @@
+[
+  {
+    "guid": {
+      "a": "239540d6-c231-6aed-b740-81600df30054",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "Disappear After Collision",
+    "expandInPanel": true,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": ""
+  }
+]

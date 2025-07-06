@@ -1,0 +1,72 @@
+{
+	"name": "Logic Select",
+	"id": "55b14d53-a6c9-28d3-615b-f019b0fa8429",
+	"inputs": [
+		{
+			"name": "Condition",
+			"type": "Bool",
+			"default_value": "1",
+			"description": "The input execution that triggers this node",
+			"displayType": "Boolean",
+			"nameKey": "graph_logic_select_input_condition",
+			"descriptionKey": "graph_logic_select_input_condition_description",
+			"displayTypeKey": "graph_type_boolean"
+		},
+		{
+			"name": "Then",
+			"type": "Int",
+			"dynamic": true,
+			"default_value": "0",
+			"description": "The value to output when Condition is true",
+			"displayType": "Number",
+			"nameKey": "graph_logic_select_input_then",
+			"descriptionKey": "graph_logic_select_input_then_description",
+			"displayTypeKey": "graph_type_number"
+		},
+		{
+			"name": "Else",
+			"type": "Int",
+			"dynamic": true,
+			"default_value": "0",
+			"description": "The value to output when Condition is false",
+			"displayType": "Number",
+			"nameKey": "graph_logic_select_input_else",
+			"descriptionKey": "graph_logic_select_input_else_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Result",
+			"type": "Int",
+			"dynamic": true,
+			"description": "The value based on Condition",
+			"displayType": "Number",
+			"nameKey": "graph_logic_select_output_result",
+			"descriptionKey": "graph_logic_select_output_result_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"js": "CGSelect.js",
+	"version": "1.1.0",
+	"category": "Logic",
+	"description": "Pass different values based on conditions. Supported type: Number, Boolean, Vec2, Vec3, Vec4, and Color.",
+	"supportedValueTypes": [
+		"Int",
+		"Double",
+		"Bool",
+		"Vector2f",
+		"Vector3f",
+		"Vector4f",
+		"Color"
+	],
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"onlineWebsite": "graph_logic_select_website",
+	"nameKey": "graph_logic_select_name",
+	"categoryKey": "graph_category_logic",
+	"descriptionKey": "graph_logic_select_description"
+}

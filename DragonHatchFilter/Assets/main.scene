@@ -209,7 +209,7 @@ entities:
         guid: {a: 5569231474056135476, b: 6141148154113677243}
         enabled: true
         sharedMaterials:
-          - {localId: 1, path: material/5125330390461211231-14014957112570352514.material}
+          - {localId: 1, path: material/5290389763728111669-1131320047623617955.material}
         sortingOrder: 0
         autoSortingOrder: true
         useFrustumCulling: true
@@ -650,7 +650,7 @@ config:
   RTInputDeferredCopy: true
 msaa:
   __class: MSAAMode
-  value: NONE
+  value: _4X
 jsScriptSystems:
   - !<str> js/AmazingProRuntime.js
   - !<str> js/Graph/GraphSystem.js
@@ -826,11 +826,11 @@ pixelsPerUnit: 32
 enablePivotMatrix: true
 --- !LetterStyleLayer &13
 name: !<str> ""
-guid: {a: 4989241862303211648, b: 8931976348521884051}
+guid: {a: 5273644708250580736, b: 14398326488924881829}
 serializedProperty:
   __class: ScriptSerializedProperty
   name: !<str> ""
-  guid: {a: 4845215658611476097, b: 10929277246434339725}
+  guid: {a: 4810336734032133352, b: 1706756578715577230}
   properties:
     __class: Map
     gradientColor1: {r: 1, g: 1, b: 1, a: 1}
@@ -881,11 +881,11 @@ shadowFeather: -1
 shadowDiffuse: -1
 --- !LetterStyleLayer &14
 name: !<str> ""
-guid: {a: 5762654100032953662, b: 2727642367031228070}
+guid: {a: 5752164472759600373, b: 13554021747565934011}
 serializedProperty:
   __class: ScriptSerializedProperty
   name: !<str> ""
-  guid: {a: 5252233804204998223, b: 5602634895943549887}
+  guid: {a: 4679778760514771716, b: 2897339448753400223}
   properties:
     __class: Map
     gradientColor1: {r: 1, g: 1, b: 1, a: 1}
@@ -936,11 +936,11 @@ shadowFeather: -1
 shadowDiffuse: -1
 --- !LetterStyleLayer &15
 name: !<str> ""
-guid: {a: 5622561598209071685, b: 16091258852896128928}
+guid: {a: 5347046446074954088, b: 11694893565329087133}
 serializedProperty:
   __class: ScriptSerializedProperty
   name: !<str> ""
-  guid: {a: 5719077179969292339, b: 3868562613115149207}
+  guid: {a: 4909131366105009882, b: 10173374863162348711}
   properties:
     __class: Map
     gradientColor1: {r: 1, g: 1, b: 1, a: 1}

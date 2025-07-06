@@ -1,0 +1,27 @@
+[
+  {
+    "guid": {
+      "a": "cc50b072-d226-635c-48e0-fa770691d9be",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "button_Triangle",
+    "expandInPanel": false,
+    "objGuid": "",
+    "rttiType": "Texture",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512
+  }
+]

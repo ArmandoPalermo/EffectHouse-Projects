@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "ca4d3592-6aec-17ce-099e-229617c09acd",
+      "b": ""
+    },
+    "extraType": "ResItemVSSubgraph",
+    "name": "Fade Out",
+    "expandInPanel": false,
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "objGuid": "",
+    "assetPackageID": "7429568200557477905",
+    "resourceFilePath": "C:\\Users\\Armando\\AppData\\Roaming\\EffectHouse\\Instances\\Instance1\\EHpackage\\7429568200557477905\\Fade Out.ssubgraph",
+    "combinedWithNodeLibary": true,
+    "assetID": "7429568200557477905"
+  }
+]

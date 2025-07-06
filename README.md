@@ -17,7 +17,7 @@ Here are some of the filters featured in this repository:
 - 🕵️ **LupinFrilter** – Inspired by the iconic gentleman thief
 - ⚔️ **GogetaVSBroly Filter** – A duel between two anime legends
 - 🐲 **MULTIPLAYERDRAGONFILTER** – Multiplayer dragon-themed experience
-
+- 🦑 **SquidGameDalgonaFilter** – A rhythm-based challenge inspired by Squid Game’s Dalgona biscuits
 > Each folder contains the source files for the filter, ready to be opened or customized in Effect House.
 
 ## 🛠 Requirements

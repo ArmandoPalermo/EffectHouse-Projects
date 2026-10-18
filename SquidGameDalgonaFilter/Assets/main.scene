@@ -3,7 +3,7 @@
 name: !<str> ""
 guid: {a: 7875085725817850609, b: 329766013828765107}
 editSceneGuid: {a: 0, b: 0}
-calibrateVer: !<str> V5
+calibrateVer: V5
 entities:
   - __class: Entity
     name: !<str> Camera
@@ -235,41 +235,49 @@ entities:
           _filledRange: 1
           _filledType: 0
           _startPoint: 0
-      - __class: JSScriptComponent
+      - __class: DynamicComponent
         name: !<str> ""
         guid: {a: 5108264552958636064, b: 3152255340802780590}
         enabled: true
-        path: !<str> js/RigidBody2D.js
-        properties:
-          __class: Map
-          angularDamping: 0
-          angularVelocity: 0
-          damping: 0
-          externalForce: {x: 0, y: 0}
-          externalTorque: 0
-          extraType: !<str> RigidBody2D
-          freezeX: false
-          freezeY: false
-          freezeZ: false
-          gravityScale: 1
-          isStatic: false
-          mass: 1
-          useGravity: false
-          velocity: {x: 0, y: 0}
-      - __class: JSScriptComponent
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 5343312230880500022, b: 18327459243133249944}
+          properties:
+            __class: Map
+            angularDamping: 0
+            angularVelocity: 0
+            damping: 0
+            externalForce: {x: 0, y: 0}
+            externalTorque: 0
+            extraType: RigidBody2D
+            freezeX: false
+            freezeY: false
+            freezeZ: false
+            gravityScale: 1
+            isStatic: false
+            mass: 1
+            useGravity: false
+            velocity: {x: 0, y: 0}
+        className: !<str> RigidBody2D
+      - __class: DynamicComponent
         name: !<str> ""
         guid: {a: 5676720415397583558, b: 8313609711274266530}
         enabled: true
-        path: !<str> js/CircleCollider2D.js
-        properties:
-          __class: Map
-          categoryBits: 1
-          extraType: !<str> CircleCollider2D
-          isTangible: true
-          maskBits: {__class: DynamicBitset, numBits: 16, values: [65535]}
-          offset: {x: 0, y: 0}
-          radius: 2.7
-          showCollider: true
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 5691370853001531105, b: 7966965148898027438}
+          properties:
+            __class: Map
+            categoryBits: 1
+            extraType: CircleCollider2D
+            isTangible: true
+            maskBits: {__class: DynamicBitset, numBits: 16, values: [65535]}
+            offset: {x: 0, y: 0}
+            radius: 2.7
+            showCollider: true
+        className: !<str> CircleCollider2D
     layer: 0
   - __class: Entity
     name: !<str> LabelPoints
@@ -278,122 +286,146 @@ entities:
     selfvisible: true
     components:
       - {localId: 10}
-      - __class: JSScriptComponent
+      - __class: Text
         name: !<str> ""
         guid: {a: 5614535273398720773, b: 17305219362859838902}
         enabled: true
-        path: !<str> js/Text.js
-        properties:
+        str: "Points:\n\n\nN.Cookies:"
+        sortingOrder: 2
+        richStr: "Points:\n\n\nN.Cookies:"
+        autoSortingOrder: true
+        bloomEnable: false
+        bloomRtSizeCoeff: 0
+        bloomMaterialProperties:
           __class: Map
-          TextGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001559--00000000-0000-0000-0000-000000001559.material}
-          TextNeonGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001568--00000000-0000-0000-0000-000000001568.material}
-          artText: {localId: 1, path: 00000000-0000-0000-0000-000000008000--00000000-0000-0000-0000-000000008000.ata}
-          autoSortingOrder: true
-          backgroundEnable: false
-          bloomColor: {r: 1, g: 1, b: 1, a: 1}
-          bloomOption: !<str> OutWard
-          bold: false
-          canvasSize: {x: 170.422, y: 180.1622}
-          enableRTL: true
-          extraType: !<str> TextJS
-          fontSize: 43
-          fontType: !<str> Classic.ttf
-          forceUpdateArtText: false
-          glow: false
-          glowHorizontalAngle: 0
-          glowIntensity: 0.5
-          glowRange: 0.5
-          glowVerticalAngle: 0
-          hasScreenTransform: true
-          horizontalAlignment: 1
-          innerShadowAlpha: 0.9
-          innerShadowAngle: -30
-          innerShadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
-          innerShadowDistance: 5
-          innerShadowEnable: false
-          innerShadowFillMode: 0
-          innerShadowGradientAngle: 90
-          innerShadowGradientColor1: {r: 0, g: 0, b: 0, a: 1}
-          innerShadowGradientColor2: {r: 0, g: 0, b: 0, a: 1}
-          innerShadowGradientColor3: {r: 0, g: 0, b: 0, a: 1}
-          innerShadowGradientColorPos1: 0
-          innerShadowGradientColorPos2: 1
-          innerShadowGradientColorPos3: 0.5
-          innerShadowGradientQuality: 0
-          innerShadowGradientRangeMode: 1
-          innerShadowSmooth: 0
-          innerShadowTexture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
-          innerShadowTextureAlpha: 1
-          innerShadowTextureAngle: 0
-          innerShadowTextureFlipX: false
-          innerShadowTextureFlipY: false
-          innerShadowTextureOffsetX: 0
-          innerShadowTextureOffsetY: 0
-          innerShadowTextureRange: -1
-          innerShadowTextureScale: 1
-          input: !<str> "Points:\n\n\nN.Cookies:"
-          italic: false
-          letterAlpha: 1
-          letterBgAlpha: 1
-          letterBgColor: {r: 0, g: 0, b: 0, a: 1}
-          letterBgFillMode: 0
-          letterBgGradientAngle: 90
-          letterBgGradientColor1: {r: 0, g: 0, b: 0, a: 1}
-          letterBgGradientColor2: {r: 0, g: 0, b: 0, a: 1}
-          letterBgGradientColor3: {r: 0, g: 0, b: 0, a: 1}
-          letterBgGradientColorPos1: 0
-          letterBgGradientColorPos2: 1
-          letterBgGradientColorPos3: 0.5
-          letterBgGradientQuality: 0
-          letterBgHeightCustomized: 0
-          letterBgRoundRadiusScale: 0
-          letterBgTexture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
-          letterBgTextureOffsetX: 0
-          letterBgTextureOffsetY: 0
-          letterBgTextureScale: 1
-          letterBgWidthCustomized: 0
-          letterColor: {r: 0.02083333, g: 0.2578947, b: 1, a: 1}
-          letterFillMode: 0
-          letterGradientAngle: 90
-          letterGradientColor1: {r: 1, g: 1, b: 1, a: 1}
-          letterGradientColor2: {r: 1, g: 1, b: 1, a: 1}
-          letterGradientColor3: {r: 1, g: 1, b: 1, a: 1}
-          letterGradientColorPos1: 0
-          letterGradientColorPos2: 1
-          letterGradientColorPos3: 0.5
-          letterGradientQuality: 0
-          letterGradientRangeMode: 1
-          letterSpacing: 0
-          letterTexture: {localId: 1, path: 00000000-0000-0000-0000-00000000001c--00000000-0000-0000-0000-00000000001c.png}
-          letterTextureAlpha: 1
-          letterTextureAngle: 0
-          letterTextureFlipX: false
-          letterTextureFlipY: false
-          letterTextureOffsetX: 0
-          letterTextureOffsetY: 0
-          letterTextureRange: -1
-          letterTextureScale: 1
-          lineBreakType: 1
-          lineSpacing: 0
-          outlineAlpha: 1
-          outlineColorRGBA: {r: 0, g: 0, b: 0, a: 1}
-          outlineEnable: false
-          outlineLayers:
-            - {localId: 18}
-          outlineWidth: 30
-          shadowAlpha: 0.9
-          shadowAngle: -45
-          shadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
-          shadowDistance: 10
-          shadowEnable: false
-          shadowSmooth: 0
-          shadowSmoothVersion: 1
-          sortingOrder: 2
-          textAdaptiveCanvasEnabled: false
-          textinputLock: false
-          underline: false
-          verticalAlignment: 1
-          writingDirection: 0
+          v_color: {x: 1, y: 1, z: 1, w: 1}
+          v_bloomPara: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          guid: {a: 4809564578530539820, b: 18386736404991713960}
+          name: !<str> ""
+          properties:
+            __class: Map
+            _arcAngle: 0
+            _inner_input: "Points:\n\n\nN.Cookies:"
+            _bendType: 0
+            _lineBreakType: 1
+            _autoFontSizeMin: 24
+            _userEditable: false
+            _verticalAlignment: 1
+            _autoFontSizeMax: 96
+            _horizontalAlignment: 1
+            textLocale: 1
+            _glowVAngle: 0
+            _glowHAngle: 0
+            _textAdaptiveCanvasEnabled: false
+            _maxInputWords: 50
+            _bloomOption: 0
+        activeTextStyle: {localId: 27}
+        letters:
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 5632800123884383561, b: 10888741335712319918}
+            name: !<str> ""
+            utf8: P
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 5627307464857563295, b: 15934770700108710808}
+            name: !<str> ""
+            utf8: o
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 4712605621511002669, b: 6968928913249382067}
+            name: !<str> ""
+            utf8: i
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 5545666905188924262, b: 3730402751383982769}
+            name: !<str> ""
+            utf8: n
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 4802786847487257767, b: 15155495289506639027}
+            name: !<str> ""
+            utf8: t
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 5402440027149594543, b: 16293750503252914080}
+            name: !<str> ""
+            utf8: s
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 4738367532490645837, b: 8012630101398664597}
+            name: !<str> ""
+            utf8: ":"
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 5046676517032285066, b: 3356437123520780958}
+            name: !<str> ""
+            utf8: "\n"
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 4639361263063449291, b: 8682683445999079597}
+            name: !<str> ""
+            utf8: "\n"
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 4942056522450304846, b: 1515097166067475113}
+            name: !<str> ""
+            utf8: "\n"
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 5640583457178085656, b: 4307031870136052407}
+            name: !<str> ""
+            utf8: N
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 4835196707971315936, b: 17042988423435298494}
+            name: !<str> ""
+            utf8: .
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 5080811227964976122, b: 12840493339523752081}
+            name: !<str> ""
+            utf8: C
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 4903357659572711724, b: 8573416953447527569}
+            name: !<str> ""
+            utf8: o
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 5626918747534046145, b: 4424798665559759786}
+            name: !<str> ""
+            utf8: o
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 5392906329255595614, b: 7088951699415580061}
+            name: !<str> ""
+            utf8: k
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 5485084193656402993, b: 8913497302311628688}
+            name: !<str> ""
+            utf8: i
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 5439434393622965428, b: 4272494988331805854}
+            name: !<str> ""
+            utf8: e
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 5692436336634895854, b: 2665772717767283360}
+            name: !<str> ""
+            utf8: s
+          - __class: Letter
+            letterStyle: {localId: 27}
+            guid: {a: 5512406107409153472, b: 9367245674087471494}
+            name: !<str> ""
+            utf8: ":"
+        globalBackground: {localId: 30}
+        typeSettingParam: {localId: 28}
+        canvas: {localId: 29}
     layer: 0
   - __class: Entity
     name: !<str> points
@@ -402,122 +434,51 @@ entities:
     selfvisible: true
     components:
       - {localId: 11}
-      - __class: JSScriptComponent
+      - __class: Text
         name: !<str> ""
         guid: {a: 5616180578077334660, b: 11928283016128908198}
         enabled: true
-        path: !<str> js/Text.js
-        properties:
+        str: 0
+        sortingOrder: 4
+        richStr: 0
+        autoSortingOrder: true
+        bloomEnable: false
+        bloomRtSizeCoeff: 0
+        bloomMaterialProperties:
           __class: Map
-          TextGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001559--00000000-0000-0000-0000-000000001559.material}
-          TextNeonGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001568--00000000-0000-0000-0000-000000001568.material}
-          artText: {localId: 1, path: 00000000-0000-0000-0000-000000008000--00000000-0000-0000-0000-000000008000.ata}
-          autoSortingOrder: true
-          backgroundEnable: false
-          bloomColor: {r: 1, g: 1, b: 1, a: 1}
-          bloomOption: !<str> OutWard
-          bold: false
-          canvasSize: {x: 200.5221, y: 108.8823}
-          enableRTL: true
-          extraType: !<str> TextJS
-          fontSize: 48
-          fontType: !<str> Classic.ttf
-          forceUpdateArtText: false
-          glow: false
-          glowHorizontalAngle: 0
-          glowIntensity: 0.5
-          glowRange: 0.5
-          glowVerticalAngle: 0
-          hasScreenTransform: true
-          horizontalAlignment: 1
-          innerShadowAlpha: 0.9
-          innerShadowAngle: -30
-          innerShadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
-          innerShadowDistance: 5
-          innerShadowEnable: false
-          innerShadowFillMode: 0
-          innerShadowGradientAngle: 90
-          innerShadowGradientColor1: {r: 0, g: 0, b: 0, a: 1}
-          innerShadowGradientColor2: {r: 0, g: 0, b: 0, a: 1}
-          innerShadowGradientColor3: {r: 0, g: 0, b: 0, a: 1}
-          innerShadowGradientColorPos1: 0
-          innerShadowGradientColorPos2: 1
-          innerShadowGradientColorPos3: 0.5
-          innerShadowGradientQuality: 0
-          innerShadowGradientRangeMode: 1
-          innerShadowSmooth: 0
-          innerShadowTexture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
-          innerShadowTextureAlpha: 1
-          innerShadowTextureAngle: 0
-          innerShadowTextureFlipX: false
-          innerShadowTextureFlipY: false
-          innerShadowTextureOffsetX: 0
-          innerShadowTextureOffsetY: 0
-          innerShadowTextureRange: -1
-          innerShadowTextureScale: 1
-          input: !<str> 0
-          italic: false
-          letterAlpha: 1
-          letterBgAlpha: 1
-          letterBgColor: {r: 0, g: 0, b: 0, a: 1}
-          letterBgFillMode: 0
-          letterBgGradientAngle: 90
-          letterBgGradientColor1: {r: 0, g: 0, b: 0, a: 1}
-          letterBgGradientColor2: {r: 0, g: 0, b: 0, a: 1}
-          letterBgGradientColor3: {r: 0, g: 0, b: 0, a: 1}
-          letterBgGradientColorPos1: 0
-          letterBgGradientColorPos2: 1
-          letterBgGradientColorPos3: 0.5
-          letterBgGradientQuality: 0
-          letterBgHeightCustomized: 0
-          letterBgRoundRadiusScale: 0
-          letterBgTexture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
-          letterBgTextureOffsetX: 0
-          letterBgTextureOffsetY: 0
-          letterBgTextureScale: 1
-          letterBgWidthCustomized: 0
-          letterColor: {r: 0.9375, g: 0, b: 0, a: 1}
-          letterFillMode: 0
-          letterGradientAngle: 90
-          letterGradientColor1: {r: 1, g: 1, b: 1, a: 1}
-          letterGradientColor2: {r: 1, g: 1, b: 1, a: 1}
-          letterGradientColor3: {r: 1, g: 1, b: 1, a: 1}
-          letterGradientColorPos1: 0
-          letterGradientColorPos2: 1
-          letterGradientColorPos3: 0.5
-          letterGradientQuality: 0
-          letterGradientRangeMode: 1
-          letterSpacing: 0
-          letterTexture: {localId: 1, path: 00000000-0000-0000-0000-00000000001c--00000000-0000-0000-0000-00000000001c.png}
-          letterTextureAlpha: 1
-          letterTextureAngle: 0
-          letterTextureFlipX: false
-          letterTextureFlipY: false
-          letterTextureOffsetX: 0
-          letterTextureOffsetY: 0
-          letterTextureRange: -1
-          letterTextureScale: 1
-          lineBreakType: 1
-          lineSpacing: 0
-          outlineAlpha: 1
-          outlineColorRGBA: {r: 0, g: 0, b: 0, a: 1}
-          outlineEnable: false
-          outlineLayers:
-            - {localId: 20}
-          outlineWidth: 30
-          shadowAlpha: 0.9
-          shadowAngle: -45
-          shadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
-          shadowDistance: 10
-          shadowEnable: false
-          shadowSmooth: 0
-          shadowSmoothVersion: 1
-          sortingOrder: 4
-          textAdaptiveCanvasEnabled: false
-          textinputLock: false
-          underline: false
-          verticalAlignment: 1
-          writingDirection: 0
+          v_color: {x: 1, y: 1, z: 1, w: 1}
+          v_bloomPara: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          guid: {a: 4970696957609840343, b: 13372618549913431710}
+          name: !<str> ""
+          properties:
+            __class: Map
+            _arcAngle: 0
+            _inner_input: 0
+            _bendType: 0
+            _lineBreakType: 1
+            _autoFontSizeMin: 24
+            _userEditable: false
+            _verticalAlignment: 1
+            _autoFontSizeMax: 96
+            _horizontalAlignment: 1
+            textLocale: 1
+            _glowVAngle: 0
+            _glowHAngle: 0
+            _textAdaptiveCanvasEnabled: false
+            _maxInputWords: 50
+            _bloomOption: 0
+        activeTextStyle: {localId: 33}
+        letters:
+          - __class: Letter
+            letterStyle: {localId: 33}
+            guid: {a: 5026807267393553045, b: 15994073606494013098}
+            name: !<str> ""
+            utf8: 0
+        globalBackground: {localId: 36}
+        typeSettingParam: {localId: 34}
+        canvas: {localId: 35}
     layer: 0
   - __class: Entity
     name: !<str> nCookies
@@ -526,122 +487,61 @@ entities:
     selfvisible: true
     components:
       - {localId: 12}
-      - __class: JSScriptComponent
+      - __class: Text
         name: !<str> ""
         guid: {a: 5730012314711224876, b: 14825864229058970297}
         enabled: true
-        path: !<str> js/Text.js
-        properties:
+        str: 0/6
+        sortingOrder: 6
+        richStr: 0/6
+        autoSortingOrder: true
+        bloomEnable: false
+        bloomRtSizeCoeff: 0
+        bloomMaterialProperties:
           __class: Map
-          TextGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001559--00000000-0000-0000-0000-000000001559.material}
-          TextNeonGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001568--00000000-0000-0000-0000-000000001568.material}
-          artText: {localId: 1, path: 00000000-0000-0000-0000-000000008000--00000000-0000-0000-0000-000000008000.ata}
-          autoSortingOrder: true
-          backgroundEnable: false
-          bloomColor: {r: 1, g: 1, b: 1, a: 1}
-          bloomOption: !<str> OutWard
-          bold: false
-          canvasSize: {x: 720, y: 1280}
-          enableRTL: true
-          extraType: !<str> TextJS
-          fontSize: 48
-          fontType: !<str> Classic.ttf
-          forceUpdateArtText: false
-          glow: false
-          glowHorizontalAngle: 0
-          glowIntensity: 0.5
-          glowRange: 0.5
-          glowVerticalAngle: 0
-          hasScreenTransform: true
-          horizontalAlignment: 1
-          innerShadowAlpha: 0.9
-          innerShadowAngle: -30
-          innerShadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
-          innerShadowDistance: 5
-          innerShadowEnable: false
-          innerShadowFillMode: 0
-          innerShadowGradientAngle: 90
-          innerShadowGradientColor1: {r: 0, g: 0, b: 0, a: 1}
-          innerShadowGradientColor2: {r: 0, g: 0, b: 0, a: 1}
-          innerShadowGradientColor3: {r: 0, g: 0, b: 0, a: 1}
-          innerShadowGradientColorPos1: 0
-          innerShadowGradientColorPos2: 1
-          innerShadowGradientColorPos3: 0.5
-          innerShadowGradientQuality: 0
-          innerShadowGradientRangeMode: 1
-          innerShadowSmooth: 0
-          innerShadowTexture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
-          innerShadowTextureAlpha: 1
-          innerShadowTextureAngle: 0
-          innerShadowTextureFlipX: false
-          innerShadowTextureFlipY: false
-          innerShadowTextureOffsetX: 0
-          innerShadowTextureOffsetY: 0
-          innerShadowTextureRange: -1
-          innerShadowTextureScale: 1
-          input: !<str> 0/6
-          italic: false
-          letterAlpha: 1
-          letterBgAlpha: 1
-          letterBgColor: {r: 0, g: 0, b: 0, a: 1}
-          letterBgFillMode: 0
-          letterBgGradientAngle: 90
-          letterBgGradientColor1: {r: 0, g: 0, b: 0, a: 1}
-          letterBgGradientColor2: {r: 0, g: 0, b: 0, a: 1}
-          letterBgGradientColor3: {r: 0, g: 0, b: 0, a: 1}
-          letterBgGradientColorPos1: 0
-          letterBgGradientColorPos2: 1
-          letterBgGradientColorPos3: 0.5
-          letterBgGradientQuality: 0
-          letterBgHeightCustomized: 0
-          letterBgRoundRadiusScale: 0
-          letterBgTexture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
-          letterBgTextureOffsetX: 0
-          letterBgTextureOffsetY: 0
-          letterBgTextureScale: 1
-          letterBgWidthCustomized: 0
-          letterColor: {r: 1, g: 0, b: 0, a: 1}
-          letterFillMode: 0
-          letterGradientAngle: 90
-          letterGradientColor1: {r: 1, g: 1, b: 1, a: 1}
-          letterGradientColor2: {r: 1, g: 1, b: 1, a: 1}
-          letterGradientColor3: {r: 1, g: 1, b: 1, a: 1}
-          letterGradientColorPos1: 0
-          letterGradientColorPos2: 1
-          letterGradientColorPos3: 0.5
-          letterGradientQuality: 0
-          letterGradientRangeMode: 1
-          letterSpacing: 0
-          letterTexture: {localId: 1, path: 00000000-0000-0000-0000-00000000001c--00000000-0000-0000-0000-00000000001c.png}
-          letterTextureAlpha: 1
-          letterTextureAngle: 0
-          letterTextureFlipX: false
-          letterTextureFlipY: false
-          letterTextureOffsetX: 0
-          letterTextureOffsetY: 0
-          letterTextureRange: -1
-          letterTextureScale: 1
-          lineBreakType: 1
-          lineSpacing: 0
-          outlineAlpha: 1
-          outlineColorRGBA: {r: 0, g: 0, b: 0, a: 1}
-          outlineEnable: false
-          outlineLayers:
-            - {localId: 22}
-          outlineWidth: 30
-          shadowAlpha: 0.9
-          shadowAngle: -45
-          shadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
-          shadowDistance: 10
-          shadowEnable: false
-          shadowSmooth: 0
-          shadowSmoothVersion: 1
-          sortingOrder: 6
-          textAdaptiveCanvasEnabled: false
-          textinputLock: false
-          underline: false
-          verticalAlignment: 1
-          writingDirection: 0
+          v_color: {x: 1, y: 1, z: 1, w: 1}
+          v_bloomPara: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          guid: {a: 4908209751836037359, b: 1000875587372842883}
+          name: !<str> ""
+          properties:
+            __class: Map
+            _arcAngle: 0
+            _inner_input: 0/6
+            _bendType: 0
+            _lineBreakType: 1
+            _autoFontSizeMin: 24
+            _userEditable: false
+            _verticalAlignment: 1
+            _autoFontSizeMax: 96
+            _horizontalAlignment: 1
+            textLocale: 1
+            _glowVAngle: 0
+            _glowHAngle: 0
+            _textAdaptiveCanvasEnabled: false
+            _maxInputWords: 50
+            _bloomOption: 0
+        activeTextStyle: {localId: 39}
+        letters:
+          - __class: Letter
+            letterStyle: {localId: 39}
+            guid: {a: 5157973797607111033, b: 7952141725377556650}
+            name: !<str> ""
+            utf8: 0
+          - __class: Letter
+            letterStyle: {localId: 39}
+            guid: {a: 5716438895797960771, b: 1236264550285231268}
+            name: !<str> ""
+            utf8: /
+          - __class: Letter
+            letterStyle: {localId: 39}
+            guid: {a: 4962131297697075712, b: 1578107735829724308}
+            name: !<str> ""
+            utf8: 6
+        globalBackground: {localId: 42}
+        typeSettingParam: {localId: 40}
+        canvas: {localId: 41}
     layer: 0
   - __class: Entity
     name: !<str> starButton
@@ -767,122 +667,46 @@ entities:
     selfvisible: true
     components:
       - {localId: 16}
-      - __class: JSScriptComponent
+      - __class: Text
         name: !<str> ""
         guid: {a: 5055681090739340570, b: 3942143497302023083}
         enabled: true
-        path: !<str> js/Text.js
-        properties:
+        str: ""
+        sortingOrder: 11
+        richStr: ""
+        autoSortingOrder: true
+        bloomEnable: false
+        bloomRtSizeCoeff: 0
+        bloomMaterialProperties:
           __class: Map
-          TextGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001559--00000000-0000-0000-0000-000000001559.material}
-          TextNeonGlowMaterial: {localId: 1, path: 00000000-0000-0000-0000-000000001568--00000000-0000-0000-0000-000000001568.material}
-          artText: {localId: 1, path: 00000000-0000-0000-0000-000000008000--00000000-0000-0000-0000-000000008000.ata}
-          autoSortingOrder: true
-          backgroundEnable: false
-          bloomColor: {r: 1, g: 1, b: 1, a: 1}
-          bloomOption: !<str> OutWard
-          bold: false
-          canvasSize: {x: 720, y: 1280}
-          enableRTL: true
-          extraType: !<str> TextJS
-          fontSize: 72
-          fontType: !<str> Retro.ttf
-          forceUpdateArtText: false
-          glow: false
-          glowHorizontalAngle: 0
-          glowIntensity: 0.5
-          glowRange: 0.5
-          glowVerticalAngle: 0
-          hasScreenTransform: true
-          horizontalAlignment: 1
-          innerShadowAlpha: 0.9
-          innerShadowAngle: -30
-          innerShadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
-          innerShadowDistance: 5
-          innerShadowEnable: false
-          innerShadowFillMode: 0
-          innerShadowGradientAngle: 90
-          innerShadowGradientColor1: {r: 0, g: 0, b: 0, a: 1}
-          innerShadowGradientColor2: {r: 0, g: 0, b: 0, a: 1}
-          innerShadowGradientColor3: {r: 0, g: 0, b: 0, a: 1}
-          innerShadowGradientColorPos1: 0
-          innerShadowGradientColorPos2: 1
-          innerShadowGradientColorPos3: 0.5
-          innerShadowGradientQuality: 0
-          innerShadowGradientRangeMode: 1
-          innerShadowSmooth: 0
-          innerShadowTexture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
-          innerShadowTextureAlpha: 1
-          innerShadowTextureAngle: 0
-          innerShadowTextureFlipX: false
-          innerShadowTextureFlipY: false
-          innerShadowTextureOffsetX: 0
-          innerShadowTextureOffsetY: 0
-          innerShadowTextureRange: -1
-          innerShadowTextureScale: 1
-          input: !<str> ""
-          italic: false
-          letterAlpha: 1
-          letterBgAlpha: 1
-          letterBgColor: {r: 0, g: 0, b: 0, a: 1}
-          letterBgFillMode: 0
-          letterBgGradientAngle: 90
-          letterBgGradientColor1: {r: 0, g: 0, b: 0, a: 1}
-          letterBgGradientColor2: {r: 0, g: 0, b: 0, a: 1}
-          letterBgGradientColor3: {r: 0, g: 0, b: 0, a: 1}
-          letterBgGradientColorPos1: 0
-          letterBgGradientColorPos2: 1
-          letterBgGradientColorPos3: 0.5
-          letterBgGradientQuality: 0
-          letterBgHeightCustomized: 0
-          letterBgRoundRadiusScale: 0
-          letterBgTexture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
-          letterBgTextureOffsetX: 0
-          letterBgTextureOffsetY: 0
-          letterBgTextureScale: 1
-          letterBgWidthCustomized: 0
-          letterColor: {r: 0.8947368, g: 0, b: 1, a: 1}
-          letterFillMode: 0
-          letterGradientAngle: 90
-          letterGradientColor1: {r: 1, g: 1, b: 1, a: 1}
-          letterGradientColor2: {r: 1, g: 1, b: 1, a: 1}
-          letterGradientColor3: {r: 1, g: 1, b: 1, a: 1}
-          letterGradientColorPos1: 0
-          letterGradientColorPos2: 1
-          letterGradientColorPos3: 0.5
-          letterGradientQuality: 0
-          letterGradientRangeMode: 1
-          letterSpacing: 0
-          letterTexture: {localId: 1, path: 00000000-0000-0000-0000-00000000001c--00000000-0000-0000-0000-00000000001c.png}
-          letterTextureAlpha: 1
-          letterTextureAngle: 0
-          letterTextureFlipX: false
-          letterTextureFlipY: false
-          letterTextureOffsetX: 0
-          letterTextureOffsetY: 0
-          letterTextureRange: -1
-          letterTextureScale: 1
-          lineBreakType: 1
-          lineSpacing: 0
-          outlineAlpha: 1
-          outlineColorRGBA: {r: 0, g: 0, b: 0, a: 1}
-          outlineEnable: false
-          outlineLayers:
-            - {localId: 24}
-          outlineWidth: 30
-          shadowAlpha: 0.9
-          shadowAngle: -45
-          shadowColorRGBA: {r: 0, g: 0, b: 0, a: 1}
-          shadowDistance: 10
-          shadowEnable: false
-          shadowSmooth: 0
-          shadowSmoothVersion: 1
-          sortingOrder: 11
-          textAdaptiveCanvasEnabled: false
-          textinputLock: false
-          underline: false
-          verticalAlignment: 1
-          writingDirection: 0
+          v_color: {x: 1, y: 1, z: 1, w: 1}
+          v_bloomPara: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          guid: {a: 4895795551660061894, b: 8856499924085300657}
+          name: !<str> ""
+          properties:
+            __class: Map
+            _arcAngle: 0
+            _inner_input: ""
+            _bendType: 0
+            _lineBreakType: 1
+            _autoFontSizeMin: 24
+            _userEditable: false
+            _verticalAlignment: 1
+            _autoFontSizeMax: 96
+            _horizontalAlignment: 1
+            textLocale: 1
+            _glowVAngle: 0
+            _glowHAngle: 0
+            _textAdaptiveCanvasEnabled: false
+            _maxInputWords: 50
+            _bloomOption: 0
+        activeTextStyle: {localId: 45}
+        letters: ~
+        globalBackground: {localId: 48}
+        typeSettingParam: {localId: 46}
+        canvas: {localId: 47}
     layer: 0
   - __class: Entity
     name: !<str> Biscuit
@@ -922,41 +746,49 @@ entities:
           _filledRange: 1
           _filledType: 0
           _startPoint: 0
-      - __class: JSScriptComponent
+      - __class: DynamicComponent
         name: !<str> ""
         guid: {a: 4797935296193486998, b: 8573074189708361141}
         enabled: true
-        path: !<str> js/RigidBody2D.js
-        properties:
-          __class: Map
-          angularDamping: 0
-          angularVelocity: 0
-          damping: 0
-          externalForce: {x: 0, y: 0}
-          externalTorque: 0
-          extraType: !<str> RigidBody2D
-          freezeX: false
-          freezeY: false
-          freezeZ: false
-          gravityScale: 1.5
-          isStatic: true
-          mass: 15
-          useGravity: true
-          velocity: {x: 0, y: 0}
-      - __class: JSScriptComponent
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 5123004058698974703, b: 6922157339774283423}
+          properties:
+            __class: Map
+            angularDamping: 0
+            angularVelocity: 0
+            damping: 0
+            externalForce: {x: 0, y: 0}
+            externalTorque: 0
+            extraType: RigidBody2D
+            freezeX: false
+            freezeY: false
+            freezeZ: false
+            gravityScale: 1.5
+            isStatic: true
+            mass: 15
+            useGravity: true
+            velocity: {x: 0, y: 0}
+        className: !<str> RigidBody2D
+      - __class: DynamicComponent
         name: !<str> ""
         guid: {a: 5410417657035936255, b: 15827811819961636792}
         enabled: true
-        path: !<str> js/CircleCollider2D.js
-        properties:
-          __class: Map
-          categoryBits: 1
-          extraType: !<str> CircleCollider2D
-          isTangible: false
-          maskBits: {__class: DynamicBitset, numBits: 16, values: [65535]}
-          offset: {x: 0, y: 0}
-          radius: 2.7
-          showCollider: true
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 4665453290183652151, b: 9517996976662549155}
+          properties:
+            __class: Map
+            categoryBits: 1
+            extraType: CircleCollider2D
+            isTangible: false
+            maskBits: {__class: DynamicBitset, numBits: 16, values: [65535]}
+            offset: {x: 0, y: 0}
+            radius: 2.7
+            showCollider: true
+        className: !<str> CircleCollider2D
     layer: 0
   - __class: Entity
     name: !<str> Global Leaderboard
@@ -965,34 +797,38 @@ entities:
     selfvisible: true
     components:
       - {localId: 17}
-      - __class: JSScriptComponent
+      - __class: DynamicComponent
         name: !<str> ""
         guid: {a: 5589084335068122724, b: 3644539181267750322}
         enabled: true
-        path: !<str> js/Leaderboard.js
-        properties:
-          __class: Map
-          LeaderboardJSVersion: 2
-          autoSortingOrder: true
-          colorFolder: !<str> green
-          errorMessageCantConnect: !<str> Server is busy. Please try again later.
-          errorMessageUnderage: !<str> You must be at least 18 years old to view your rank
-          extraType: !<str> LeaderBoard
-          friendRankingText: !<str> FRIENDS RANKING
-          globalRankingText: !<str> GLOBAL RANKING
-          imageRendererMaterial: {localId: 1, path: 00000000-0000-0000-0000-f00000000132--00000000-0000-0000-0000-f00000000132.material}
-          messageNoFriends: !<str> Add more friends to start playing together
-          messageNotEnoughFriends: !<str> Invite friends to play to see how you rank against them
-          nationalRankingText: !<str> NATIONAL RANKING
-          rankingType: 3
-          sendScore: true
-          sortingOrder: 13
-          sortingOrderCount: 2
-          sortingType: 0
-          thumbnailMaterial: {localId: 1, path: 00000000-0000-0000-0000-000020004001--00000000-0000-0000-0000-000020004001.material}
-          titleColor: {r: 0.482, g: 1, b: 0.698, a: 1}
-          titleFont: !<str> Vintage.ttf
-          v: 0
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 5572812821627245519, b: 9275223284287582602}
+          properties:
+            __class: Map
+            LeaderboardJSVersion: 2
+            autoSortingOrder: true
+            colorFolder: green
+            errorMessageCantConnect: Server is busy. Please try again later.
+            errorMessageUnderage: You must be at least 18 years old to view your rank
+            extraType: LeaderBoard
+            friendRankingText: FRIENDS RANKING
+            globalRankingText: GLOBAL RANKING
+            imageRendererMaterial: {localId: 1, path: 00000000-0000-0000-0000-f00000000132--00000000-0000-0000-0000-f00000000132.material}
+            messageNoFriends: Add more friends to start playing together
+            messageNotEnoughFriends: Invite friends to play to see how you rank against them
+            nationalRankingText: NATIONAL RANKING
+            rankingType: 3
+            sendScore: true
+            sortingOrder: 13
+            sortingOrderCount: 2
+            sortingType: 0
+            thumbnailMaterial: {localId: 1, path: 00000000-0000-0000-0000-000020004001--00000000-0000-0000-0000-000020004001.material}
+            titleColor: {r: 0.4819999933242798, g: 1, b: 0.6980000138282776, a: 1}
+            titleFont: Vintage.ttf
+            v: 0
+        className: !<str> Leaderboard
     layer: 0
 visible: true
 config:
@@ -1002,12 +838,12 @@ msaa:
   __class: MSAAMode
   value: NONE
 jsScriptSystems:
-  - !<str> js/AmazingProRuntime.js
-  - !<str> js/Graph/GraphSystem.js
-  - !<str> js/JSAssetSystem.js
-  - !<str> js/PhysicsSystem2D.js
-  - !<str> js/LeaderboardSystem.js
-  - !<str> js/AmazingProEditor.js
+  - js/AmazingProRuntime.js
+  - js/Graph/GraphSystem.js
+  - js/JSAssetSystem.js
+  - js/PhysicsSystem2D.js
+  - js/LeaderboardSystem.js
+  - js/AmazingProEditor.js
 enableMultiTouch: false
 enableLightMultiPass: false
 pixelLightCount: 4
@@ -1045,7 +881,7 @@ guid: {a: 15367742060568528024, b: 10146237304508457363}
 enabled: true
 localPosition: {x: -30, y: 20, z: -20}
 localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: -0.9816272, x: 0.190809, y: 0, z: 0}
+localOrientation: {w: -0.9816272258758545, x: 0.1908089965581894, y: 0, z: 0}
 parent: {localId: 3}
 mobility:
   __class: Mobility
@@ -1056,7 +892,7 @@ guid: {a: 2038139312557020282, b: 1886311758165782682}
 enabled: true
 localPosition: {x: 0, y: 30, z: 0}
 localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 0.7071069, x: 0, y: 0.7071067, z: 0}
+localOrientation: {w: 0.70710688829422, x: 0, y: 0.7071067094802856, z: 0}
 parent: {localId: 3}
 mobility:
   __class: Mobility
@@ -1099,15 +935,15 @@ mobility:
 name: !<str> ""
 guid: {a: 5396235225399710402, b: 11112484520977020585}
 enabled: true
-localPosition: {x: 0.1545539, y: -6.589063, z: -40}
+localPosition: {x: 0.1545539051294327, y: -6.589063167572021, z: -40}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
 parent: {localId: 7}
 mobility:
   __class: Mobility
   value: Dynamic
-anchoredPosition: {x: 4.945724, y: -210.85}
-sizeDelta: {x: 233.1378, y: 233.8792}
+anchoredPosition: {x: 4.945724010467529, y: -210.8500061035156}
+sizeDelta: {x: 233.1378021240234, y: 233.8791961669922}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
@@ -1116,15 +952,15 @@ enablePivotMatrix: false
 name: !<str> ""
 guid: {a: 4674558163685587069, b: 6735960225116663964}
 enabled: true
-localPosition: {x: 0, y: 12.19281, z: -40}
+localPosition: {x: 0, y: 12.19281005859375, z: -40}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
 parent: {localId: 7}
 mobility:
   __class: Mobility
   value: Dynamic
-anchoredPosition: {x: 0, y: 390.17}
-sizeDelta: {x: 209.619, y: 319.4161}
+anchoredPosition: {x: 0, y: 390.1700134277344}
+sizeDelta: {x: 209.6190032958984, y: 319.4161071777344}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
@@ -1133,15 +969,15 @@ enablePivotMatrix: false
 name: !<str> ""
 guid: {a: 4821314609119181342, b: 6080362371748398484}
 enabled: true
-localPosition: {x: -6.853947, y: -4.888696, z: -40}
+localPosition: {x: -6.853947162628174, y: -4.888696193695068, z: -40}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
 parent: {localId: 7}
 mobility:
   __class: Mobility
   value: Dynamic
-anchoredPosition: {x: -219.3263, y: -156.4383}
-sizeDelta: {x: 221.9231, y: 312.8765}
+anchoredPosition: {x: -219.3262939453125, y: -156.4382934570312}
+sizeDelta: {x: 221.923095703125, y: 312.8764953613281}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
@@ -1150,15 +986,15 @@ enablePivotMatrix: true
 name: !<str> ""
 guid: {a: 5241228527527150243, b: 6778966736142980538}
 enabled: true
-localPosition: {x: -8.116844, y: -4.666309, z: -40}
+localPosition: {x: -8.116844177246094, y: -4.666308879852295, z: -40}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
 parent: {localId: 7}
 mobility:
   __class: Mobility
   value: Dynamic
-anchoredPosition: {x: -259.739, y: -149.3219}
-sizeDelta: {x: 200.5221, y: 108.8823}
+anchoredPosition: {x: -259.739013671875, y: -149.3218994140625}
+sizeDelta: {x: 200.5220947265625, y: 108.8823013305664}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
@@ -1167,15 +1003,15 @@ enablePivotMatrix: true
 name: !<str> ""
 guid: {a: 5674177808475752017, b: 8688663275123559310}
 enabled: true
-localPosition: {x: -7.4642, y: -8.106975, z: -40}
+localPosition: {x: -7.464200019836426, y: -8.106974601745605, z: -40}
 localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 0.9999742, x: 0, y: 0, z: -0.007189478}
+localOrientation: {w: 0.9999741911888123, x: 0, y: 0, z: -0.007189477793872356}
 parent: {localId: 7}
 mobility:
   __class: Mobility
   value: Dynamic
-anchoredPosition: {x: -238.8544, y: -259.4232}
-sizeDelta: {x: 170.9821, y: 111.1957}
+anchoredPosition: {x: -238.8544006347656, y: -259.4231872558594}
+sizeDelta: {x: 170.9821014404297, y: 111.1957015991211}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
@@ -1184,15 +1020,15 @@ enablePivotMatrix: true
 name: !<str> ""
 guid: {a: 4957430545967464491, b: 6011328423965801127}
 enabled: true
-localPosition: {x: 6.802163, y: -12.01957, z: -40}
+localPosition: {x: 6.802163124084473, y: -12.01957035064697, z: -40}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
 parent: {localId: 7}
 mobility:
   __class: Mobility
   value: Dynamic
-anchoredPosition: {x: 217.6692, y: -384.6261}
-sizeDelta: {x: 110.9624, y: 169.5352}
+anchoredPosition: {x: 217.6692047119141, y: -384.6260986328125}
+sizeDelta: {x: 110.96240234375, y: 169.5352020263672}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
@@ -1201,15 +1037,15 @@ enablePivotMatrix: false
 name: !<str> ""
 guid: {a: 5356946457485645415, b: 313363123167301535}
 enabled: true
-localPosition: {x: 7.266829, y: -4.174761, z: -40}
+localPosition: {x: 7.266829013824463, y: -4.174760818481445, z: -40}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
 parent: {localId: 7}
 mobility:
   __class: Mobility
   value: Dynamic
-anchoredPosition: {x: 232.5385, y: -133.5924}
-sizeDelta: {x: 110.9624, y: 169.5352}
+anchoredPosition: {x: 232.5384979248047, y: -133.5924072265625}
+sizeDelta: {x: 110.96240234375, y: 169.5352020263672}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
@@ -1218,15 +1054,15 @@ enablePivotMatrix: false
 name: !<str> ""
 guid: {a: 5044893380735342084, b: 17714357490371412373}
 enabled: true
-localPosition: {x: 6.950724, y: -8.002821, z: -40}
+localPosition: {x: 6.950724124908447, y: -8.00282096862793, z: -40}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
 parent: {localId: 7}
 mobility:
   __class: Mobility
   value: Dynamic
-anchoredPosition: {x: 222.4232, y: -256.0903}
-sizeDelta: {x: 110.9624, y: 169.5352}
+anchoredPosition: {x: 222.4232025146484, y: -256.0903015136719}
+sizeDelta: {x: 110.96240234375, y: 169.5352020263672}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
@@ -1235,15 +1071,15 @@ enablePivotMatrix: false
 name: !<str> ""
 guid: {a: 5023104540737922493, b: 14384960717462287271}
 enabled: true
-localPosition: {x: 0, y: 7.567565, z: -40}
+localPosition: {x: 0, y: 7.567564964294434, z: -40}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
 parent: {localId: 7}
 mobility:
   __class: Mobility
   value: Dynamic
-anchoredPosition: {x: 0, y: 242.1621}
-sizeDelta: {x: 720, y: 972.4925}
+anchoredPosition: {x: 0, y: 242.1620941162109}
+sizeDelta: {x: 720, y: 972.4924926757812}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
 pixelsPerUnit: 32
@@ -1252,14 +1088,14 @@ enablePivotMatrix: true
 name: !<str> ""
 guid: {a: 4839706906332282588, b: 10506959487800084390}
 enabled: true
-localPosition: {x: 0, y: 12.28641, z: -40}
+localPosition: {x: 0, y: 12.28641033172607, z: -40}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
 parent: {localId: 7}
 mobility:
   __class: Mobility
   value: Dynamic
-anchoredPosition: {x: 0, y: 393.165}
+anchoredPosition: {x: 0, y: 393.1650085449219}
 sizeDelta: {x: 335, y: 357}
 pivot: {x: 0.5, y: 0.5}
 anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
@@ -1293,12 +1129,14 @@ color: {r: 0, g: 0, b: 0, a: 1}
 gradientColors:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
-gradientPoints: [0, 1]
+gradientPoints:
+  - 0
+  - 1
 gradientAngle: 90
 gradientMode:
   __class: LetterStyleLayerGradientMode
   value: ALL
-texturePath: !<str> ""
+texturePath: ""
 textureFlipX: false
 textureFlipY: false
 textureScale: 1
@@ -1348,12 +1186,14 @@ color: {r: 0, g: 0, b: 0, a: 1}
 gradientColors:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
-gradientPoints: [0, 1]
+gradientPoints:
+  - 0
+  - 1
 gradientAngle: 90
 gradientMode:
   __class: LetterStyleLayerGradientMode
   value: ALL
-texturePath: !<str> ""
+texturePath: ""
 textureFlipX: false
 textureFlipY: false
 textureScale: 1
@@ -1403,12 +1243,14 @@ color: {r: 0, g: 0, b: 0, a: 1}
 gradientColors:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
-gradientPoints: [0, 1]
+gradientPoints:
+  - 0
+  - 1
 gradientAngle: 90
 gradientMode:
   __class: LetterStyleLayerGradientMode
   value: ALL
-texturePath: !<str> ""
+texturePath: ""
 textureFlipX: false
 textureFlipY: false
 textureScale: 1
@@ -1458,12 +1300,14 @@ color: {r: 0, g: 0, b: 0, a: 1}
 gradientColors:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
-gradientPoints: [0, 1]
+gradientPoints:
+  - 0
+  - 1
 gradientAngle: 90
 gradientMode:
   __class: LetterStyleLayerGradientMode
   value: ALL
-texturePath: !<str> ""
+texturePath: ""
 textureFlipX: false
 textureFlipY: false
 textureScale: 1
@@ -1485,3 +1329,615 @@ shadowDistance: 0
 shadowAngle: -45
 shadowFeather: -1
 shadowDiffuse: -1
+--- !LetterStyleLayer &25
+texture: {localId: 1, path: 00000000-0000-0000-0000-00000000001c--00000000-0000-0000-0000-00000000001c.png}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  guid: {a: 5142894425649116589, b: 5391628917879591595}
+  name: !<str> ""
+  properties:
+    __class: Map
+    gradientColor1: {r: 1, g: 1, b: 1, a: 1}
+    gradientColor2: {r: 1, g: 1, b: 1, a: 1}
+    gradientColorPos1: 0
+    gradientColor3: {r: 1, g: 1, b: 1, a: 1}
+    gradientColorPos2: 1
+    gradientColorPos3: 0.5
+guid: {a: 5690994954248731420, b: 2090719817444449445}
+name: !<str> ""
+type:
+  __class: LetterStyleLayerType
+  value: FILL
+renderType:
+  __class: LetterStyleLayerRenderType
+  value: SOLID
+color: {r: 0.02083333022892475, g: 0.2578946948051453, b: 1, a: 1}
+enable: true
+alpha: 1
+gradientColors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+gradientPoints:
+  - 0
+  - 1
+textureFlipY: false
+gradientAngle: 90
+gradientMode:
+  __class: LetterStyleLayerGradientMode
+  value: ALL
+textureFlipX: false
+textureScale: 1
+textureAlpha: 1
+textureAngle: 0
+textureRange: -1
+textureOffsetX: 0
+textureOffsetY: 0
+--- !LetterStyleLayer &26
+texture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  guid: {a: 4719742794177846308, b: 12085023664207888292}
+  name: !<str> ""
+  properties:
+    __class: Map
+    gradientColor1: {r: 0, g: 0, b: 0, a: 1}
+    gradientColor2: {r: 0, g: 0, b: 0, a: 1}
+    gradientColorPos1: 0
+    gradientColor3: {r: 0, g: 0, b: 0, a: 1}
+    gradientColorPos2: 1
+    gradientColorPos3: 0.5
+guid: {a: 5203799811801947267, b: 2203654782126160048}
+name: !<str> ""
+type:
+  __class: LetterStyleLayerType
+  value: INNER_SHADOW
+renderType:
+  __class: LetterStyleLayerRenderType
+  value: SOLID
+color: {r: 0, g: 0, b: 0, a: 1}
+enable: false
+alpha: 0.9
+gradientColors:
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+gradientPoints:
+  - 0
+  - 1
+textureFlipY: false
+gradientAngle: 90
+gradientMode:
+  __class: LetterStyleLayerGradientMode
+  value: ALL
+textureFlipX: false
+textureScale: 1
+textureAlpha: 1
+textureAngle: 0
+textureRange: -1
+textureOffsetX: 0
+shadowDistance: 0.05
+textureOffsetY: 0
+shadowAngle: -30
+shadowFeather: 0
+--- !LetterStyle &27
+fontfamily: font/Classic.ttf
+guid: {a: 4732845307312736134, b: 6598494897379375764}
+name: !<str> ""
+version: 101
+fontId: ""
+fontSize: 155.5266203703704
+fontStyle:
+  __class: FontStyle
+  value: NORMAL
+fontDecoration:
+  __class: FontDecorationType
+  value: NONE
+fill: {localId: 25}
+innerShadows:
+  - {localId: 26}
+strokes:
+  - {localId: 18}
+--- !TextTypeSettingParam &28
+guid: {a: 4808310864550178030, b: 11749970197768561049}
+name: !<str> ""
+textAdaptiveCanvasEnabled: false
+lineSpacing: 0
+letterSpacing: 0
+typeSettingAlign:
+  __class: TypesettingAlign
+  value: CENTER
+canvasWHFixed: {x: 3408.43994140625, y: 3603.244018554688}
+typeSettingKind:
+  __class: TypesettingKind
+  value: HORIZONTAL
+typeSettingAlignVertical:
+  __class: TypesettingAlignVertical
+  value: CENTER
+lineBreakType:
+  __class: LineBreakType
+  value: 1
+--- !TextCanvas &29
+guid: {a: 4859176634711678714, b: 15114519333649194922}
+name: !<str> ""
+canvasEnabled: false
+canvasColor: {x: 0, y: 0, z: 0, w: 1}
+canvasRoundCornerEnabled: false
+canvasRoundRadiusScale: 0
+canvasCustomizedEnabled: false
+canvasWHCustomized: {x: 0, y: 0}
+--- !TextBackground &30
+textureOffsetY: 0
+textureScale: 1
+texture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
+guid: {a: 4953566797511991007, b: 17255542203818001075}
+name: !<str> ""
+renderType:
+  __class: TextBackgroundRenderType
+  value: SOLID
+alpha: 1
+textureOffsetX: 0
+gradientColors:
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+gradientPoints:
+  - 0
+  - 1
+gradientAngle: 90
+--- !LetterStyleLayer &31
+texture: {localId: 1, path: 00000000-0000-0000-0000-00000000001c--00000000-0000-0000-0000-00000000001c.png}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  guid: {a: 4641877746923361684, b: 14664820592423010181}
+  name: !<str> ""
+  properties:
+    __class: Map
+    gradientColor1: {r: 1, g: 1, b: 1, a: 1}
+    gradientColor2: {r: 1, g: 1, b: 1, a: 1}
+    gradientColorPos1: 0
+    gradientColor3: {r: 1, g: 1, b: 1, a: 1}
+    gradientColorPos2: 1
+    gradientColorPos3: 0.5
+guid: {a: 5600196065474910277, b: 13650837511940095638}
+name: !<str> ""
+type:
+  __class: LetterStyleLayerType
+  value: FILL
+renderType:
+  __class: LetterStyleLayerRenderType
+  value: SOLID
+color: {r: 0.9375, g: 0, b: 0, a: 1}
+enable: true
+alpha: 1
+gradientColors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+gradientPoints:
+  - 0
+  - 1
+textureFlipY: false
+gradientAngle: 90
+gradientMode:
+  __class: LetterStyleLayerGradientMode
+  value: ALL
+textureFlipX: false
+textureScale: 1
+textureAlpha: 1
+textureAngle: 0
+textureRange: -1
+textureOffsetX: 0
+textureOffsetY: 0
+--- !LetterStyleLayer &32
+texture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  guid: {a: 4714159056438482604, b: 12191820152983824044}
+  name: !<str> ""
+  properties:
+    __class: Map
+    gradientColor1: {r: 0, g: 0, b: 0, a: 1}
+    gradientColor2: {r: 0, g: 0, b: 0, a: 1}
+    gradientColorPos1: 0
+    gradientColor3: {r: 0, g: 0, b: 0, a: 1}
+    gradientColorPos2: 1
+    gradientColorPos3: 0.5
+guid: {a: 5658623967790055672, b: 12920680770416389015}
+name: !<str> ""
+type:
+  __class: LetterStyleLayerType
+  value: INNER_SHADOW
+renderType:
+  __class: LetterStyleLayerRenderType
+  value: SOLID
+color: {r: 0, g: 0, b: 0, a: 1}
+enable: false
+alpha: 0.9
+gradientColors:
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+gradientPoints:
+  - 0
+  - 1
+textureFlipY: false
+gradientAngle: 90
+gradientMode:
+  __class: LetterStyleLayerGradientMode
+  value: ALL
+textureFlipX: false
+textureScale: 1
+textureAlpha: 1
+textureAngle: 0
+textureRange: -1
+textureOffsetX: 0
+shadowDistance: 0.05
+textureOffsetY: 0
+shadowAngle: -30
+shadowFeather: 0
+--- !LetterStyle &33
+fontfamily: font/Classic.ttf
+guid: {a: 5107911843744529192, b: 6511334108724864693}
+name: !<str> ""
+version: 101
+fontId: ""
+fontSize: 173.6111111111111
+fontStyle:
+  __class: FontStyle
+  value: NORMAL
+fontDecoration:
+  __class: FontDecorationType
+  value: NONE
+fill: {localId: 31}
+innerShadows:
+  - {localId: 32}
+strokes:
+  - {localId: 20}
+--- !TextTypeSettingParam &34
+guid: {a: 5697211701101052929, b: 4920902620176264077}
+name: !<str> ""
+textAdaptiveCanvasEnabled: false
+lineSpacing: 0
+letterSpacing: 0
+typeSettingAlign:
+  __class: TypesettingAlign
+  value: CENTER
+canvasWHFixed: {x: 4010.44189453125, y: 2177.646026611328}
+typeSettingKind:
+  __class: TypesettingKind
+  value: HORIZONTAL
+typeSettingAlignVertical:
+  __class: TypesettingAlignVertical
+  value: CENTER
+lineBreakType:
+  __class: LineBreakType
+  value: 1
+--- !TextCanvas &35
+guid: {a: 5077801957190834006, b: 925644667187572122}
+name: !<str> ""
+canvasEnabled: false
+canvasColor: {x: 0, y: 0, z: 0, w: 1}
+canvasRoundCornerEnabled: false
+canvasRoundRadiusScale: 0
+canvasCustomizedEnabled: false
+canvasWHCustomized: {x: 0, y: 0}
+--- !TextBackground &36
+textureOffsetY: 0
+textureScale: 1
+texture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
+guid: {a: 5266078015286678715, b: 16189159141487164312}
+name: !<str> ""
+renderType:
+  __class: TextBackgroundRenderType
+  value: SOLID
+alpha: 1
+textureOffsetX: 0
+gradientColors:
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+gradientPoints:
+  - 0
+  - 1
+gradientAngle: 90
+--- !LetterStyleLayer &37
+texture: {localId: 1, path: 00000000-0000-0000-0000-00000000001c--00000000-0000-0000-0000-00000000001c.png}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  guid: {a: 5619502068380035086, b: 12456836631086309796}
+  name: !<str> ""
+  properties:
+    __class: Map
+    gradientColor1: {r: 1, g: 1, b: 1, a: 1}
+    gradientColor2: {r: 1, g: 1, b: 1, a: 1}
+    gradientColorPos1: 0
+    gradientColor3: {r: 1, g: 1, b: 1, a: 1}
+    gradientColorPos2: 1
+    gradientColorPos3: 0.5
+guid: {a: 5053585226437193080, b: 9734017180188192402}
+name: !<str> ""
+type:
+  __class: LetterStyleLayerType
+  value: FILL
+renderType:
+  __class: LetterStyleLayerRenderType
+  value: SOLID
+color: {r: 1, g: 0, b: 0, a: 1}
+enable: true
+alpha: 1
+gradientColors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+gradientPoints:
+  - 0
+  - 1
+textureFlipY: false
+gradientAngle: 90
+gradientMode:
+  __class: LetterStyleLayerGradientMode
+  value: ALL
+textureFlipX: false
+textureScale: 1
+textureAlpha: 1
+textureAngle: 0
+textureRange: -1
+textureOffsetX: 0
+textureOffsetY: 0
+--- !LetterStyleLayer &38
+texture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  guid: {a: 5355741181810618763, b: 9827261052962719918}
+  name: !<str> ""
+  properties:
+    __class: Map
+    gradientColor1: {r: 0, g: 0, b: 0, a: 1}
+    gradientColor2: {r: 0, g: 0, b: 0, a: 1}
+    gradientColorPos1: 0
+    gradientColor3: {r: 0, g: 0, b: 0, a: 1}
+    gradientColorPos2: 1
+    gradientColorPos3: 0.5
+guid: {a: 4818416367069206234, b: 10877051624360980103}
+name: !<str> ""
+type:
+  __class: LetterStyleLayerType
+  value: INNER_SHADOW
+renderType:
+  __class: LetterStyleLayerRenderType
+  value: SOLID
+color: {r: 0, g: 0, b: 0, a: 1}
+enable: false
+alpha: 0.9
+gradientColors:
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+gradientPoints:
+  - 0
+  - 1
+textureFlipY: false
+gradientAngle: 90
+gradientMode:
+  __class: LetterStyleLayerGradientMode
+  value: ALL
+textureFlipX: false
+textureScale: 1
+textureAlpha: 1
+textureAngle: 0
+textureRange: -1
+textureOffsetX: 0
+shadowDistance: 0.05
+textureOffsetY: 0
+shadowAngle: -30
+shadowFeather: 0
+--- !LetterStyle &39
+fontfamily: font/Classic.ttf
+guid: {a: 5495129871272021573, b: 13037773621505329029}
+name: !<str> ""
+version: 101
+fontId: ""
+fontSize: 173.6111111111111
+fontStyle:
+  __class: FontStyle
+  value: NORMAL
+fontDecoration:
+  __class: FontDecorationType
+  value: NONE
+fill: {localId: 37}
+innerShadows:
+  - {localId: 38}
+strokes:
+  - {localId: 22}
+--- !TextTypeSettingParam &40
+guid: {a: 4716886435211438735, b: 16628041109312855474}
+name: !<str> ""
+textAdaptiveCanvasEnabled: false
+lineSpacing: 0
+letterSpacing: 0
+typeSettingAlign:
+  __class: TypesettingAlign
+  value: CENTER
+canvasWHFixed: {x: 14400, y: 25600}
+typeSettingKind:
+  __class: TypesettingKind
+  value: HORIZONTAL
+typeSettingAlignVertical:
+  __class: TypesettingAlignVertical
+  value: CENTER
+lineBreakType:
+  __class: LineBreakType
+  value: 1
+--- !TextCanvas &41
+guid: {a: 4878506138955028925, b: 11837595737451804567}
+name: !<str> ""
+canvasEnabled: false
+canvasColor: {x: 0, y: 0, z: 0, w: 1}
+canvasRoundCornerEnabled: false
+canvasRoundRadiusScale: 0
+canvasCustomizedEnabled: false
+canvasWHCustomized: {x: 0, y: 0}
+--- !TextBackground &42
+textureOffsetY: 0
+textureScale: 1
+texture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
+guid: {a: 5043958296719188641, b: 9925712712708694965}
+name: !<str> ""
+renderType:
+  __class: TextBackgroundRenderType
+  value: SOLID
+alpha: 1
+textureOffsetX: 0
+gradientColors:
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+gradientPoints:
+  - 0
+  - 1
+gradientAngle: 90
+--- !LetterStyleLayer &43
+texture: {localId: 1, path: 00000000-0000-0000-0000-00000000001c--00000000-0000-0000-0000-00000000001c.png}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  guid: {a: 4653683145546833643, b: 7969186243254721432}
+  name: !<str> ""
+  properties:
+    __class: Map
+    gradientColor1: {r: 1, g: 1, b: 1, a: 1}
+    gradientColor2: {r: 1, g: 1, b: 1, a: 1}
+    gradientColorPos1: 0
+    gradientColor3: {r: 1, g: 1, b: 1, a: 1}
+    gradientColorPos2: 1
+    gradientColorPos3: 0.5
+guid: {a: 5291175772307206912, b: 17426202943398807687}
+name: !<str> ""
+type:
+  __class: LetterStyleLayerType
+  value: FILL
+renderType:
+  __class: LetterStyleLayerRenderType
+  value: SOLID
+color: {r: 0.8947368264198303, g: 0, b: 1, a: 1}
+enable: true
+alpha: 1
+gradientColors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+gradientPoints:
+  - 0
+  - 1
+textureFlipY: false
+gradientAngle: 90
+gradientMode:
+  __class: LetterStyleLayerGradientMode
+  value: ALL
+textureFlipX: false
+textureScale: 1
+textureAlpha: 1
+textureAngle: 0
+textureRange: -1
+textureOffsetX: 0
+textureOffsetY: 0
+--- !LetterStyleLayer &44
+texture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  guid: {a: 5338155112711610019, b: 11877180044861953693}
+  name: !<str> ""
+  properties:
+    __class: Map
+    gradientColor1: {r: 0, g: 0, b: 0, a: 1}
+    gradientColor2: {r: 0, g: 0, b: 0, a: 1}
+    gradientColorPos1: 0
+    gradientColor3: {r: 0, g: 0, b: 0, a: 1}
+    gradientColorPos2: 1
+    gradientColorPos3: 0.5
+guid: {a: 5016634370091698358, b: 10864393494636814980}
+name: !<str> ""
+type:
+  __class: LetterStyleLayerType
+  value: INNER_SHADOW
+renderType:
+  __class: LetterStyleLayerRenderType
+  value: SOLID
+color: {r: 0, g: 0, b: 0, a: 1}
+enable: false
+alpha: 0.9
+gradientColors:
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+gradientPoints:
+  - 0
+  - 1
+textureFlipY: false
+gradientAngle: 90
+gradientMode:
+  __class: LetterStyleLayerGradientMode
+  value: ALL
+textureFlipX: false
+textureScale: 1
+textureAlpha: 1
+textureAngle: 0
+textureRange: -1
+textureOffsetX: 0
+shadowDistance: 0.05
+textureOffsetY: 0
+shadowAngle: -30
+shadowFeather: 0
+--- !LetterStyle &45
+fontfamily: font/Retro.ttf
+guid: {a: 5048930022491399735, b: 1741561533418424990}
+name: !<str> ""
+version: 101
+fontId: ""
+fontSize: 260.4166666666667
+fontStyle:
+  __class: FontStyle
+  value: NORMAL
+fontDecoration:
+  __class: FontDecorationType
+  value: NONE
+fill: {localId: 43}
+innerShadows:
+  - {localId: 44}
+strokes:
+  - {localId: 24}
+--- !TextTypeSettingParam &46
+guid: {a: 5572731208621820751, b: 3526909019471527333}
+name: !<str> ""
+textAdaptiveCanvasEnabled: false
+lineSpacing: 0
+letterSpacing: 0
+typeSettingAlign:
+  __class: TypesettingAlign
+  value: CENTER
+canvasWHFixed: {x: 14400, y: 25600}
+typeSettingKind:
+  __class: TypesettingKind
+  value: HORIZONTAL
+typeSettingAlignVertical:
+  __class: TypesettingAlignVertical
+  value: CENTER
+lineBreakType:
+  __class: LineBreakType
+  value: 1
+--- !TextCanvas &47
+guid: {a: 5532673274812760742, b: 4916883442616449711}
+name: !<str> ""
+canvasEnabled: false
+canvasColor: {x: 0, y: 0, z: 0, w: 1}
+canvasRoundCornerEnabled: false
+canvasRoundRadiusScale: 0
+canvasCustomizedEnabled: false
+canvasWHCustomized: {x: 0, y: 0}
+--- !TextBackground &48
+textureOffsetY: 0
+textureScale: 1
+texture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
+guid: {a: 5626884452516122123, b: 3606509651476583612}
+name: !<str> ""
+renderType:
+  __class: TextBackgroundRenderType
+  value: SOLID
+alpha: 1
+textureOffsetX: 0
+gradientColors:
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+gradientPoints:
+  - 0
+  - 1
+gradientAngle: 90

@@ -1,7 +1,7 @@
 {
   "name": "",
-  "lastModified": "Mon, 30 Jun 2025 21:12:35 GMT",
-  "version": "4.15.0",
+  "lastModified": "Sun, 11 Oct 2026 11:53:02 GMT",
+  "version": "5.15.0",
   "renderNames": {
     "0": "Default Layer",
     "1": "Layer 1",
@@ -103,5 +103,7 @@
   "effectUploadResult": {
     "uri": "/obj/tiktok-effect-public-us/effects/effect/ahdzo3MDEumJREe3FR13iw_cee1eb8e72e01d2525cade9cc2a4a3ec",
     "url": "https://lf16-effect.tiktokcdn.com/obj/tiktok-effect-public-us/effects/effect/ahdzo3MDEumJREe3FR13iw_cee1eb8e72e01d2525cade9cc2a4a3ec"
-  }
+  },
+  "preUpgradeVersion": "4.15.0",
+  "orionSDKVersion": "9.4.0"
 }

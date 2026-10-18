@@ -6,13 +6,17 @@
     },
     "extraType": "ResItemVSSubgraph",
     "name": "Disappear After Collision",
-    "expandInPanel": false,
     "version": "0.1.0",
-    "isVisibleInInspector": true,
-    "hideInPanel": false,
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
     "objGuid": "",
     "assetPackageID": "7270261243628355585",
     "resourceFilePath": "C:\\Users\\Armando\\AppData\\Roaming\\EffectHouse\\Instances\\Instance1\\EHpackage\\7270261243628355585\\Subgraphs\\Disappear After Collision.ssubgraph",
+    "references": [],
     "combinedWithNodeLibary": true,
     "assetID": "7270261243628355585"
   }

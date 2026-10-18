@@ -15,7 +15,10 @@
     "type": "none",
     "isAnimatorBound": false,
     "modelGUID": "",
-    "createdEffectNodeKey": ""
+    "createdEffectNodeKey": "",
+    "extendedInfo": {
+      "hideInPanel": false
+    }
   },
   {
     "guid": {
@@ -413,7 +416,7 @@
     "objGuid": "Guid(5108264552958636064, 3152255340802780590)",
     "extraType": "RigidBody2D",
     "name": "Rigid Body 2D",
-    "rttiType": "JSScriptComponent",
+    "rttiType": "RigidBody2D",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -428,7 +431,7 @@
     "objGuid": "Guid(5676720415397583558, 8313609711274266530)",
     "extraType": "CircleCollider2D",
     "name": "Circle Collider 2D",
-    "rttiType": "JSScriptComponent",
+    "rttiType": "CircleCollider2D",
     "version": "0.2.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -508,7 +511,7 @@
     "objGuid": "Guid(4797935296193486998, 8573074189708361141)",
     "extraType": "RigidBody2D",
     "name": "Rigid Body 2D",
-    "rttiType": "JSScriptComponent",
+    "rttiType": "RigidBody2D",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -523,7 +526,7 @@
     "objGuid": "Guid(5410417657035936255, 15827811819961636792)",
     "extraType": "CircleCollider2D",
     "name": "Circle Collider 2D",
-    "rttiType": "JSScriptComponent",
+    "rttiType": "CircleCollider2D",
     "version": "0.2.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
@@ -574,16 +577,19 @@
       "b": ""
     },
     "objGuid": "Guid(5614535273398720773, 17305219362859838902)",
-    "extraType": "TextJS",
+    "extraType": "Text2D",
     "name": "Text",
-    "rttiType": "JSScriptComponent",
-    "version": "0.2.0",
+    "rttiType": "Text",
+    "version": "1.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
     "expanded": true,
     "editable": true,
     "artTextNameDropdown": "00000000-0000-0000-0000-000000008000",
-    "inspectorUICtx": "{}"
+    "inspectorUICtx": "{}",
+    "boxDimension": 2,
+    "userEditable": false,
+    "maxInputWords": 50
   },
   {
     "guid": {
@@ -629,16 +635,19 @@
       "b": ""
     },
     "objGuid": "Guid(5616180578077334660, 11928283016128908198)",
-    "extraType": "TextJS",
+    "extraType": "Text2D",
     "name": "Text",
-    "rttiType": "JSScriptComponent",
-    "version": "0.2.0",
+    "rttiType": "Text",
+    "version": "1.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
     "expanded": true,
     "editable": true,
     "artTextNameDropdown": "00000000-0000-0000-0000-000000008000",
-    "inspectorUICtx": "{}"
+    "inspectorUICtx": "{}",
+    "boxDimension": 2,
+    "userEditable": false,
+    "maxInputWords": 50
   },
   {
     "guid": {
@@ -684,16 +693,19 @@
       "b": ""
     },
     "objGuid": "Guid(5730012314711224876, 14825864229058970297)",
-    "extraType": "TextJS",
+    "extraType": "Text2D",
     "name": "Text",
-    "rttiType": "JSScriptComponent",
-    "version": "0.2.0",
+    "rttiType": "Text",
+    "version": "1.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
     "expanded": true,
     "editable": true,
     "artTextNameDropdown": "00000000-0000-0000-0000-000000008000",
-    "inspectorUICtx": "{}"
+    "inspectorUICtx": "{}",
+    "boxDimension": 2,
+    "userEditable": false,
+    "maxInputWords": 50
   },
   {
     "guid": {
@@ -934,16 +946,19 @@
       "b": ""
     },
     "objGuid": "Guid(5055681090739340570, 3942143497302023083)",
-    "extraType": "TextJS",
+    "extraType": "Text2D",
     "name": "Text",
-    "rttiType": "JSScriptComponent",
-    "version": "0.2.0",
+    "rttiType": "Text",
+    "version": "1.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
     "expanded": true,
     "editable": true,
     "artTextNameDropdown": "00000000-0000-0000-0000-000000008000",
-    "inspectorUICtx": "{}"
+    "inspectorUICtx": "{}",
+    "boxDimension": 2,
+    "userEditable": false,
+    "maxInputWords": 50
   },
   {
     "guid": {
@@ -991,7 +1006,7 @@
     "objGuid": "Guid(5589084335068122724, 3644539181267750322)",
     "extraType": "LeaderBoard",
     "name": "Leaderboard",
-    "rttiType": "JSScriptComponent",
+    "rttiType": "Leaderboard",
     "version": "0.2.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,

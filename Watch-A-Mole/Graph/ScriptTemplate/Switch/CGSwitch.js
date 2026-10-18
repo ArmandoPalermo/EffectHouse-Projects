@@ -1,0 +1,1 @@
+Object.defineProperty(exports,"__esModule",{value:!0}),exports.CGSwitch=void 0;const ScriptNodeAPI_1=require("../Utils/ScriptNodeAPI");class CGSwitch extends ScriptNodeAPI_1.BaseNode{execute(e){const t=Math.floor(this.inputs[1]());null!=t&&this.nexts[t]&&this.nexts[t]()}}exports.CGSwitch=CGSwitch;

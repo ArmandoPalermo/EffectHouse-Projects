@@ -6,10 +6,14 @@
     },
     "extraType": "ResItemFolder",
     "name": "Disappear After Collision",
-    "expandInPanel": true,
     "version": "0.1.0",
-    "isVisibleInInspector": true,
-    "hideInPanel": false,
-    "objGuid": ""
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "references": []
   }
 ]

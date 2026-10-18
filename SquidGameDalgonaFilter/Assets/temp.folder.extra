@@ -5,11 +5,15 @@
       "b": ""
     },
     "extraType": "ResItemFolder",
-    "name": "temp.folder",
-    "expandInPanel": false,
+    "name": "temp",
     "version": "0.1.0",
-    "isVisibleInInspector": true,
-    "hideInPanel": false,
-    "objGuid": ""
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "references": []
   }
 ]

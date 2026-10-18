@@ -1,0 +1,97 @@
+{
+	"name": "Update Leaderboard Score",
+	"id": "0a22ad61-ff89-b9e3-a16d-fe083cd20ff7",
+	"inputs": [
+		{
+			"name": "Update Score",
+			"description": "Recalculates the user's current rank based on the latest score",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_update_leaderboard_score_input_updatescore",
+			"descriptionKey": "graph_update_leaderboard_score_input_updatescore_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Post Final Score",
+			"description": "Determines whether the game has ended and if the score is ready to be posted",
+			"type": "Pulse",
+			"displayType": "Exec",
+			"nameKey": "graph_update_leaderboard_score_input_postfinalscore",
+			"descriptionKey": "graph_update_leaderboard_score_input_postfinalscore_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Score",
+			"type": "Double",
+			"item_type": "",
+			"default_value": "0",
+			"dynamic": true,
+			"description": "The score value to get and send to the server to determine the user's rank",
+			"displayType": "Number",
+			"nameKey": "graph_update_leaderboard_score_input_score",
+			"descriptionKey": "graph_update_leaderboard_score_input_score_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Score Updated",
+			"type": "Pulse",
+			"description": "Triggers a pulse when the score is updated",
+			"displayType": "Exec",
+			"nameKey": "graph_update_leaderboard_score_output_scoreupdated",
+			"descriptionKey": "graph_update_leaderboard_score_output_scoreupdated_description",
+			"displayTypeKey": "graph_type_exec"
+		},
+		{
+			"name": "Current Friends Rank",
+			"type": "Double",
+			"item_type": "",
+			"description": "The user's real-time rank among friends. This ignores previous rankings",
+			"displayType": "Number",
+			"nameKey": "graph_update_leaderboard_score_output_currentfriendsrank",
+			"descriptionKey": "graph_update_leaderboard_score_output_currentfriendsrank_description",
+			"displayTypeKey": "graph_type_number"
+		},
+		{
+			"name": "Current National Rank",
+			"type": "Double",
+			"item_type": "",
+			"description": "The user's real-time rank among all users in their country. This ignores previous rankings",
+			"displayType": "Number",
+			"nameKey": "graph_update_leaderboard_score_output_currentnationalrank",
+			"descriptionKey": "graph_update_leaderboard_score_output_currentnationalrank_description",
+			"displayTypeKey": "graph_type_number"
+		},
+		{
+			"name": "Current Global Rank",
+			"type": "Double",
+			"item_type": "",
+			"description": "The user's real-time rank among all users worldwide. This ignores previous rankings",
+			"displayType": "Number",
+			"nameKey": "graph_update_leaderboard_score_output_currentglobalrank",
+			"descriptionKey": "graph_update_leaderboard_score_output_currentglobalrank_description",
+			"displayTypeKey": "graph_type_number"
+		}
+	],
+	"js": "CGUpdateLeaderboard.js",
+	"useAPJSSystem": [
+		"LeaderboardSystem"
+	],
+	"scriptAPIVersion": "1.0.0",
+	"supportedValueTypes": [],
+	"version": "1.0.0",
+	"category": "Social Info",
+	"description": "Updates and posts leaderboard scores",
+	"productTypes": [
+		"EHO",
+		"EHD",
+		"EHI"
+	],
+	"nameKey": "graph_update_leaderboard_score_name",
+	"categoryKey": "graph_category_socialinfo",
+	"descriptionKey": "graph_update_leaderboard_score_description",
+	"contentFeature": [
+		"UpdateLeaderboardScore"
+	]
+}
